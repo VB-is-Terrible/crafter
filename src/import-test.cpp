@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main(int argc, char const *argv[]) {
-	auto recipes = crafter::read_in("./import.yaml");
+	auto recipes = crafter::read_in("data/recipes/import.yaml");
 	std::string in;
 	std::cout << "Input Recipe: ";
 	getline(std::cin, in);
