@@ -1,0 +1,8 @@
+.ccls-cache/*
+bazel-bin
+bazel-compilation-database*
+bazel-crafter
+bazel-out
+bazel-testlogs
+compile_commands.json
+bazel-genfiles

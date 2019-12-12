@@ -1,0 +1,15 @@
+Solar Panel II:
+  makes: 3
+  ingredients:
+    - name: Iron Plate
+      count: 11
+    - name: Mirror
+      count: 5
+    - name: Redstone
+      count: 2
+    - name: Basic Control Circuit
+      count: 1
+    - name: Solar Panel I
+      count: 1
+    - name: Redstone Transmission Coil
+      count: 1
