@@ -16,7 +16,7 @@ namespace crafter {
 
 	recipe_store read_in(std::ifstream& file_name) {
 		recipe_store recipes;
-		auto recipes_yaml = YAML::LoadFile("test");
+		auto recipes_yaml = YAML::Load(file_name);
 		for (auto it : recipes_yaml) {
 			std::string name;
 			try {
