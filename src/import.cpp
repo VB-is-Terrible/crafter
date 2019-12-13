@@ -32,6 +32,7 @@ namespace crafter {
 		}
 		return recipes;
 	}
+	
 	Recipe::Recipe(std::string name, YAML::Node recipe) : name{name} {
 		auto makes = recipe["makes"];
 		if (makes.IsDefined() && !makes.IsScalar()) {
