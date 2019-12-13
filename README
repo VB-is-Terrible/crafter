@@ -1,0 +1,6 @@
+Run commands:
+bazel build import
+bazel run import
+
+Dependencies:
+bazel, clang, gcc-c++
