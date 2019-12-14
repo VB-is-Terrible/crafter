@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef CRAFTER_GRAPH_2
+#define CRAFTER_GRAPH_2
+
 #include <map>
 #include <memory>
 #include <string>
@@ -7,8 +10,6 @@
 #include <unordered_set>
 #include <vector>
 #include <iostream>
-
-
 
 namespace graph {
 
@@ -35,8 +36,8 @@ class Graph;
 template <typename N, typename E>
 std::ostream& operator<<(std::ostream& os, const Graph<N, E>& graph);
 
-// template <typename N, typename E>
-// bool operator==(const Graph<N, E>& lhs, Graph<N, E>& rhs);
+template <typename N, typename E>
+bool operator==(const Graph<N, E>& lhs, Graph<N, E>& rhs);
 
 template <typename N, typename E>
 class Graph {
@@ -44,6 +45,7 @@ private:
 	node_map<N, E> nodes;
 
 	friend std::ostream& operator<< <N, E>(std::ostream& os, const Graph<N, E>&);
+	friend bool operator== <N, E>(const Graph<N, E>& lhs, Graph<N, E>& rhs);
 
 	static bool node_check(const Graph<N, E>& lhs, const Graph<N, E>& rhs);
 	static bool edge_check(const Graph<N, E>& lhs, const Graph<N, E>& rhs);
@@ -64,9 +66,11 @@ public:
 	bool DeleteNode(const N&);
 
 
-	// friend bool operator==<N, E>(const Graph<N, E>& lhs, Graph<N, E>& rhs);
 
 };
 
-
 }
+
+#include "graph2.tpp"
+
+#endif /* end of include guard: graph2 */
