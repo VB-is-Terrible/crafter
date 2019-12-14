@@ -49,7 +49,7 @@ bool Graph<N, E>::InsertNode(const N& val) {
 
 template <typename N, typename E>
 bool Graph<N, E>::InsertEdge(const N& src, const N& dst, const E& w) {
-	if (!this->IsNode(src) || !this->IsNode(dst)) {
+	if (!IsNode(src) || !IsNode(dst)) {
 		throw std::runtime_error(
 		"Cannot call Graph::InsertEdge when either src or dst node does not exist");
 	}
@@ -69,7 +69,7 @@ bool Graph<N, E>::InsertEdge(const N& src, const N& dst, const E& w) {
 
 template <typename N, typename E>
 bool Graph<N, E>::DeleteNode(const N& value) {
-	if (!this->IsNode(value)) {
+	if (!IsNode(value)) {
 		return false;
 	} else {
 		auto& node = nodes[value];
@@ -98,7 +98,7 @@ bool Graph<N, E>::IsNode(const N& value) const {
 
 template <typename N, typename E>
 bool Graph<N, E>::IsConnected(const N& src, const N& dst) const {
-	if (!this->IsNode(src) || !this->IsNode(dst)) {
+	if (!IsNode(src) || !IsNode(dst)) {
 		throw std::runtime_error(
 		"Cannot call Graph::IsConnected if src or dst node don't exist in the graph");
 	}
@@ -135,7 +135,7 @@ std::vector<N> Graph<N, E>::GetConnected(const N& value) const {
 
 template <typename N, typename E>
 E Graph<N, E>::GetWeight(const N& src, const N& dst) const {
-	if (!this->IsNode(src) || !this->IsNode(dst)) {
+	if (!IsNode(src) || !IsNode(dst)) {
 		throw std::out_of_range(
 		"Cannot call Graph::GetWeights if src or dst node don't exist in the graph");
 	}
