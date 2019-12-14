@@ -133,6 +133,19 @@ std::vector<N> Graph<N, E>::GetConnected(const N& value) const {
 }
 
 template <typename N, typename E>
+E Graph<N, E>::GetWeight(const N& src, const N& dst) const {
+	if (!this->IsNode(src) || !this->IsNode(dst)) {
+		throw std::out_of_range(
+		"Cannot call Graph::GetWeights if src or dst node don't exist in the graph");
+	}
+	auto& src_node = nodes[src];
+	if (src_node.edges.count(dst)) {
+		return src_node.edges.find(dst).second;
+	}
+	throw std::out_of_range(
+	"Cannot call Graph::GetWeights if src or dst node aren't connected");
+}
+template <typename N, typename E>
 bool node_check(const graph::Graph<N, E>& lhs, const graph::Graph<N, E>& rhs) {
 	for (const auto& node : lhs.GetNodes()) {
 		if (!rhs.IsNode(node)) {
