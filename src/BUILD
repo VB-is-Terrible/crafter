@@ -13,12 +13,6 @@ cc_binary(
 )
 
 cc_library(
-    name = "graph",
-    hdrs = ["graph.h", "graph.tpp"],
-    deps = [],
-)
-
-cc_library(
     name = "graph2",
     hdrs = ["graph2.h", "graph2.tpp"],
     deps = [],
