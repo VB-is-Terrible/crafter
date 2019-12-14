@@ -3,7 +3,7 @@
 #include "yaml-cpp/yaml.h"
 #include <string>
 
-int main(int argc, char const *argv[]) {
+int main() {
 	std::ifstream testfile("test.yaml");
 	YAML::Node mine_template = YAML::LoadFile("test.yaml");
 	std::cout << "whole: " << mine_template << "\n";
