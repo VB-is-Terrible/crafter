@@ -6,3 +6,4 @@ bazel-out
 bazel-testlogs
 compile_commands.json
 bazel-genfiles
+Crafter.code-workspace
