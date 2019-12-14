@@ -171,9 +171,9 @@ template <typename N, typename E>
 std::ostream& operator<<(std::ostream& os, const Graph<N, E>& graph) {
 	for (auto pair : graph.nodes) {
 		auto& node = pair.second;
-		os << node.value;
+		os << pair.first;
 		os << " (\n";
-		for (auto edge_pair : node.edges) {
+		for (auto& edge_pair : node.edges) {
 			auto edge = edge_pair.second;
 			auto& dest = edge_pair.first;
 			os << "  " << dest << " | " << edge << "\n";
