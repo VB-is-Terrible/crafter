@@ -3,7 +3,7 @@
 #ifndef CRAFTER_GRAPH_2
 #define CRAFTER_GRAPH_2
 
-#include <map>
+#include <unordered_map>
 #include <memory>
 #include <string>
 #include <set>
@@ -17,10 +17,10 @@ template <typename N, typename E>
 struct Nodes;
 
 template <typename N, typename E>
-using edge_map = std::map<N, E> ;
+using edge_map = std::unordered_map<N, E> ;
 
 template <typename N, typename E>
-using node_map = std::map<N, Nodes<N, E>>;
+using node_map = std::unordered_map<N, Nodes<N, E>>;
 
 template <typename N, typename E>
 struct Nodes {
