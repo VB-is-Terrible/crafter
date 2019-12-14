@@ -139,9 +139,9 @@ E Graph<N, E>::GetWeight(const N& src, const N& dst) const {
 		throw std::out_of_range(
 		"Cannot call Graph::GetWeights if src or dst node don't exist in the graph");
 	}
-	auto& src_node = nodes[src];
+	const auto& src_node = nodes.find(src)->second;
 	if (src_node.edges.count(dst)) {
-		return src_node.edges.find(dst).second;
+		return src_node.edges.find(dst)->second;
 	}
 	throw std::out_of_range(
 	"Cannot call Graph::GetWeights if src or dst node aren't connected");
