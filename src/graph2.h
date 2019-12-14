@@ -71,6 +71,7 @@ public:
 	std::vector<N> GetConnected(const N&) const;
 	E GetWeight(const N& src, const N& dst) const;
 	bool erase(const N& src, const N& dst);
+	bool ChangeWeight(const N& src, const N& dst, const E& w);
 	bool Replace(const N& oldData, const N& newData);
 	void MergeReplace(const N& oldData, const N& newData);
 };
