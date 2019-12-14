@@ -64,6 +64,7 @@ bool Graph<N, E>::InsertEdge(const N& src, const N& dst, const E& w) {
 		throw std::runtime_error(
 		"Cannot call Graph::InsertEdge when the edge already exists");
 	}
+	return true;
 }
 
 template <typename N, typename E>
