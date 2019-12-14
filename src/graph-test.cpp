@@ -1,4 +1,4 @@
-#include "graph2.h"
+#include "graph.h"
 #include <iostream>
 #include <string>
 
@@ -29,12 +29,15 @@ std::ostream& operator<<( std::ostream& o, const Test<T, V>& t ) {
 }
 
 int main() {
-	// graph::Graph<std::string, int> b, c;
-	// std::cout << b;
-	//
-	// if (b == c) {
-	// 	std::cout << "hi!\n";
-	// }
+	graph::Graph<std::string, int> b, c;
+	b.InsertNode("ho");
+	b.InsertNode("humm");
+	b.InsertEdge("ho", "humm", 5);
+	std::cout << b;
+
+	if (b == c) {
+		std::cout << "hi!\n";
+	}
 	test::Test<int, std::string> a;
 	a.v = 9999;
 	a.w = "testing";

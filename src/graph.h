@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef CRAFTER_GRAPH_2
-#define CRAFTER_GRAPH_2
+#ifndef CRAFTER_GRAPH
+#define CRAFTER_GRAPH
 
 #include <unordered_map>
 #include <memory>
@@ -79,6 +79,6 @@ public:
 
 }
 
-#include "graph2.tpp"
+#include "graph.tpp"
 
 #endif /* end of include guard: graph2 */

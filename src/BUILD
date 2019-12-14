@@ -13,15 +13,15 @@ cc_binary(
 )
 
 cc_library(
-    name = "graph2",
-    hdrs = ["graph2.h", "graph2.tpp"],
+    name = "graph",
+    hdrs = ["graph.h", "graph.tpp"],
     deps = [],
 )
 
 cc_binary(
     name = "g",
     srcs = ["graph-test.cpp"],
-    deps = [":graph2"],
+    deps = [":graph"],
     data = [],
 )
 
