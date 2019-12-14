@@ -261,17 +261,17 @@ std::ostream& operator<<(std::ostream& os, const Graph<N, E>& graph) {
 template <typename N, typename E>
 bool operator==(const Graph<N, E>& lhs, Graph<N, E>& rhs) {
 	// Node equality
-	if (!node_check(lhs, rhs)) {
+	if (!Graph<N, E>::node_check(lhs, rhs)) {
 		return false;
 	}
-	if (!node_check(rhs, lhs)) {
+	if (!Graph<N, E>::node_check(rhs, lhs)) {
 		return false;
 	}
 	// Edge equality
-	if (!edge_check(lhs, rhs)) {
+	if (!Graph<N, E>::edge_check(lhs, rhs)) {
 		return false;
 	}
-	if (!edge_check(rhs, lhs)) {
+	if (!Graph<N, E>::edge_check(rhs, lhs)) {
 		return false;
 	}
 	return true;
