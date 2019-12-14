@@ -29,9 +29,12 @@ std::ostream& operator<<( std::ostream& o, const Test<T, V>& t ) {
 }
 
 int main() {
-	// graph::Graph<std::string, int> b;
+	// graph::Graph<std::string, int> b, c;
 	// std::cout << b;
-
+	//
+	// if (b == c) {
+	// 	std::cout << "hi!\n";
+	// }
 	test::Test<int, std::string> a;
 	a.v = 9999;
 	a.w = "testing";
