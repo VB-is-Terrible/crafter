@@ -117,6 +117,19 @@ std::vector<N> Graph<N, E>::GetNodes() const {
 	}
 	return result;
 }
+
+template <typename N, typename E>
+std::vector<N> Graph<N, E>::GetConnected(const N& value) const {
+	auto src_it = nodes.find(value);
+	if (src_it == nodes.end()) {
+		throw std::out_of_range("Cannot call Graph::GetConnected if src doesn't exist in the graph");
+	}
+	const auto& src = src_it->second;
+	std::vector<N> result;
+	for (auto& pair : src.edges) {
+		result.push_back(*pair.first);
+	}
+	return result;
 }
 
 template <typename N, typename E>
