@@ -81,7 +81,7 @@ bool Graph<N, E>::DeleteNode(const N& value) {
 			auto& dst_node = nodes[outbound];
 			dst_node.incoming.erase(value);
 		}
-		nodes.erase(node_it);
+		nodes.erase(value);
 		return true;
 	}
 }
