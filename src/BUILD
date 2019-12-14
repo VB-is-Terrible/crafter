@@ -11,5 +11,3 @@ cc_binary(
     deps = [":importer"],
     data = ["//data:recipes/import.yaml"],
 )
-
-)
