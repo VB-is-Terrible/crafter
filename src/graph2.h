@@ -35,13 +35,15 @@ class Graph;
 template <typename N, typename E>
 std::ostream& operator<<(std::ostream& os, const Graph<N, E>& graph);
 
-template <typename N, typename E>
-bool operator==(const Graph<N, E>& lhs, Graph<N, E>& rhs);
+// template <typename N, typename E>
+// bool operator==(const Graph<N, E>& lhs, Graph<N, E>& rhs);
 
 template <typename N, typename E>
 class Graph {
 private:
 	node_map<N, E> nodes;
+
+	friend std::ostream& operator<< <N, E>(std::ostream& os, const Graph<N, E>&);
 
 	static bool node_check(const Graph<N, E>& lhs, const Graph<N, E>& rhs);
 	static bool edge_check(const Graph<N, E>& lhs, const Graph<N, E>& rhs);
@@ -61,9 +63,8 @@ public:
 	bool InsertEdge(const N& src, const N& dst, const E& w);
 	bool DeleteNode(const N&);
 
-	friend std::ostream& operator<<(std::ostream& os, const Graph<N, E>& graph);
 
-	friend bool operator==(const Graph<N, E>& lhs, Graph<N, E>& rhs);
+	// friend bool operator==<N, E>(const Graph<N, E>& lhs, Graph<N, E>& rhs);
 
 };
 
