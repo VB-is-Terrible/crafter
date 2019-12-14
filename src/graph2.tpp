@@ -40,7 +40,7 @@ Graph<N, E>::Graph(Graph<N, E>&& other) {
 template <typename N, typename E>
 bool Graph<N, E>::InsertNode(const N& val) {
 	if (nodes.count(val) == 0) {
-		nodes.insert(val, Nodes<N, E>());
+		nodes[val] = Nodes<N, E>();
 		return true;
 	} else {
 		return false;
@@ -56,9 +56,9 @@ bool Graph<N, E>::InsertEdge(const N& src, const N& dst, const E& w) {
 	auto& src_node = nodes.find(src)->second;
 	auto& dest_node = nodes.find(dst)->second;
 
-	auto& src_edges = src_node.edges.find(dst);
-	if (src_edges == src_node.edges.end()) {
-		src_edges.insert(dst, w);
+	auto& src_edges = src_node.edges;
+	if (src_edges.count(dst) == 0) {
+		src_edges[dst] = w;
 		dest_node.incoming.insert(src);
 	} else {
 		throw std::runtime_error(
