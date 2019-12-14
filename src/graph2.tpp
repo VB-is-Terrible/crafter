@@ -77,7 +77,7 @@ bool Graph<N, E>::DeleteNode(const N& value) {
 			auto& src_node = nodes[inbound];
 			src_node.edges.erase(src_node);
 		}
-		for (auto outbound : node.edges) {
+		for (auto& outbound : node.edges) {
 			auto& dst_node = nodes[outbound];
 			dst_node.incoming.erase(value);
 		}
