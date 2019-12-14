@@ -220,9 +220,9 @@ void Graph<N, E>::MergeReplace(const N& oldData, const N& newData) {
 }
 
 template <typename N, typename E>
-bool node_check(const graph::Graph<N, E>& lhs, const graph::Graph<N, E>& rhs) {
-	for (const auto& node : lhs.GetNodes()) {
-		if (!rhs.IsNode(node)) {
+bool Graph<N, E>::node_check(const graph::Graph<N, E>& lhs, const graph::Graph<N, E>& rhs) {
+	for (const auto& it : lhs.nodes) {
+		if (!rhs.IsNode(it.first)) {
 			return false;
 		}
 	}
