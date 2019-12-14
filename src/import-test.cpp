@@ -1,9 +1,10 @@
 #include "import.h"
 #include <iostream>
 
-int main(int argc, char const *argv[]) {
+int main() {
 	auto recipes = crafter::read_in("data/recipes/import.yaml");
 	std::string in;
+	std::cout << "Loaded " << recipes.size() << " recipes\n";
 	std::cout << "Input Recipe: ";
 	getline(std::cin, in);
 	while (in != "") {
@@ -18,6 +19,7 @@ int main(int argc, char const *argv[]) {
 				std::cout << "   count: " << ingredient.count << "\n";
 			}
 		}
+		std::cout << "Input Recipe: ";
 		getline(std::cin, in);
 	}
 	return 0;
