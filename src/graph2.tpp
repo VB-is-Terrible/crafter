@@ -3,6 +3,126 @@
 namespace graph {
 
 template <typename N, typename E>
+Graph<N, E>::Graph(typename std::vector<N>::const_iterator begin,
+                   typename std::vector<N>::const_iterator end) {
+	for (auto iter = begin; iter != end; iter++) {
+		InsertNode(*iter);
+	}
+}
+
+template <typename N, typename E>
+Graph<N, E>::Graph(typename std::vector<std::tuple<N, N, E>>::const_iterator begin,
+                         typename std::vector<std::tuple<N, N, E>>::const_iterator end) {
+        for (auto iter = begin; iter != end; iter++) {
+    		auto [name1, name2, weight] = *iter;
+		InsertNode(name1);
+		InsertNode(name2);
+		InsertEdge(name1, name2, weight);
+	}
+}
+
+template <typename N, typename E>
+Graph<N, E>::Graph(typename std::initializer_list<N> list) {
+	for (auto& item : list) {
+		InsertNode(item);
+	}
+}
+
+template <typename N, typename E>
+Graph<N, E>::Graph(const Graph<N, E>& other) : nodes{other.nodes} {}
+
+template <typename N, typename E>
+Graph<N, E>::Graph(Graph<N, E>&& other) {
+	nodes = std::move(other.nodes);
+	other.nodes_ = decltype(other.nodes_)();
+}
+
+template <typename N, typename E>
+bool Graph<N, E>::InsertNode(const N& val) {
+	if (nodes.count(val) == 0) {
+		nodes.insert(val, Nodes<N, E>());
+		return true;
+	} else {
+		return false;
+	}
+}
+
+template <typename N, typename E>
+bool Graph<N, E>::InsertEdge(const N& src, const N& dst, const E& w) {
+	if (nodes.count(src) == 0 || nodes.count(dst) == 0) {
+		throw std::runtime_error(
+		"Cannot call Graph::InsertEdge when either src or dst node does not exist");
+	}
+	auto& src_node = nodes.find(src)->second;
+	auto& dest_node = nodes.find(dst)->second;
+
+	auto& src_edges = src_node.edges.find(dst);
+	if (src_edges == src_node.edges.end()) {
+		src_edges.insert(dst, w);
+		dest_node.incoming.insert(src);
+	} else {
+		throw std::runtime_error(
+		"Cannot call Graph::InsertEdge when the edge already exists");
+	}
+}
+
+template <typename N, typename E>
+bool Graph<N, E>::DeleteNode(const N& value) {
+	auto node_it = nodes.find(value);
+	if (node_it == nodes.end()) {
+		return false;
+	} else {
+		auto& node = node_it->second;
+		for (auto& inbound : node.incoming) {
+			auto& src_node = nodes[inbound];
+			src_node.edges.erase(src_node);
+		}
+		for (auto outbound : node.edges) {
+			auto& dst_node = nodes[outbound];
+			dst_node.incoming.erase(value);
+		}
+		nodes.erase(node_it);
+		return true;
+	}
+}
+
+template <typename N, typename E>
+bool Graph<N, E>::IsNode(const N& value) const {
+	auto it = nodes.find(value);
+	if (it == nodes.end()) {
+		return false;
+	} else {
+		return true;
+	}
+}
+
+template <typename N, typename E>
+bool Graph<N, E>::IsConnected(const N& src, const N& dst) const {
+	auto src_it = nodes.find(src), dst_it = nodes.find(dst), end = nodes.end();
+	if (src_it == end || dst_it == end) {
+		throw std::runtime_error(
+		"Cannot call Graph::IsConnected if src or dst node don't exist in the graph");
+	}
+	const auto& src_node = src_it->second;
+	if (src_node.edges.find(dst) == src_node.edges.end()) {
+		return false;
+	} else {
+		return true;
+	}
+}
+
+template <typename N, typename E>
+std::vector<N> gdwg::Graph<N, E>::GetNodes() const {
+  std::vector<N> result(nodes_.size());
+  auto count = 0;
+  for (auto iter : nodes_) {
+    result[count] = *iter.first;
+    count++;
+  }
+  return result;
+}
+
+template <typename N, typename E>
 bool node_check(const graph::Graph<N, E>& lhs, const graph::Graph<N, E>& rhs) {
 	for (const auto& node : lhs.GetNodes()) {
 		if (!rhs.IsNode(node)) {
