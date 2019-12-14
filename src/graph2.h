@@ -52,14 +52,14 @@ private:
 public:
 	Graph(typename std::vector<N>::const_iterator, typename std::vector<N>::const_iterator);
 
-        Graph<N, E>(typename std::vector<std::tuple<N, N, E>>::const_iterator,
-                    typename std::vector<std::tuple<N, N, E>>::const_iterator);
+	Graph<N, E>(typename std::vector<std::tuple<N, N, E>>::const_iterator,
+	            typename std::vector<std::tuple<N, N, E>>::const_iterator);
 
-        Graph<N, E>(std::initializer_list<N>);
-        Graph<N, E>(const Graph<N, E>&);
-        Graph<N, E>(Graph<N, E>&&);
-        Graph() = default;
-        ~Graph() = default;
+	Graph<N, E>(std::initializer_list<N>);
+	Graph<N, E>(const Graph<N, E>&);
+	Graph<N, E>(Graph<N, E>&&);
+	Graph() = default;
+	~Graph() = default;
 
 	bool InsertNode(const N& val);
 	bool InsertEdge(const N& src, const N& dst, const E& w);
