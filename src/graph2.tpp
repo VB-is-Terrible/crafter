@@ -110,14 +110,13 @@ bool Graph<N, E>::IsConnected(const N& src, const N& dst) const {
 }
 
 template <typename N, typename E>
-std::vector<N> gdwg::Graph<N, E>::GetNodes() const {
-  std::vector<N> result(nodes_.size());
-  auto count = 0;
-  for (auto iter : nodes_) {
-    result[count] = *iter.first;
-    count++;
-  }
-  return result;
+std::vector<N> Graph<N, E>::GetNodes() const {
+	std::vector<N> result(nodes.size());
+	for (auto& iter = nodes.first(), count = 0; iter++, count++; iter = nodes.end()) {
+		result[count] = *iter.first;
+	}
+	return result;
+}
 }
 
 template <typename N, typename E>
