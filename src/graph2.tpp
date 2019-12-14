@@ -49,7 +49,7 @@ bool Graph<N, E>::InsertNode(const N& val) {
 
 template <typename N, typename E>
 bool Graph<N, E>::InsertEdge(const N& src, const N& dst, const E& w) {
-	if (nodes.count(src) == 0 || nodes.count(dst) == 0) {
+	if (!this->IsNode(src) || !this->IsNode(dst)) {
 		throw std::runtime_error(
 		"Cannot call Graph::InsertEdge when either src or dst node does not exist");
 	}
@@ -68,11 +68,10 @@ bool Graph<N, E>::InsertEdge(const N& src, const N& dst, const E& w) {
 
 template <typename N, typename E>
 bool Graph<N, E>::DeleteNode(const N& value) {
-	auto node_it = nodes.find(value);
-	if (node_it == nodes.end()) {
+	if (!this->IsNode(value)) {
 		return false;
 	} else {
-		auto& node = node_it->second;
+		auto& node = nodes[value];
 		for (auto& inbound : node.incoming) {
 			auto& src_node = nodes[inbound];
 			src_node.edges.erase(src_node);
@@ -98,12 +97,11 @@ bool Graph<N, E>::IsNode(const N& value) const {
 
 template <typename N, typename E>
 bool Graph<N, E>::IsConnected(const N& src, const N& dst) const {
-	auto src_it = nodes.find(src), dst_it = nodes.find(dst), end = nodes.end();
-	if (src_it == end || dst_it == end) {
+	if (!this->IsNode(src) || !this->IsNode(dst)) {
 		throw std::runtime_error(
 		"Cannot call Graph::IsConnected if src or dst node don't exist in the graph");
 	}
-	const auto& src_node = src_it->second;
+	const auto& src_node = nodes[src];
 	if (src_node.edges.find(dst) == src_node.edges.end()) {
 		return false;
 	} else {
