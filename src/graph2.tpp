@@ -146,6 +146,79 @@ E Graph<N, E>::GetWeight(const N& src, const N& dst) const {
 	throw std::out_of_range(
 	"Cannot call Graph::GetWeights if src or dst node aren't connected");
 }
+
+template <typename N, typename E>
+bool Graph<N, E>::erase(const N& src, const N& dst) {
+	if (!IsNode(src) || !IsNode(dst)) {
+		return false;
+	}
+	auto& src_node = nodes[src];
+	if (src_node.edges.count(dst)) {
+		src_node.edges.erase(dst);
+		return true;
+	} else {
+		return false;
+	}
+}
+
+template <typename N, typename E>
+bool Graph<N, E>::SetWeight(const N& src, const N& dst, const E& w) {
+	if (!IsNode(src) || !IsNode(dst)) {
+		throw std::runtime_error(
+		"Cannot call Graph::InsertEdge when either src or dst node does not exist");
+	}
+	auto& src_node = nodes.find(src)->second;
+	auto& dest_node = nodes.find(dst)->second;
+
+	auto& src_edges = src_node.edges;
+	if (src_edges.count(dst) == 0) {
+		src_edges[dst] = w;
+		dest_node.incoming.insert(src);
+	} else {
+		src_edges[dst] = w;
+	}
+	return true;
+}
+
+template <typename N, typename E>
+bool Graph<N, E>::Replace(const N& oldData, const N& newData) {
+	if (!IsNode(oldData)) {
+		throw std::runtime_error("Cannot call Graph::Replace on a node that doesn't exist");
+	}
+	if (IsNode(newData)) {
+		throw std::runtime_error("Cannot call Graph::Replace on a node that already exists");
+	}
+	InsertNode(newData);
+
+	MergeReplace(oldData, newData);
+	return true;
+}
+
+template <typename N, typename E>
+void Graph<N, E>::MergeReplace(const N& oldData, const N& newData) {
+	if (!IsNode(oldData) || !IsNode(newData)) {
+		throw std::runtime_error(
+		"Cannot call Graph::MergeReplace on old or new data if they don't exist in the graph");
+	}
+
+	auto& old_node = nodes[oldData];
+
+	for (auto& outbound : old_node.edges) {
+		if (outbound.first == oldData) {
+			InsertEdge(newData, newData, outbound.second);
+		} else {
+			InsertEdge(newData, outbound.first, outbound.second);
+		}
+	}
+
+	for (auto incoming : old_node.incoming) {
+		auto& weight = nodes[incoming].edges[oldData];
+		InsertEdge(incoming, newData, weight);
+	}
+
+	DeleteNode(oldData);
+}
+
 template <typename N, typename E>
 bool node_check(const graph::Graph<N, E>& lhs, const graph::Graph<N, E>& rhs) {
 	for (const auto& node : lhs.GetNodes()) {
@@ -157,11 +230,11 @@ bool node_check(const graph::Graph<N, E>& lhs, const graph::Graph<N, E>& rhs) {
 }
 
 template <typename N, typename E>
-bool edge_check(const Graph<N, E>& lhs, const Graph<N, E>& rhs) {
+bool Graph<N, E>::edge_check(const Graph<N, E>& lhs, const Graph<N, E>& rhs) {
 	for (const auto& src_it : lhs.nodes) {
-		auto& src = src_it->second;
-		for (const auto& dst_it : src) {
-			if (dst_it->second != rhs.GetWeight(src, dst_it->first)) {
+		auto& src = src_it.second;
+		for (const auto& dst_it : src.edges) {
+			if (dst_it.second != rhs.GetWeight(src_it.first, dst_it.first)) {
 				return false;
 			}
 		}
