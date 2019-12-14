@@ -157,9 +157,10 @@ bool node_check(const graph::Graph<N, E>& lhs, const graph::Graph<N, E>& rhs) {
 
 template <typename N, typename E>
 bool edge_check(const Graph<N, E>& lhs, const Graph<N, E>& rhs) {
-	for (const auto& src : lhs.GetNodes()) {
-		for (const auto& dst : lhs.GetConnected(src)) {
-			if (lhs.GetWeight(src, dst) != rhs.GetWeight(src, dst)) {
+	for (const auto& src_it : lhs.nodes) {
+		auto& src = src_it->second;
+		for (const auto& dst_it : src) {
+			if (dst_it->second != rhs.GetWeight(src, dst_it->first)) {
 				return false;
 			}
 		}
