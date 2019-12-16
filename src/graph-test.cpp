@@ -28,15 +28,59 @@ std::ostream& operator<<( std::ostream& o, const Test<T, V>& t ) {
 
 }
 
+template <typename T, typename V>
+class _G3;
+
+template <typename T, typename V>
+bool operator==(const _G3<T, V> lhs, const _G3<T, V> rhs);
+
+template <typename T, typename V>
+class _G3 {
+public:
+	_G3(T c, V d) : a{c}, b{d} {}
+	friend bool operator== <T, V>(const _G3<T, V> lhs, const _G3<T, V> rhs);
+private:
+	T a;
+	V b;
+};
+
+template <typename T, typename V>
+class G2 {
+public:
+	using G3 = _G3<T, V>;
+};
+
+
+template <typename T, typename V>
+bool operator==(const _G3<T, V> lhs, const _G3<T, V> rhs) {
+	return lhs.a == rhs.a && lhs.b == rhs.b;
+}
+
 int main() {
 	graph::Graph<std::string, int> b, c;
 	b.InsertNode("ho");
 	b.InsertNode("humm");
 	b.InsertEdge("ho", "humm", 5);
-	std::cout << b;
+	// std::cout << b;
 
+	G2<std::string, int>::G3 n("first", 1), m("second", 2), o("first", 1);
+
+	if (n == m) {
+		std::cout << "nope!\n";
+	}
+	if (n == o) {
+		std::cout << "WTF!\n";
+	}
 	if (b == c) {
 		std::cout << "hi!\n";
+	}
+
+
+	for (auto e = b.cbegin(); e != b.cend(); e++) {
+		std::cout << *e << "\n";
+	}
+	for (const auto d : b) {
+		std::cout << d << "\n";
 	}
 	test::Test<int, std::string> a;
 	a.v = 9999;

@@ -3,12 +3,14 @@
 #ifndef CRAFTER_GRAPH
 #define CRAFTER_GRAPH
 
+#include <initializer_list>
 #include <unordered_map>
 #include <memory>
 #include <string>
 #include <set>
 #include <unordered_set>
 #include <vector>
+#include <iterator>
 #include <iostream>
 
 namespace graph {
@@ -37,8 +39,16 @@ template <typename N, typename E>
 std::ostream& operator<<(std::ostream& os, const Graph<N, E>& graph);
 
 template <typename N, typename E>
-bool operator==(const Graph<N, E>& lhs, Graph<N, E>& rhs);
+bool operator==(const Graph<N, E>& lhs, const Graph<N, E>& rhs);
 
+template <typename N, typename E>
+class _const_iterator;
+
+template <typename N, typename E>
+bool operator==(const _const_iterator<N, E>& lhs, const _const_iterator<N, E>& rhs);
+
+template <typename N, typename E>
+bool operator!=(const _const_iterator<N, E>& lhs, const _const_iterator<N, E>& rhs);
 
 template <typename N, typename E>
 class Graph {
@@ -46,7 +56,7 @@ private:
 	node_map<N, E> nodes;
 
 	friend std::ostream& operator<< <N, E>(std::ostream& os, const Graph<N, E>&);
-	friend bool operator== <N, E>(const Graph<N, E>& lhs, Graph<N, E>& rhs);
+	friend bool operator== <N, E>(const Graph<N, E>& lhs, const Graph<N, E>& rhs);
 
 	static bool node_check(const Graph<N, E>& lhs, const Graph<N, E>& rhs);
 	static bool edge_check(const Graph<N, E>& lhs, const Graph<N, E>& rhs);
@@ -75,6 +85,43 @@ public:
 	bool SetWeight(const N& src, const N& dst, const E& w);
 	bool Replace(const N& oldData, const N& newData);
 	void MergeReplace(const N& oldData, const N& newData);
+
+	using const_iterator = _const_iterator<N, E>;
+	using const_reverse_iterator = std::reverse_iterator<const_iterator>;
+
+	const_iterator cbegin() const;
+	const_iterator cend() const;
+	const_iterator erase(const_iterator it);
+	const_iterator find(const N&) const;
+	const_reverse_iterator crbegin() const;
+	const_reverse_iterator crend() const;
+	const_reverse_iterator rbegin() const;
+        const_reverse_iterator rend() const;
+        const_iterator begin() const;
+        const_iterator end() const;
+};
+
+
+template <typename N, typename E>
+class _const_iterator {
+	using iterator_category = std::bidirectional_iterator_tag;
+	using value_type = N;
+	using pointer = N*;
+	using reference = const N&;
+	using difference_type = int;
+public:
+	reference operator*() const;
+	_const_iterator operator++();
+	_const_iterator operator++(int);
+	_const_iterator operator--();
+	_const_iterator operator--(int);
+	friend bool operator== <N ,E>(const _const_iterator& lhs, const _const_iterator& rhs);
+	friend bool operator!= <N, E>(const _const_iterator& lhs, const _const_iterator& rhs);
+private:
+	typename node_map<N, E>::const_iterator iter_;
+	explicit _const_iterator(typename node_map<N, E>::const_iterator iter) : iter_ {iter} {};
+	friend class Graph<N, E>;
+
 };
 
 }

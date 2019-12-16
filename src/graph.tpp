@@ -259,7 +259,7 @@ std::ostream& operator<<(std::ostream& os, const Graph<N, E>& graph) {
 }
 
 template <typename N, typename E>
-bool operator==(const Graph<N, E>& lhs, Graph<N, E>& rhs) {
+bool operator==(const Graph<N, E>& lhs, const Graph<N, E>& rhs) {
 	// Node equality
 	if (!Graph<N, E>::node_check(lhs, rhs)) {
 		return false;
@@ -276,5 +276,97 @@ bool operator==(const Graph<N, E>& lhs, Graph<N, E>& rhs) {
 	}
 	return true;
 }
+
+template <typename N, typename E>
+typename Graph<N, E>::const_iterator Graph<N, E>::cbegin() const {
+        return const_iterator(this->nodes.cbegin());
+}
+
+template <typename N, typename E>
+typename Graph<N, E>::const_iterator Graph<N, E>::cend() const {
+        return const_iterator(this->nodes.cend());
+}
+
+template <typename N, typename E>
+typename Graph<N, E>::const_iterator Graph<N, E>::erase(typename Graph<N, E>::const_iterator it) {
+
+}
+
+template <typename N, typename E>
+typename Graph<N, E>::const_iterator Graph<N, E>::find(const N&) const {
+
+}
+
+template <typename N, typename E>
+typename Graph<N, E>::const_reverse_iterator Graph<N, E>::crbegin() const {
+        return const_reverse_iterator{cend()};
+}
+
+template <typename N, typename E>
+typename Graph<N, E>::const_reverse_iterator Graph<N, E>::crend() const {
+        return const_reverse_iterator{cbegin()};
+}
+
+template <typename N, typename E>
+typename Graph<N, E>::const_iterator Graph<N, E>::begin() const {
+        return cbegin();
+}
+
+template <typename N, typename E>
+typename Graph<N, E>::const_iterator Graph<N, E>::end() const {
+        return cend();
+}
+
+template <typename N, typename E>
+typename Graph<N, E>::const_reverse_iterator Graph<N, E>::rbegin() const {
+        return crbegin();
+}
+
+template <typename N, typename E>
+typename Graph<N, E>::const_reverse_iterator Graph<N, E>::rend() const {
+        return crend();
+}
+
+template <typename N, typename E>
+bool operator==(const _const_iterator<N, E>& lhs, const _const_iterator<N, E>& rhs) {
+        return lhs.iter_ == rhs.iter_;
+}
+
+template <typename N, typename E>
+bool operator!=(const _const_iterator<N, E>& lhs, const _const_iterator<N, E>& rhs) {
+        return lhs.iter_ != rhs.iter_;
+}
+
+template <typename N, typename E>
+typename _const_iterator<N, E>::reference _const_iterator<N, E>::operator*() const {
+        return this->iter_->first;
+}
+
+template <typename N, typename E>
+_const_iterator<N, E> _const_iterator<N, E>::operator++() {
+        ++this->iter_;
+        return *this;
+}
+
+template <typename N, typename E>
+_const_iterator<N, E> _const_iterator<N, E>::operator++(int) {
+        auto copy{*this};
+        this->iter_++;
+        return *this;
+}
+
+template <typename N, typename E>
+_const_iterator<N, E> _const_iterator<N, E>::operator--() {
+        --this->iter_;
+        return *this;
+}
+
+template <typename N, typename E>
+_const_iterator<N, E> _const_iterator<N, E>::operator--(int) {
+        auto copy{*this};
+        this->iter_--;
+        return copy;
+}
+
 
 }
