@@ -31,3 +31,10 @@ cc_binary(
     deps = ["//yaml-cpp:yaml-cpp"],
     data = ["test.yaml"],
 )
+
+cc_binary(
+    name = "client",
+    srcs = ["graph-construct.cpp"],
+    deps = [":graph", ":importer"],
+    data = ["//data:recipes/import.yaml"],
+)
