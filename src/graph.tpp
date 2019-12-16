@@ -34,13 +34,14 @@ Graph<N, E>::Graph(const Graph<N, E>& other) : nodes{other.nodes} {}
 template <typename N, typename E>
 Graph<N, E>::Graph(Graph<N, E>&& other) {
 	nodes = std::move(other.nodes);
-	other.nodes_ = decltype(other.nodes_)();
+	other.nodes = decltype(other.nodes)();
 }
 
 template <typename N, typename E>
 bool Graph<N, E>::InsertNode(const N& val) {
 	if (nodes.count(val) == 0) {
 		nodes[val] = Nodes<N, E>();
+                nodes[val].value = val;
 		return true;
 	} else {
 		return false;
