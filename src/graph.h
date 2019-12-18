@@ -80,6 +80,7 @@ public:
 	bool IsConnected(const N& src, const N& dst) const;
 	std::vector<N> GetNodes() const;
 	std::vector<N> GetConnected(const N&) const;
+	std::vector<N> GetIncoming(const N&) const;
 	E GetWeight(const N& src, const N& dst) const;
 	bool erase(const N& src, const N& dst);
 	bool SetWeight(const N& src, const N& dst, const E& w);
