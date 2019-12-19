@@ -83,7 +83,7 @@ template <typename N, typename E>
 std::vector<N> heads(graph::Graph<N, E> g) {
 	std::vector<N> result;
 	for (auto& node : g) {
-		if (g.GetConnected(node).size() == 0) {
+		if (g.GetIncoming(node).size() == 0) {
 			result.push_back(node);
 		}
 	}
@@ -94,7 +94,7 @@ template <typename N, typename E>
 std::vector<N> tails(graph::Graph<N, E> g) {
 	std::vector<N> result;
 	for (auto& node : g) {
-		if (g.GetIncoming(node).size() == 0) {
+		if (g.GetConnected(node).size() == 0) {
 			result.push_back(node);
 		}
 	}
