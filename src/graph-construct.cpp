@@ -12,10 +12,10 @@
 #define data_location "data/recipes/import.yaml"
 
 struct craft_count {
-	size_t count;
-	size_t needed;
-	bool ready;
-	size_t distance;
+	size_t count = 0;
+	size_t needed = 0;
+	bool ready = false;
+	size_t distance = 0;
 };
 
 graph::Graph<std::string, int> build_graph(std::vector<std::string> requests, const crafter::recipe_store& recipes);
@@ -111,7 +111,7 @@ std::unordered_map<std::string, craft_count> tally_count(const graph::Graph<std:
 	std::unordered_map<std::string, craft_count> recipe_count;
 	std::deque<std::string> queue;
 	for (auto& node : heads(recipe_graph)) {
-		recipe_count[node] = craft_count{1, true, 0};
+		recipe_count[node] = craft_count();
 		queue.push_back(node);
 	}
 	while (!queue.empty()) {
