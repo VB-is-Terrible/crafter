@@ -106,7 +106,7 @@ craft_store tally_count(const recipe_graph_t& recipe_graph, const crafter::recip
 	std::unordered_map<std::string, craft_count> recipe_count;
 	std::deque<std::string> queue;
 	for (auto& node : heads(recipe_graph)) {
-		recipe_count[node] = craft_count();
+		recipe_count[node] = craft_count{1, 1, true, 0};
 		queue.push_back(node);
 	}
 	while (!queue.empty()) {
@@ -135,7 +135,7 @@ bool check_ingredient(const std::string& ingredient, craft_store& recipe_count, 
 	}
 	count.distance = parent_distance + 1;
 	auto recipe_it = recipes.find(ingredient);
-	bool has_recipe = recipe_it == recipes.end();
+	bool has_recipe = recipe_it != recipes.end();
 	if (!has_recipe) {
 		count.ready = true;
 		count.count = count.needed;
@@ -193,7 +193,7 @@ void output (const std::vector<std::vector<std::string>>& order, const craft_sto
 }
 
 void output_recipe(const std::string& name, const craft_store& craft, const recipe_graph_t& recipe_graph) {
-	std::cout << name << "\n";
+	std::cout << name << " (" << craft.find(name)->second.count << ")\n";
 	size_t count = craft.find(name)->second.count;
 	for (auto& ingredient : recipe_graph.GetConnected(name)) {
 		std::cout << count * recipe_graph.GetWeight(name, ingredient) << "\t" << ingredient << "\n";
