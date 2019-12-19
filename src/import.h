@@ -1,6 +1,6 @@
 #pragma once
 
-#include <map>
+#include <unordered_map>
 #include <vector>
 #include <string>
 #include <fstream>
@@ -22,7 +22,7 @@ namespace crafter {
 		std::vector<Ingredients> ingredients;
 	};
 
-	using recipe_store = std::map<std::string, std::vector<Recipe>>;
+	using recipe_store = std::unordered_map<std::string, std::vector<Recipe>>;
 	recipe_store read_in(std::ifstream& file);
 	recipe_store read_in(std::string file_name);
 
