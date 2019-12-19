@@ -12,8 +12,8 @@
 #define data_location "data/recipes/import.yaml"
 
 struct craft_count {
-	size_t count = 0;
-	size_t needed = 0;
+	size_t count = 1;
+	size_t needed = 1;
 	bool ready = false;
 	size_t distance = 0;
 };
