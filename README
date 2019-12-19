@@ -4,3 +4,6 @@ bazel run import
 
 Dependencies:
 bazel, clang, gcc-c++
+
+
+Use --compilation_mode=dbg for debug builds
