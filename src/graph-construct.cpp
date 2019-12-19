@@ -18,10 +18,16 @@ struct craft_count {
 	size_t distance = 0;
 };
 
+using recipe_graph_t = graph::Graph<std::string, int>;
+using craft_store = std::unordered_map<std::string, craft_count>;
 graph::Graph<std::string, int> build_graph(std::vector<std::string> requests, const crafter::recipe_store& recipes);
-std::unordered_map<std::string, craft_count> tally_count(graph::Graph<std::string, int> recipe_graph);
-bool check_ingredient(const std::string& ingredient, std::unordered_map<std::string, craft_count>& recipe_count, const graph::Graph<std::string, int>& recipe_graph, const crafter::recipe_store& recipes);
+craft_store tally_count(const recipe_graph_t& recipe_graph, const crafter::recipe_store& recipes);
+bool check_ingredient(const std::string& ingredient, craft_store& recipe_count, const recipe_graph_t& recipe_graph, const crafter::recipe_store& recipes);
 std::vector<std::string> get_requests (const crafter::recipe_store& recipes);
+std::vector<std::vector<std::string>> get_order (const craft_store recipe_count);
+void output (const std::vector<std::vector<std::string>>& order, const craft_store&, const recipe_graph_t& recipe_graph);
+void output_recipe(const std::string& name, const craft_store&, const recipe_graph_t& recipe_graph);
+
 
 template <typename N, typename E>
 std::vector<N> heads(graph::Graph<N, E>);
@@ -95,7 +101,7 @@ std::vector<N> tails(graph::Graph<N, E> g) {
 }
 
 
-std::unordered_map<std::string, craft_count> tally_count(const graph::Graph<std::string, int>& recipe_graph, const crafter::recipe_store& recipes) {
+craft_store tally_count(const recipe_graph_t& recipe_graph, const crafter::recipe_store& recipes) {
 	std::unordered_map<std::string, craft_count> recipe_count;
 	std::deque<std::string> queue;
 	for (auto& node : heads(recipe_graph)) {
@@ -114,7 +120,7 @@ std::unordered_map<std::string, craft_count> tally_count(const graph::Graph<std:
 	}
 }
 
-bool check_ingredient(const std::string& ingredient, std::unordered_map<std::string, craft_count>& recipe_count, const graph::Graph<std::string, int>& recipe_graph, const crafter::recipe_store& recipes) {
+bool check_ingredient(const std::string& ingredient, craft_store& recipe_count, const recipe_graph_t& recipe_graph, const crafter::recipe_store& recipes) {
 	craft_count count;
 	decltype(count.distance) parent_distance = 0;
 	for (auto& parent : recipe_graph.GetIncoming(ingredient)) {
