@@ -24,7 +24,7 @@ graph::Graph<std::string, int> build_graph(std::vector<std::string> requests, co
 craft_store tally_count(const recipe_graph_t& recipe_graph, const crafter::recipe_store& recipes);
 bool check_ingredient(const std::string& ingredient, craft_store& recipe_count, const recipe_graph_t& recipe_graph, const crafter::recipe_store& recipes);
 std::vector<std::string> get_requests (const crafter::recipe_store& recipes);
-std::vector<std::vector<std::string>> get_order (const craft_store recipe_count);
+std::vector<std::vector<std::string>> get_order (const craft_store& recipe_count);
 void output (const std::vector<std::vector<std::string>>& order, const craft_store&, const recipe_graph_t& recipe_graph);
 void output_recipe(const std::string& name, const craft_store&, const recipe_graph_t& recipe_graph);
 
@@ -168,7 +168,7 @@ std::vector<std::string> get_requests (const crafter::recipe_store& recipes) {
 	return requests;
 }
 
-std::vector<std::vector<std::string>> get_order (const craft_store recipe_count) {
+std::vector<std::vector<std::string>> get_order (const craft_store& recipe_count) {
 	std::vector<std::vector<std::string>> result;
 	for (auto it : recipe_count) {
 		auto& name = it.first;
