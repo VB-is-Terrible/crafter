@@ -129,7 +129,7 @@ std::vector<N> Graph<N, E>::GetConnected(const N& value) const {
 	const auto& src = src_it->second;
 	std::vector<N> result;
 	for (auto& pair : src.edges) {
-		result.push_back(*pair.first);
+		result.push_back(pair.first);
 	}
 	return result;
 }
@@ -371,14 +371,14 @@ _const_iterator<N, E> _const_iterator<N, E>::operator--(int) {
 
 template <typename N, typename E>
 std::vector<N> Graph<N, E>::GetIncoming(const N& node) const {
-  auto src_it = nodes.find(value);
+  auto src_it = nodes.find(node);
 	if (src_it == nodes.end()) {
 		throw std::out_of_range("Cannot call Graph::GetIncoming if src doesn't exist in the graph");
 	}
 	const auto& src = src_it->second;
 	std::vector<N> result;
-	for (auto& pair : src.incoming) {
-		result.push_back(*pair.first);
+	for (auto& incoming : src.incoming) {
+		result.push_back(incoming);
 	}
 	return result;
 
