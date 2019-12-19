@@ -61,7 +61,6 @@ graph::Graph<std::string, int> build_graph(std::vector<std::string> requests, co
 	graph::Graph<std::string, int> graph_;
 	while (!queue.empty()) {
 		auto request = queue[0];
-		std::cout << "Unpacking " << request << "\n";
 		queue.pop_front();
 		graph_.InsertNode(request);
 		auto recipe_it = recipes.find(request);
