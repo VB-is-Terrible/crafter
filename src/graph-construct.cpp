@@ -21,6 +21,7 @@ struct craft_count {
 graph::Graph<std::string, int> build_graph(std::vector<std::string> requests, const crafter::recipe_store& recipes);
 std::unordered_map<std::string, craft_count> tally_count(graph::Graph<std::string, int> recipe_graph);
 bool check_ingredient(const std::string& ingredient, std::unordered_map<std::string, craft_count>& recipe_count, const graph::Graph<std::string, int>& recipe_graph);
+std::vector<std::string> get_requests (const crafter::recipe_store& recipes);
 
 template <typename N, typename E>
 std::vector<N> heads(graph::Graph<N, E>);
@@ -32,21 +33,8 @@ std::vector<N> tails(graph::Graph<N, E>);
 int main() {
 	auto recipes = crafter::read_in(data_location);
 	std::cout << "Loaded " << recipes.size() << " recipes\n";
-	std::cout << "Input Recipe: ";
-	std::string in;
-	getline(std::cin, in);
 
-	std::vector<std::string> requests;
-	while (in != "") {
-		auto it = recipes.find(in);
-		if (it == recipes.end()) {
-			std::cerr << "Recipe not found\n";
-		} else {
-			requests.push_back(in);
-		}
-		std::cout << "Input Recipe: ";
-		getline(std::cin, in);
-	}
+	auto requests = get_requests(recipes);
 
 	auto recipe_graph = build_graph(requests, recipes);
 	std::cout << recipe_graph;
@@ -133,7 +121,23 @@ bool check_ingredient(const std::string& ingredient, std::unordered_map<std::str
 			return false;
 		}
 		count.needed += recipe_count[parent].count;
+		count.count = ceil(count.needed / (double) recipe.makes);
+		count.ready = true;
+std::vector<std::string> get_requests (const crafter::recipe_store& recipes) {
+	std::cout << "Input Recipe: ";
+	std::string in;
+	getline(std::cin, in);
+
+	std::vector<std::string> requests;
+	while (in != "") {
+		auto it = recipes.find(in);
+		if (it == recipes.end()) {
+			std::cerr << "Recipe not found\n";
+		} else {
+			requests.push_back(in);
+		}
+		std::cout << "Input Recipe: ";
+		getline(std::cin, in);
 	}
-	count.count = ceil(count.needed / (double) )
-	return true;
+	return requests;
 }
