@@ -118,6 +118,8 @@ craft_store tally_count(const recipe_graph_t& recipe_graph, const crafter::recip
 			}
 		}
 	}
+
+	return recipe_count;
 }
 
 bool check_ingredient(const std::string& ingredient, craft_store& recipe_count, const recipe_graph_t& recipe_graph, const crafter::recipe_store& recipes) {
