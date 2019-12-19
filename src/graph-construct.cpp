@@ -20,7 +20,7 @@ struct craft_count {
 
 graph::Graph<std::string, int> build_graph(std::vector<std::string> requests, const crafter::recipe_store& recipes);
 std::unordered_map<std::string, craft_count> tally_count(graph::Graph<std::string, int> recipe_graph);
-bool check_ingredient(const std::string& ingredient, std::unordered_map<std::string, craft_count>& recipe_count, const graph::Graph<std::string, int>& recipe_graph);
+bool check_ingredient(const std::string& ingredient, std::unordered_map<std::string, craft_count>& recipe_count, const graph::Graph<std::string, int>& recipe_graph, const crafter::recipe_store& recipes);
 std::vector<std::string> get_requests (const crafter::recipe_store& recipes);
 
 template <typename N, typename E>
@@ -106,7 +106,7 @@ std::unordered_map<std::string, craft_count> tally_count(const graph::Graph<std:
 		auto request = queue[0];
 		queue.pop_front();
 		for (auto& ingredient : recipe_graph.GetConnected(request)) {
-			auto ready = check_ingredient(ingredient, recipe_count, recipe_graph);
+			auto ready = check_ingredient(ingredient, recipe_count, recipe_graph, recipes);
 			if (ready) {
 				queue.push_back(ingredient);
 			}
@@ -116,13 +116,29 @@ std::unordered_map<std::string, craft_count> tally_count(const graph::Graph<std:
 
 bool check_ingredient(const std::string& ingredient, std::unordered_map<std::string, craft_count>& recipe_count, const graph::Graph<std::string, int>& recipe_graph, const crafter::recipe_store& recipes) {
 	craft_count count;
-	for (auto& parent : recipe_graph.getIncoming(ingredient)) {
+	decltype(count.distance) parent_distance = 0;
+	for (auto& parent : recipe_graph.GetIncoming(ingredient)) {
 		if (!recipe_count[parent].ready) {
 			return false;
 		}
 		count.needed += recipe_count[parent].count;
+		parent_distance = std::max(parent_distance, recipe_count[parent].distance);
+	}
+	count.distance = parent_distance + 1;
+	auto recipe_it = recipes.find(ingredient);
+	bool has_recipe = recipe_it == recipes.end();
+	if (!has_recipe) {
+		count.ready = true;
+		count.count = count.needed;
+	} else {
+		auto& recipe = recipe_it->second[0];
 		count.count = ceil(count.needed / (double) recipe.makes);
 		count.ready = true;
+	}
+	recipe_count[ingredient] = count;
+	return has_recipe;
+}
+
 std::vector<std::string> get_requests (const crafter::recipe_store& recipes) {
 	std::cout << "Input Recipe: ";
 	std::string in;
