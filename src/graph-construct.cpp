@@ -43,8 +43,10 @@ int main() {
 	auto requests = get_requests(recipes);
 
 	auto recipe_graph = build_graph(requests, recipes);
-	std::cout << recipe_graph;
-	// auto recipe_counts = tally_count(recipe_graph);
+	// std::cout << recipe_graph;
+	auto recipe_counts = tally_count(recipe_graph, recipes);
+	auto simplified = get_order(recipe_counts);
+	output(simplified, recipe_counts, recipe_graph);
 
 	return 0;
 }
@@ -164,4 +166,38 @@ std::vector<std::string> get_requests (const crafter::recipe_store& recipes) {
 		getline(std::cin, in);
 	}
 	return requests;
+}
+
+std::vector<std::vector<std::string>> get_order (const craft_store recipe_count) {
+	std::vector<std::vector<std::string>> result;
+	for (auto it : recipe_count) {
+		auto& name = it.first;
+		auto& craft = it.second;
+		if (craft.count > result.size()) {
+			result.resize(craft.count);
+		}
+		result[craft.distance].push_back(name);
+	}
+	return result;
+}
+
+void output (const std::vector<std::vector<std::string>>& order, const craft_store& craft, const recipe_graph_t& recipe_graph) {
+	const std::string line = "---------------";
+	size_t level_count = 0;
+	for (auto& level : order) {
+		level_count++;
+		std::cout << line << " " << "Level " << level_count << " " << line << "\n\n";
+		for (auto& name : level) {
+			output_recipe(name, craft, recipe_graph);
+		}
+	}
+}
+
+void output_recipe(const std::string& name, const craft_store& craft, const recipe_graph_t& recipe_graph) {
+	std::cout << name << "\n";
+	size_t count = craft.find(name)->second.count;
+	for (auto& ingredient : recipe_graph.GetConnected(name)) {
+		std::cout << count * recipe_graph.GetWeight(name, ingredient) << "\t" << ingredient << "\n";
+	}
+	std::cout << "\n";
 }
