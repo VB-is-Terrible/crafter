@@ -172,8 +172,8 @@ std::vector<std::vector<std::string>> get_order (const craft_store& recipe_count
 	for (auto it : recipe_count) {
 		auto& name = it.first;
 		auto& craft = it.second;
-		if (craft.count > result.size()) {
-			result.resize(craft.count);
+		if (craft.distance >= result.size()) {
+			result.resize(craft.distance + 1);
 		}
 		result[craft.distance].push_back(name);
 	}
