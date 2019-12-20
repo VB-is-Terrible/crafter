@@ -14,8 +14,8 @@
 #define data_location "data/recipes/import.yaml"
 
 struct craft_count {
-	size_t count = 1;
-	size_t needed = 1;
+	size_t count = 0;
+	size_t needed = 0;
 	bool ready = false;
 	size_t distance = 0;
 };
@@ -161,7 +161,7 @@ bool check_ingredient(const std::string& ingredient, craft_store& recipe_count, 
 		if (!recipe_count[parent].ready) {
 			return false;
 		}
-		count.needed += recipe_count[parent].count;
+		count.needed += recipe_count[parent].count * recipe_graph.GetWeight(parent, ingredient);
 		parent_distance = std::max(parent_distance, recipe_count[parent].distance);
 	}
 	count.distance = parent_distance + 1;
@@ -180,14 +180,15 @@ bool check_ingredient(const std::string& ingredient, craft_store& recipe_count, 
 }
 
 bool check_parent(const std::string& parent, craft_store& recipe_count, const recipe_graph_t& recipe_graph) {
-	size_t child_distance = 0;
+	size_t child_distance = -1;
 	for (auto& child : recipe_graph.GetConnected(parent)) {
 		if (!recipe_count[child].ready) {
 			return false;
 		}
-		child_distance = std::max(child_distance, recipe_count[child].distance);
+		child_distance = std::min(child_distance, recipe_count[child].distance);
 	}
 	recipe_count[parent].distance = child_distance - 1;
+	recipe_count[parent].ready = true;
 	return true;
 }
 
