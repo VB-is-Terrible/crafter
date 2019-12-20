@@ -23,16 +23,18 @@ struct craft_count {
 
 using recipe_graph_t = graph::Graph<std::string, int>;
 using craft_store = std::unordered_map<std::string, craft_count>;
-graph::Graph<std::string, int> build_graph(std::vector<std::string> requests, const crafter::recipe_store& recipes);
-craft_store tally_count(const recipe_graph_t& recipe_graph, const crafter::recipe_store& recipes);
+graph::Graph<std::string, int> build_graph(const std::vector<crafter::Ingredients>& requests, const crafter::recipe_store& recipes);
+craft_store tally_count(const std::vector<crafter::Ingredients>& requests, const recipe_graph_t& recipe_graph, const crafter::recipe_store& recipes);
 bool check_ingredient(const std::string& ingredient, craft_store& recipe_count, const recipe_graph_t& recipe_graph, const crafter::recipe_store& recipes);
-std::vector<std::string> get_requests (const crafter::recipe_store& recipes);
+std::vector<crafter::Ingredients> get_requests (const crafter::recipe_store& recipes, const std::string& input_file);
+std::vector<crafter::Ingredients> get_requests_from_input (const crafter::recipe_store& recipes);
 std::vector<std::vector<std::string>> get_order (const craft_store& recipe_count);
 void output (const std::vector<std::vector<std::string>>& order, const craft_store&, const recipe_graph_t& recipe_graph);
 void output_recipe(const std::string& name, const craft_store&, const recipe_graph_t& recipe_graph);
 bool check_parent(const std::string& parent, craft_store& recipe_count, const recipe_graph_t& recipe_graph);
 crafter::recipe_store read_templates(std::string template_location);
 bool valid_extension(std::string);
+std::string read_args(int argc, char const *argv[]);
 
 
 template <typename N, typename E>
@@ -42,28 +44,32 @@ template <typename N, typename E>
 std::vector<N> tails(graph::Graph<N, E>);
 
 
-int main() {
+int main(int argc, char const *argv[]) {
+	auto input = read_args(argc, argv);
 
 	auto recipes = read_templates(data_location);
-	std::cout << "Loaded " << recipes.size() << " recipes\n";
 
-	auto requests = get_requests(recipes);
+	if (input == "") {
+		std::cout << "Loaded " << recipes.size() << " recipes\n";
+	}
+
+	auto requests = get_requests(recipes, input);
 
 	auto recipe_graph = build_graph(requests, recipes);
 	// std::cout << recipe_graph;
-	auto recipe_counts = tally_count(recipe_graph, recipes);
+	auto recipe_counts = tally_count(requests, recipe_graph, recipes);
 	auto simplified = get_order(recipe_counts);
 	output(simplified, recipe_counts, recipe_graph);
 
 	return 0;
 }
 
-graph::Graph<std::string, int> build_graph(std::vector<std::string> requests, const crafter::recipe_store& recipes) {
+graph::Graph<std::string, int> build_graph(const std::vector<crafter::Ingredients>& requests, const crafter::recipe_store& recipes) {
 	std::deque<std::string> queue;
 	std::unordered_set<std::string> seen;
-		queue.push_back(request);
-		seen.insert(request);
 	for (const auto& request : requests) {
+		queue.push_back(request.name);
+		seen.insert(request.name);
 	}
 	graph::Graph<std::string, int> graph_;
 	while (!queue.empty()) {
@@ -109,12 +115,13 @@ std::vector<N> tails(graph::Graph<N, E> g) {
 }
 
 
-craft_store tally_count(const recipe_graph_t& recipe_graph, const crafter::recipe_store& recipes) {
+craft_store tally_count(const std::vector<crafter::Ingredients>& requests, const recipe_graph_t& recipe_graph, const crafter::recipe_store& recipes) {
 	std::unordered_map<std::string, craft_count> recipe_count;
 	std::deque<std::string> queue;
-	for (auto& node : heads(recipe_graph)) {
-		recipe_count[node] = craft_count{1, 1, true, 0};
-		queue.push_back(node);
+	for (const auto& node : requests) {
+		auto count = static_cast<size_t>(node.count);
+		recipe_count[node.name] = craft_count{count, count, true, 0};
+		queue.push_back(node.name);
 	}
 	while (!queue.empty()) {
 		auto request = queue[0];
@@ -196,18 +203,27 @@ bool check_parent(const std::string& parent, craft_store& recipe_count, const re
 	return true;
 }
 
-std::vector<std::string> get_requests (const crafter::recipe_store& recipes) {
+std::vector<crafter::Ingredients> get_requests (const crafter::recipe_store& recipes, const std::string& input_file) {
+	if (input_file == "") {
+		return get_requests_from_input(recipes);
+	} else {
+		return crafter::get_requests_from_file(recipes, input_file);
+	}
+}
+
+
+std::vector<crafter::Ingredients> get_requests_from_input (const crafter::recipe_store& recipes) {
 	std::cout << "Input Recipe: ";
 	std::string in;
 	getline(std::cin, in);
 
-	std::vector<std::string> requests;
+	std::vector<crafter::Ingredients> requests;
 	while (in != "") {
 		auto it = recipes.find(in);
 		if (it == recipes.end()) {
 			std::cerr << "Recipe not found\n";
 		} else {
-			requests.push_back(in);
+			requests.push_back(crafter::Ingredients(in, 1));
 		}
 		std::cout << "Input Recipe: ";
 		getline(std::cin, in);
@@ -270,4 +286,15 @@ crafter::recipe_store read_templates(std::string template_location) {
 		}
 	}
 	return result;
+}
+
+std::string read_args (int argc, char const *argv[]) {
+	if (argc == 1) {
+		return "";
+	} else if (argc == 2) {
+		return argv[1];
+	} else {
+		std::cerr << "Got " << argc << " arguements, expected 0 or 1\n";
+		throw std::invalid_argument(argv[2]);
+	}
 }

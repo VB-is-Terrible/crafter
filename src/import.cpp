@@ -5,6 +5,7 @@
 #include <map>
 #include <vector>
 #include <string>
+#include <filesystem>
 
 #include "yaml-cpp/yaml.h"
 
@@ -86,5 +87,55 @@ namespace crafter {
 		this->name = ingredient["name"].as<std::string>();
 	}
 
+	std::vector<Ingredients> get_requests_from_file(const crafter::recipe_store& recipes, const std::string& input_file) {
+		auto requests_yaml = YAML::LoadFile(input_file);
+		std::vector<Ingredients> requests;
+		if (requests_yaml.IsSequence()) {
+			for (const auto name_node : requests_yaml) {
+				std::string name;
+				try {
+					name = name_node.as<std::string>();
+				} catch (...) {
+					std::cerr << "Failed to read request from file\n";
+					continue;
+				}
+				if (recipes.count(name)) {
+					requests.push_back(Ingredients(name, 1));
+				} else {
+					std::cerr << "Could not find a recipe for " << name << "\n";
+				}
+
+			}
+		} else if (requests_yaml.IsMap()) {
+			for (const auto request_it : requests_yaml) {
+				std::string name;
+				int count;
+				try {
+					name = request_it.first.as<std::string>();
+					count = request_it.second.as<int>();
+				} catch (...) {
+					std::cerr << "Failed to read request from file\n";
+					continue;
+				}
+
+				if (recipes.count(name)) {
+					requests.push_back(Ingredients(name, count));
+				} else {
+					std::cerr << "Could not find a recipe for " << name << "\n";
+				}
+			}
+		} else if (requests_yaml.IsScalar()){
+			std::string name;
+			try {
+				name = requests_yaml.as<std::string>();
+			} catch (...) {
+				std::cerr << "Failed to read request from file\n";
+			}
+			if (name != "") {
+				requests.push_back(Ingredients(name, 1));
+			}
+		}
+		return requests;
+	}
 
 }

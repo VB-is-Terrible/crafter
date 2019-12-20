@@ -29,4 +29,5 @@ namespace crafter {
 	void read_in(std::ifstream& file, recipe_store& store);
 	void read_in(std::string file_name, recipe_store& store);
 
+	std::vector<Ingredients> get_requests_from_file(const crafter::recipe_store& recipes, const std::string& input_file);
 }
