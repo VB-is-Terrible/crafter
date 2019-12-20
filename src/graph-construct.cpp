@@ -231,10 +231,10 @@ std::vector<std::vector<std::string>> get_order (const craft_store& recipe_count
 void output (const std::vector<std::vector<std::string>>& order, const craft_store& craft, const recipe_graph_t& recipe_graph) {
 	const std::string line = "---------------";
 	size_t level_count = 0;
-	for (auto& level : order) {
+	for (auto level = order.crbegin(); level != order.crend(); level++) {
 		level_count++;
 		std::cout << line << " " << "Level " << level_count << " " << line << "\n\n";
-		for (auto& name : level) {
+		for (auto& name : *level) {
 			output_recipe(name, craft, recipe_graph);
 		}
 	}
