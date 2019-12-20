@@ -75,7 +75,7 @@ Arithmetic Logic Unit <ALU>:
   - count: 2
     name: Iron Nugget
   - count: 1
-    name: Redstone
+    name: Redstone Torch
   makes: 1
 Atomic Reconstructor:
   ingredients:
@@ -254,6 +254,21 @@ Cactus Green:
   ingredients:
   - count: 1
     name: Cactus
+  makes: 1
+Calculation Processor:
+  ingredients:
+  - count: 8
+    name: Circuit Plate
+  - count: 1
+    name: Red Alloy Plate
+  - count: 1
+    name: Advanced Control Circuit
+  - count: 2
+    name: Pure Certus Quartz Crystal
+  - count: 1
+    name: Silicon Plate
+  - count: 2000
+    name: Super Glue
   makes: 1
 Carbon Fiber:
   ingredients:
@@ -684,7 +699,7 @@ Fluix Crystal:
     name: Redstone
   - count: 1
     name: Charged Certus Quartz Crystal
-  makes: 1
+  makes: 2
 Fluix Dust:
   ingredients:
   - count: 1
@@ -750,6 +765,8 @@ Graphics Card <Tier 1>:
     name: Arithmetic Logic Unit <ALU>
   - count: 1
     name: Card Base [OpenComputers]
+  - count: 1
+    name: Memory <Tier 1>
   makes: 1
 Grog:
   ingredients:
@@ -883,6 +900,13 @@ Intermedium Esscence:
     name: Infusion Crystal Use
   - count: 4
     name: Prudentium Esscence
+  makes: 1
+Intermedium Gear:
+  ingredients:
+  - count: 4
+    name: Intermedium Ingot
+  - count: 1
+    name: Copper Ingot
   makes: 1
 Intermedium Ingot:
   ingredients:
@@ -1109,6 +1133,8 @@ ME Controller:
     name: 10k Coolant Cell
   - count: 1
     name: Graphics Card <Tier 1>
+  - count: 2
+    name: Logic Processor
   - count: 1
     name: Calculation Processor
   - count: 2
@@ -1147,6 +1173,13 @@ Majestic Component:
     name: Luminessence
   - count: 1
     name: Black Iron Slate
+  makes: 1
+Memory <Tier 1>:
+  ingredients:
+  - count: 3
+    name: Printed Circuit Board <PCB>
+  - count: 3
+    name: Microchip <Tier 1>
   makes: 1
 Microchip <Tier 1>:
   ingredients:
@@ -1207,12 +1240,12 @@ Mirror:
 Mixed Metal Ingot:
   ingredients:
   - count: 3
-    name: Steel Ingot
+    name: Inert Blood-Iron Ingot
   - count: 3
     name: Bronze Ingot
   - count: 3
     name: Tin Ingot
-  makes: 3
+  makes: 5
 Molten Copper:
   ingredients:
   - count: 1
@@ -1370,7 +1403,7 @@ Raw Circuit Board:
     name: Clay
   - count: 1
     name: Cutting Wire
-  makes: 1
+  makes: 8
 Reactant Dynamo:
   ingredients:
   - count: 3
