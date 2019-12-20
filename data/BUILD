@@ -1,1 +1,1 @@
-exports_files(glob(["recipes/*.yaml"]))
+exports_files(["recipes"])

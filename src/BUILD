@@ -36,5 +36,5 @@ cc_binary(
     name = "client",
     srcs = ["graph-construct.cpp"],
     deps = [":graph", ":importer"],
-    data = ["//data:recipes/import.yaml"],
+    data = ["//data:recipes"],
 )
