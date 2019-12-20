@@ -5,6 +5,8 @@
 #include <unordered_set>
 #include <deque>
 #include <math.h>
+#include <algorithm>
+
 
 #include "import.h"
 #include "graph.h"
@@ -27,6 +29,7 @@ std::vector<std::string> get_requests (const crafter::recipe_store& recipes);
 std::vector<std::vector<std::string>> get_order (const craft_store& recipe_count);
 void output (const std::vector<std::vector<std::string>>& order, const craft_store&, const recipe_graph_t& recipe_graph);
 void output_recipe(const std::string& name, const craft_store&, const recipe_graph_t& recipe_graph);
+bool check_parent(const std::string& parent, craft_store& recipe_count, const recipe_graph_t& recipe_graph);
 
 
 template <typename N, typename E>
@@ -120,6 +123,34 @@ craft_store tally_count(const recipe_graph_t& recipe_graph, const crafter::recip
 		}
 	}
 
+	std::vector<size_t> distances;
+	for (auto& tail : tails(recipe_graph)) {
+		distances.push_back(recipe_count[tail].distance);
+	}
+
+	size_t max_distance = *std::max_element(distances.cbegin(), distances.cend());
+
+	for (auto& it : recipe_count) {
+		it.second.ready = false;
+	}
+
+	for (auto& tail : tails(recipe_graph)) {
+		queue.push_back(tail);
+		recipe_count[tail].distance = max_distance;
+		recipe_count[tail].ready = true;
+	}
+
+	while (!queue.empty()) {
+		auto request = queue[0];
+		queue.pop_front();
+		for (auto& parent : recipe_graph.GetIncoming(request)) {
+			auto ready = check_parent(parent, recipe_count, recipe_graph);
+			if (ready) {
+				queue.push_back(parent);
+			}
+		}
+	}
+
 	return recipe_count;
 }
 
@@ -148,6 +179,18 @@ bool check_ingredient(const std::string& ingredient, craft_store& recipe_count, 
 	return has_recipe;
 }
 
+bool check_parent(const std::string& parent, craft_store& recipe_count, const recipe_graph_t& recipe_graph) {
+	size_t child_distance = 0;
+	for (auto& child : recipe_graph.GetConnected(parent)) {
+		if (!recipe_count[child].ready) {
+			return false;
+		}
+		child_distance = std::max(child_distance, recipe_count[child].distance);
+	}
+	recipe_count[parent].distance = child_distance - 1;
+	return true;
+}
+
 std::vector<std::string> get_requests (const crafter::recipe_store& recipes) {
 	std::cout << "Input Recipe: ";
 	std::string in;
@@ -164,6 +207,7 @@ std::vector<std::string> get_requests (const crafter::recipe_store& recipes) {
 		std::cout << "Input Recipe: ";
 		getline(std::cin, in);
 	}
+	std::cout << "\n";
 	return requests;
 }
 
@@ -176,6 +220,9 @@ std::vector<std::vector<std::string>> get_order (const craft_store& recipe_count
 			result.resize(craft.distance + 1);
 		}
 		result[craft.distance].push_back(name);
+	}
+	for (auto& level : result) {
+		std::sort(level.begin(), level.end());
 	}
 	return result;
 }
@@ -198,5 +245,7 @@ void output_recipe(const std::string& name, const craft_store& craft, const reci
 	for (auto& ingredient : recipe_graph.GetConnected(name)) {
 		std::cout << count * recipe_graph.GetWeight(name, ingredient) << "\t" << ingredient << "\n";
 	}
-	std::cout << "\n";
+	if (recipe_graph.GetConnected(name).size() != 0) {
+		std::cout << "\n";
+	}
 }
