@@ -42,7 +42,7 @@ namespace crafter {
 			this->makes = makes.as<int>();
 		}
 		auto ingredients = recipe["ingredients"];
-		if (ingredients.IsDefined() && !ingredients.IsSequence()) {
+		if (ingredients.IsDefined() && !(ingredients.IsSequence() || ingredients.IsMap())) {
 			throw std::runtime_error("Failed to parse: " + name + "\n" + "Invalid 'ingredients' value");
 		}
 		if (ingredients.IsSequence()) {
@@ -61,12 +61,12 @@ namespace crafter {
 				std::string ingredient;
 				int count;
 				try {
-					name = ingredient_it.first.as<std::string>();
+					ingredient = ingredient_it.first.as<std::string>();
 					count = ingredient_it.second.as<int>();
 				} catch (...) {
 					throw std::runtime_error("Failed to read in a ingredient list for " + name + "\nThe yaml format seems to be stuffed");
 				}
-				this->ingredients.push_back(Ingredients{count, ingredient})
+				this->ingredients.push_back(Ingredients(ingredient, count));
 			}
 		}
 

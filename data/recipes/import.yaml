@@ -1,1764 +1,1194 @@
 10k Coolant Cell:
   ingredients:
-  - count: 2
-    name: Snowball
-  - count: 1
-    name: Water Cell
+    Snowball: 2
+    Water Cell: 1
   makes: 1
 30k Coolant Cell:
   ingredients:
-  - count: 2
-    name: Tin Ingot
-  - count: 3
-    name: 10k Coolant Cell
-  - count: 4
-    name: Ovium Ingot
+    10k Coolant Cell: 3
+    Ovium Ingot: 4
+    Tin Ingot: 2
   makes: 1
 60k Coolant Cell:
   ingredients:
-  - count: 6
-    name: Ovium Ingot
-  - count: 2
-    name: 30k Coolant Cell
-  - count: 1
-    name: Vanadium Plate
+    30k Coolant Cell: 2
+    Ovium Ingot: 6
+    Vanadium Plate: 1
   makes: 1
 Advanced Alloy Ingot:
   ingredients:
-  - count: 1
-    name: Mixed Metal Ingot
+    Mixed Metal Ingot: 1
   makes: 1
 Advanced Alloy Plate:
   ingredients:
-  - count: 1
-    name: Advanced Alloy Ingot
+    Advanced Alloy Ingot: 1
   makes: 1
 Advanced Coil:
   ingredients:
-  - count: 5
-    name: Gold Ingot
-  - count: 2
-    name: Basic Coil
-  - count: 2
-    name: Black Quartz
+    Basic Coil: 2
+    Black Quartz: 2
+    Gold Ingot: 5
   makes: 1
 Advanced Component:
   ingredients:
-  - count: 2
-    name: Gold Ingot
-  - count: 1
-    name: Luminessence
-  - count: 1
-    name: Black Iron Slate
+    Black Iron Slate: 1
+    Gold Ingot: 2
+    Luminessence: 1
   makes: 1
 Advanced Control Circuit:
   ingredients:
-  - count: 2000
-    name: Super Glue
-  - count: 3
-    name: Circuit Plate
-  - count: 2
-    name: Steel Ingot
-  - count: 2
-    name: Basic Control Circuit
-  - count: 4
-    name: Gold Ingot
+    Basic Control Circuit: 2
+    Circuit Plate: 3
+    Gold Ingot: 4
+    Steel Ingot: 2
+    Super Glue: 2000
   makes: 1
 Arithmetic Logic Unit <ALU>:
   ingredients:
-  - count: 2
-    name: Redstone Repeater
-  - count: 1
-    name: Redstone
-  - count: 3
-    name: Transistor
-  - count: 2
-    name: Iron Nugget
-  - count: 1
-    name: Redstone Torch
+    Iron Nugget: 2
+    Redstone: 1
+    Redstone Repeater: 2
+    Redstone Torch: 1
+    Transistor: 3
   makes: 1
 Atomic Reconstructor:
   ingredients:
-  - count: 12
-    name: Bronze Plate
-  - count: 4
-    name: Iron Plate
-  - count: 2
-    name: Silicon Plate
-  - count: 2
-    name: Redstone
-  - count: 1
-    name: Red Alloy Gear
-  - count: 1
-    name: Basic Control Circuit
-  - count: 1
-    name: Clear Laser Lens
-  - count: 2
-    name: Battery
+    Basic Control Circuit: 1
+    Battery: 2
+    Bronze Plate: 12
+    Clear Laser Lens: 1
+    Iron Plate: 4
+    Red Alloy Gear: 1
+    Redstone: 2
+    Silicon Plate: 2
   makes: 1
 'Augment: Flux Reconstruction':
   ingredients:
-  - count: 8
-    name: Electrum Plate
-  - count: 2
-    name: Block of Iron
-  - count: 1
-    name: Majestic Component
-  - count: 1
-    name: Redstone Servo
-  - count: 1
-    name: Microchip <Tier 3>
-  - count: 5000
-    name: Liquid Crystalline
+    Block of Iron: 2
+    Electrum Plate: 8
+    Liquid Crystalline: 5000
+    Majestic Component: 1
+    Microchip <Tier 3>: 1
+    Redstone Servo: 1
   makes: 1
 Automated User:
   ingredients:
-  - count: 8
-    name: Gold Plate
-  - count: 8
-    name: Bronze Plate
-  - count: 2
-    name: Electrum Gear
-  - count: 1
-    name: Motor
-  - count: 1
-    name: Silicon
-  - count: 2
-    name: Chest
-  - count: 1
-    name: CPU Core B500
-  - count: 1
-    name: Silicon Chip
-  - count: 1
-    name: Advanced Component
+    Advanced Component: 1
+    Bronze Plate: 8
+    CPU Core B500: 1
+    Chest: 2
+    Electrum Gear: 2
+    Gold Plate: 8
+    Motor: 1
+    Silicon: 1
+    Silicon Chip: 1
   makes: 1
 Base Esscence Ingot:
   ingredients:
-  - count: 1
-    name: Iron Ingot
-  - count: 4
-    name: Prosperity Shard
+    Iron Ingot: 1
+    Prosperity Shard: 4
   makes: 1
 Basic Coil:
   ingredients:
-  - count: 5
-    name: Restonia Crystal
-  - count: 2
-    name: Enori Crystal
-  - count: 2
-    name: Black Quartz
+    Black Quartz: 2
+    Enori Crystal: 2
+    Restonia Crystal: 5
   makes: 1
 Basic Control Circuit:
   ingredients:
-  - count: 4
-    name: Circuit Plate
-  - count: 1000
-    name: Super Glue
-  - count: 2
-    name: Transistor
-  - count: 2
-    name: Electrotine Alloy Ingot
-  - count: 1
-    name: Silicon
+    Circuit Plate: 4
+    Electrotine Alloy Ingot: 2
+    Silicon: 1
+    Super Glue: 1000
+    Transistor: 2
   makes: 1
 Battery:
   ingredients:
-  - count: 2000
-    name: Silicone
-  - count: 9
-    name: Copper Ingot
-  - count: 1
-    name: Tin Ingot
-  - count: 2
-    name: Crystalized Menril Chunk
-  - count: 1
-    name: Electro Silicon
+    Copper Ingot: 9
+    Crystalized Menril Chunk: 2
+    Electro Silicon: 1
+    Silicone: 2000
+    Tin Ingot: 1
   makes: 1
 Black Iron Ingot:
   ingredients:
-  - count: 1
-    name: Iron Ingot
-  - count: 1
-    name: Black Dye
+    Black Dye: 1
+    Iron Ingot: 1
   makes: 1
 Black Iron Slate:
   ingredients:
-  - count: 2
-    name: Black Iron Ingot
+    Black Iron Ingot: 2
   makes: 1
 Block of Black Quartz:
   ingredients:
-  - count: 4
-    name: Black Quartz
+    Black Quartz: 4
   makes: 1
 Block of Iron:
   ingredients:
-  - count: 9
-    name: Iron Ingot
+    Iron Ingot: 9
   makes: 1
 Block of Redstone:
   ingredients:
-  - count: 9
-    name: Redstone
+    Redstone: 9
   makes: 1
 Block of Silver:
   ingredients:
-  - count: 9
-    name: Silver Ingot
+    Silver Ingot: 9
   makes: 1
 Blood Infused Glowstone Dust:
   ingredients:
-  - count: 1
-    name: Glowstone
-  - count: 2500
-    name: Blood <LP>
+    Blood <LP>: 2500
+    Glowstone: 1
   makes: 1
 Bronze Gear:
   ingredients:
-  - count: 4
-    name: Bronze Ingot
+    Bronze Ingot: 4
   makes: 1
 Bronze Ingot:
   ingredients:
-  - count: 1
-    name: Tin Ingot
-  - count: 3
-    name: Copper Ingot
+    Copper Ingot: 3
+    Tin Ingot: 1
   makes: 4
 Bronze Plate:
   ingredients:
-  - count: 1
-    name: Bronze Ingot
+    Bronze Ingot: 1
   makes: 1
 CPU Core B500:
   ingredients:
-  - count: 4
-    name: Redstone
-  - count: 4
-    name: Gold Ingot
-  - count: 1
-    name: Card Base
+    Card Base: 1
+    Gold Ingot: 4
+    Redstone: 4
   makes: 1
 CPU Core S1000:
   ingredients:
-  - count: 4
-    name: Diamond
-  - count: 2
-    name: Emerald
-  - count: 2
-    name: Block of Redstone
-  - count: 1
-    name: CPU Core B500
+    Block of Redstone: 2
+    CPU Core B500: 1
+    Diamond: 4
+    Emerald: 2
   makes: 1
 Cactus Green:
   ingredients:
-  - count: 1
-    name: Cactus
+    Cactus: 1
   makes: 1
 Calculation Processor:
   ingredients:
-  - count: 8
-    name: Circuit Plate
-  - count: 1
-    name: Red Alloy Plate
-  - count: 1
-    name: Advanced Control Circuit
-  - count: 2
-    name: Pure Certus Quartz Crystal
-  - count: 1
-    name: Silicon Plate
-  - count: 2000
-    name: Super Glue
+    Advanced Control Circuit: 1
+    Circuit Plate: 8
+    Pure Certus Quartz Crystal: 2
+    Red Alloy Plate: 1
+    Silicon Plate: 1
+    Super Glue: 2000
   makes: 1
 Carbon Fiber:
   ingredients:
-  - count: 4
-    name: Pulverized Coal
-  - count: 1
-    name: Pulverized Diamond
+    Pulverized Coal: 4
+    Pulverized Diamond: 1
   makes: 2
 Carbon Mesh:
   ingredients:
-  - count: 2
-    name: Carbon Fiber
+    Carbon Fiber: 2
   makes: 1
 Carbon Plate:
   ingredients:
-  - count: 1
-    name: Carbon Mesh
+    Carbon Mesh: 1
   makes: 1
 Card Base:
   ingredients:
-  - count: 2
-    name: Paper
-  - count: 1
-    name: Gold Ingot
-  - count: 2
-    name: Cactus Green
-  - count: 1
-    name: Basic Control Circuit
-  - count: 3
-    name: Redstone
+    Basic Control Circuit: 1
+    Cactus Green: 2
+    Gold Ingot: 1
+    Paper: 2
+    Redstone: 3
   makes: 1
 Card Base [OpenComputers]:
   ingredients:
-  - count: 3
-    name: Iron Nugget
-  - count: 1
-    name: Microchip <Tier 1>
-  - count: 1
-    name: Transistor
-  - count: 2
-    name: Printed Circuit Board <PCB>
-  - count: 2
-    name: Gold Nugget
+    Gold Nugget: 2
+    Iron Nugget: 3
+    Microchip <Tier 1>: 1
+    Printed Circuit Board <PCB>: 2
+    Transistor: 1
   makes: 1
 Certus Quartz Plate:
   ingredients:
-  - count: 1
-    name: Certus Quartz Crystal
+    Certus Quartz Crystal: 1
   makes: 1
 Chemical Reactor:
   ingredients:
-  - count: 1
-    name: Advanced Control Circuit
-  - count: 2
-    name: Carbon Plate
-  - count: 2
-    name: Liquid Cleaning Tube
-  - count: 2
-    name: Redstone Transmission Coil
-  - count: 1
-    name: Copper Chest
-  - count: 1
-    name: Electrolytic Core
-  - count: 8
-    name: Advanced Alloy Plate
-  - count: 8
-    name: Constantan Plate
+    Advanced Alloy Plate: 8
+    Advanced Control Circuit: 1
+    Carbon Plate: 2
+    Constantan Plate: 8
+    Copper Chest: 1
+    Electrolytic Core: 1
+    Liquid Cleaning Tube: 2
+    Redstone Transmission Coil: 2
   makes: 1
 Chest:
   ingredients:
-  - count: 8
-    name: Wooden Planks
+    Wooden Planks: 8
   makes: 1
 Circuit Board:
   ingredients:
-  - count: 1
-    name: Raw Circuit Board
+    Raw Circuit Board: 1
   makes: 1
 Circuit Plate:
   ingredients:
-  - count: 1
-    name: -Any Stone-
+    -Any Stone-: 1
   makes: 2
 Cleaning Tube:
   ingredients:
-  - count: 3
-    name: Iron Ingot
-  - count: 6
-    name: Orange Dye
+    Iron Ingot: 3
+    Orange Dye: 6
   makes: 2
 Clear Laser Lens:
   ingredients:
-  - count: 7
-    name: Glass
+    Glass: 7
   makes: 1
 Compressed Diamond:
   ingredients:
-  - count: 1
-    name: Diamond
+    Diamond: 1
   makes: 1
 Configuration Card:
   ingredients:
-  - count: 4
-    name: Enriched Alloy
-  - count: 1
-    name: Basic Control Circuit
+    Basic Control Circuit: 1
+    Enriched Alloy: 4
   makes: 1
 Constantan Ingot:
   ingredients:
-  - count: 1
-    name: Nickel Ingot
-  - count: 1
-    name: Copper Ingot
+    Copper Ingot: 1
+    Nickel Ingot: 1
   makes: 2
 Constantan Plate:
   ingredients:
-  - count: 1
-    name: Constantan Ingot
+    Constantan Ingot: 1
   makes: 1
 Copper Battery Cell:
   ingredients:
-  - count: 3000
-    name: Molten Copper
+    Molten Copper: 3000
   makes: 1
 Copper Coil:
   ingredients:
-  - count: 6
-    name: Copper Ingot
-  - count: 1
-    name: Stick
-  - count: 2
-    name: Redstone
+    Copper Ingot: 6
+    Redstone: 2
+    Stick: 1
   makes: 1
 Copper Coil Block:
   ingredients:
-  - count: 8
-    name: LV Wire Coil
-  - count: 1
-    name: Iron Ingot
+    Iron Ingot: 1
+    LV Wire Coil: 8
   makes: 1
 Copper Gear:
   ingredients:
-  - count: 4
-    name: Copper Ingot
+    Copper Ingot: 4
   makes: 1
 Copper Plate:
   ingredients:
-  - count: 1
-    name: Copper Ingot
+    Copper Ingot: 1
   makes: 1
 Copper Solenoid:
   ingredients:
-  - count: 4
-    name: Copper Ingot
-  - count: 2
-    name: Iron Ingot
+    Copper Ingot: 4
+    Iron Ingot: 2
   makes: 2
 Copper Wire:
   ingredients:
-  - count: 1
-    name: Copper Plate
+    Copper Plate: 1
   makes: 1
 Crystalized Menril Block:
   ingredients:
-  - count: 9
-    name: Crystalized Menril Chunk
+    Crystalized Menril Chunk: 9
   makes: 1
 Cutting Wire:
   ingredients:
-  - count: 2
-    name: Stick
-  - count: 1
-    name: Iron Nugget
+    Iron Nugget: 1
+    Stick: 2
   makes: 1
 Diamond Hook:
   ingredients:
-  - count: 6
-    name: Diamond
-  - count: 1
-    name: Diamond Pickaxe
-  - count: 2
-    name: Rope
-  - count: 1
-    name: Wooden Grip
-  - count: 2
-    name: Iron Chain
-  - count: 1
-    name: Range Addon <+7>
+    Diamond: 6
+    Diamond Pickaxe: 1
+    Iron Chain: 2
+    Range Addon <+7>: 1
+    Rope: 2
+    Wooden Grip: 1
   makes: 1
 Double Battery:
   ingredients:
-  - count: 3000
-    name: Silicone
-  - count: 14
-    name: Enori Plate
-  - count: 2
-    name: Advanced Coil
-  - count: 2
-    name: Tin Plate
-  - count: 2
-    name: Gold Plate
-  - count: 1
-    name: Infused Silicon
-  - count: 1
-    name: Single Battery
+    Advanced Coil: 2
+    Enori Plate: 14
+    Gold Plate: 2
+    Infused Silicon: 1
+    Silicone: 3000
+    Single Battery: 1
+    Tin Plate: 2
   makes: 1
 Drawer Controller:
   ingredients:
-  - count: 3
-    name: Stone
-  - count: 4
-    name: Iron Plate
-  - count: 1
-    name: Diamond
-  - count: 1
-    name: Nether Quartz Gear
+    Diamond: 1
+    Iron Plate: 4
+    Nether Quartz Gear: 1
+    Stone: 3
   makes: 1
 Electric Motor:
   ingredients:
-  - count: 6
-    name: Steel Ingot
-  - count: 1
-    name: Gold Gear
-  - count: 2
-    name: Copper Solenoid
+    Copper Solenoid: 2
+    Gold Gear: 1
+    Steel Ingot: 6
   makes: 1
 Electro Silicon:
   ingredients:
-  - count: 1
-    name: Electrotine Silicon Compound
+    Electrotine Silicon Compound: 1
   makes: 1
 Electrolytic Core:
   ingredients:
-  - count: 5
-    name: Enriched Alloy
-  - count: 1
-    name: Pulverized Gold
-  - count: 1
-    name: Pulverized Iron
-  - count: 2
-    name: Osmium Dust
+    Enriched Alloy: 5
+    Osmium Dust: 2
+    Pulverized Gold: 1
+    Pulverized Iron: 1
   makes: 1
 Electrotine:
   ingredients:
-  - count: 3
-    name: Pulverized Copper
-  - count: 3
-    name: Redstone
-  - count: 3
-    name: Sawdust
+    Pulverized Copper: 3
+    Redstone: 3
+    Sawdust: 3
   makes: 8
 Electrotine Alloy Ingot:
   ingredients:
-  - count: 4
-    name: Electrotine
-  - count: 1
-    name: Iron Ingot
+    Electrotine: 4
+    Iron Ingot: 1
   makes: 1
 Electrotine Alloy Plate:
   ingredients:
-  - count: 1
-    name: Electrotine Alloy Ingot
+    Electrotine Alloy Ingot: 1
   makes: 1
 Electrotine Iron Compound:
   ingredients:
-  - count: 8
-    name: Electrotine
-  - count: 1
-    name: Iron Ingot
+    Electrotine: 8
+    Iron Ingot: 1
   makes: 1
 Electrotine Silicon Compound:
   ingredients:
-  - count: 8
-    name: Electrotine
-  - count: 1
-    name: Silicon
+    Electrotine: 8
+    Silicon: 1
   makes: 1
 Electrum Gear:
   ingredients:
-  - count: 4
-    name: Electrum Ingot
+    Electrum Ingot: 4
   makes: 1
 Electrum Ingot:
   ingredients:
-  - count: 1
-    name: Gold Ingot
-  - count: 1
-    name: Silver Ingot
+    Gold Ingot: 1
+    Silver Ingot: 1
   makes: 2
 Electrum Plate:
   ingredients:
-  - count: 1
-    name: Electrum Ingot
+    Electrum Ingot: 1
   makes: 1
 Emeradic Crystal:
   ingredients:
-  - count: 1
-    name: Emerald
+    Emerald: 1
   makes: 1
 Empowered Emeradic Crystal:
   ingredients:
-  - count: 1
-    name: Emeradic Crystal
-  - count: 1
-    name: Terrasteel Ingot
-  - count: 1
-    name: Blood Infused Glowstone Dust
-  - count: 1
-    name: Block of Redstone
-  - count: 1
-    name: Inert Blood-Iron Ingot
+    Block of Redstone: 1
+    Blood Infused Glowstone Dust: 1
+    Emeradic Crystal: 1
+    Inert Blood-Iron Ingot: 1
+    Terrasteel Ingot: 1
   makes: 1
 Empowered Emeradic Plate:
   ingredients:
-  - count: 1
-    name: Empowered Emeradic Crystal
+    Empowered Emeradic Crystal: 1
   makes: 1
 Empowerer:
   ingredients:
-  - count: 12
-    name: Enori Plate
-  - count: 12
-    name: Lumium Plate
-  - count: 4
-    name: Dilithium Ingot
-  - count: 4
-    name: Lunar Reactive Dust
-  - count: 4
-    name: Tough Alloy
-  - count: 2
-    name: Electro Silicon
-  - count: 2
-    name: Microchip <Tier 2>
-  - count: 2
-    name: Intermedium Gear
-  - count: 2
-    name: Block of Black Quartz
-  - count: 1
-    name: Advanced Item Laser Relay
-  - count: 2
-    name: Advanced Control Circuit
-  - count: 1
-    name: Triberium Block
-  - count: 1
-    name: Double Battery
+    Advanced Control Circuit: 2
+    Advanced Item Laser Relay: 1
+    Block of Black Quartz: 2
+    Dilithium Ingot: 4
+    Double Battery: 1
+    Electro Silicon: 2
+    Enori Plate: 12
+    Intermedium Gear: 2
+    Lumium Plate: 12
+    Lunar Reactive Dust: 4
+    Microchip <Tier 2>: 2
+    Tough Alloy: 4
+    Triberium Block: 1
   makes: 1
 Ender Shard:
   ingredients:
-  - count: 1
-    name: Ender Pearl
+    Ender Pearl: 1
   makes: 8
 Energetic Infuser:
   ingredients:
-  - count: 8
-    name: Bronze Plate
-  - count: 8
-    name: Electrotine Alloy Plate
-  - count: 2
-    name: CPU Core B500
-  - count: 2
-    name: Gold Coil
-  - count: 2
-    name: Redstone Transmission Coil
-  - count: 2
-    name: Lead Gear
-  - count: 1
-    name: Advanced Control Circuit
+    Advanced Control Circuit: 1
+    Bronze Plate: 8
+    CPU Core B500: 2
+    Electrotine Alloy Plate: 8
+    Gold Coil: 2
+    Lead Gear: 2
+    Redstone Transmission Coil: 2
   makes: 1
 Energized Silicon:
   ingredients:
-  - count: 1
-    name: Glowing Silicon Compound
+    Glowing Silicon Compound: 1
   makes: 1
 Energy Battery:
   ingredients:
-  - count: 8
-    name: Silicon Plate
-  - count: 8
-    name: Iron Plate
-  - count: 4
-    name: Crystalized Menril Chunk
-  - count: 1
-    name: Block of Redstone
-  - count: 1
-    name: Copper Coil
-  - count: 1
-    name: Crystalized Menril Block
+    Block of Redstone: 1
+    Copper Coil: 1
+    Crystalized Menril Block: 1
+    Crystalized Menril Chunk: 4
+    Iron Plate: 8
+    Silicon Plate: 8
   makes: 1
 Enori Crystal:
   ingredients:
-  - count: 1
-    name: Iron Ingot
+    Iron Ingot: 1
   makes: 1
 Enori Plate:
   ingredients:
-  - count: 1
-    name: Enori Crystal
+    Enori Crystal: 1
   makes: 1
 Enriched Alloy:
   ingredients:
-  - count: 5
-    name: Redstone
-  - count: 1
-    name: Steel Ingot
+    Redstone: 5
+    Steel Ingot: 1
   makes: 1
 Enrichment Chamber:
   ingredients:
-  - count: 8
-    name: Osmium Plate
-  - count: 8
-    name: Iron Plate
-  - count: 2
-    name: Bronze Gear
-  - count: 1
-    name: Motor
-  - count: 2
-    name: Basic Control Circuit
-  - count: 2
-    name: Cleaning Tube
-  - count: 1
-    name: Enriched Alloy
+    Basic Control Circuit: 2
+    Bronze Gear: 2
+    Cleaning Tube: 2
+    Enriched Alloy: 1
+    Iron Plate: 8
+    Motor: 1
+    Osmium Plate: 8
   makes: 1
 Fluix Crystal:
   ingredients:
-  - count: 1
-    name: Nether Quartz
-  - count: 1
-    name: Redstone
-  - count: 1
-    name: Charged Certus Quartz Crystal
+    Charged Certus Quartz Crystal: 1
+    Nether Quartz: 1
+    Redstone: 1
   makes: 2
 Fluix Dust:
   ingredients:
-  - count: 1
-    name: Fluix Crystal
+    Fluix Crystal: 1
   makes: 1
 Formation Core:
   ingredients:
-  - count: 4
-    name: Certus Quartz Plate
-  - count: 2
-    name: Lumium Plate
-  - count: 2
-    name: Fluix Dust
-  - count: 1
-    name: Logic Processor
+    Certus Quartz Plate: 4
+    Fluix Dust: 2
+    Logic Processor: 1
+    Lumium Plate: 2
   makes: 1
 Galena Dust:
   ingredients:
-  - count: 1
-    name: Galena Ore
+    Galena Ore: 1
   makes: 2
 Glass:
   ingredients:
-  - count: 1
-    name: Sand
+    Sand: 1
   makes: 1
 Glowing Silicon Compound:
   ingredients:
-  - count: 8
-    name: Glowstone
-  - count: 1
-    name: Silicon
+    Glowstone: 8
+    Silicon: 1
   makes: 1
 Gold Coil:
   ingredients:
-  - count: 6
-    name: Gold Ingot
-  - count: 2
-    name: Redstone
-  - count: 1
-    name: Stick
+    Gold Ingot: 6
+    Redstone: 2
+    Stick: 1
   makes: 1
 Gold Gear:
   ingredients:
-  - count: 4
-    name: Gold Ingot
+    Gold Ingot: 4
   makes: 1
 Gold Nugget:
   ingredients:
-  - count: 1
-    name: Gold Ingot
+    Gold Ingot: 1
   makes: 9
 Gold Plate:
   ingredients:
-  - count: 1
-    name: Gold Ingot
+    Gold Ingot: 1
   makes: 1
 Graphics Card <Tier 1>:
   ingredients:
-  - count: 1
-    name: Microchip <Tier 1>
-  - count: 1
-    name: Arithmetic Logic Unit <ALU>
-  - count: 1
-    name: Card Base [OpenComputers]
-  - count: 1
-    name: Memory <Tier 1>
+    Arithmetic Logic Unit <ALU>: 1
+    Card Base [OpenComputers]: 1
+    Memory <Tier 1>: 1
+    Microchip <Tier 1>: 1
   makes: 1
 Grog:
   ingredients:
-  - count: 1
-    name: Sugar
-  - count: 1
-    name: Spider Eye
-  - count: 1
-    name: Bone Meal
-  - count: 1
-    name: Slimeball
-  - count: 1
-    name: Water Bucket
+    Bone Meal: 1
+    Slimeball: 1
+    Spider Eye: 1
+    Sugar: 1
+    Water Bucket: 1
   makes: 1
 Hardened Glass:
   ingredients:
-  - count: 8
-    name: Pulverized Obsidian
-  - count: 1
-    name: Vanadium Dust
+    Pulverized Obsidian: 8
+    Vanadium Dust: 1
   makes: 2
 Hardened Upgrade Kit:
   ingredients:
-  - count: 4
-    name: Red Alloy Ingot
-  - count: 4
-    name: Copper Gear
-  - count: 1
-    name: Basic Control Circuit
-  - count: 2000
-    name: Liquid Crystalline
-  - count: 8
-    name: Invar Plate
+    Basic Control Circuit: 1
+    Copper Gear: 4
+    Invar Plate: 8
+    Liquid Crystalline: 2000
+    Red Alloy Ingot: 4
   makes: 1
 Heat Conductor:
   ingredients:
-  - count: 8
-    name: Iron Bars
-  - count: 8
-    name: Silicon Plate
-  - count: 2
-    name: Gold Coil
-  - count: 1
-    name: Lava Bucket
-  - count: 4
-    name: Lava Bricks
-  - count: 2
-    name: Silicon
+    Gold Coil: 2
+    Iron Bars: 8
+    Lava Bricks: 4
+    Lava Bucket: 1
+    Silicon: 2
+    Silicon Plate: 8
   makes: 2
 Induction Smelter:
   ingredients:
-  - count: 8
-    name: Bronze Plate
-  - count: 8
-    name: Iron Plate
-  - count: 1
-    name: 10k Coolant Cell
-  - count: 1
-    name: Motor
-  - count: 2
-    name: Copper Gear
-  - count: 1
-    name: Silicon Plate
-  - count: 1
-    name: Basic Control Circuit
-  - count: 1
-    name: Cleaning Tube
-  - count: 2
-    name: Chest
+    10k Coolant Cell: 1
+    Basic Control Circuit: 1
+    Bronze Plate: 8
+    Chest: 2
+    Cleaning Tube: 1
+    Copper Gear: 2
+    Iron Plate: 8
+    Motor: 1
+    Silicon Plate: 1
   makes: 1
 Industrial Electrolyzer:
   ingredients:
-  - count: 8
-    name: Steel Plate
-  - count: 8
-    name: Constantan Plate
-  - count: 2
-    name: 60k Coolant Cell
-  - count: 1
-    name: Heat Conductor
-  - count: 1
-    name: Carbon Plate
-  - count: 1
-    name: Advanced Control Circuit
-  - count: 1
-    name: CPU Core S1000
-  - count: 1
-    name: Cleaning Tube
-  - count: 1
-    name: Liquid Cleaning Tube
-  - count: 1
-    name: Electric Motor
+    60k Coolant Cell: 2
+    Advanced Control Circuit: 1
+    CPU Core S1000: 1
+    Carbon Plate: 1
+    Cleaning Tube: 1
+    Constantan Plate: 8
+    Electric Motor: 1
+    Heat Conductor: 1
+    Liquid Cleaning Tube: 1
+    Steel Plate: 8
   makes: 1
 Inert Blood-Iron Ingot:
   ingredients:
-  - count: 1
-    name: Iron Ingot
-  - count: 5000
-    name: Blood <Evilcraft>
+    Blood <Evilcraft>: 5000
+    Iron Ingot: 1
   makes: 1
 Inferium Ingot:
   ingredients:
-  - count: 4
-    name: Inferium Esscence
-  - count: 1
-    name: Base Esscence Ingot
+    Base Esscence Ingot: 1
+    Inferium Esscence: 4
   makes: 1
 Infused Silicon:
   ingredients:
-  - count: 1
-    name: Red Silicon Compound
+    Red Silicon Compound: 1
   makes: 1
 Insightful Condenser:
   ingredients:
-  - count: 8
-    name: Iron Plate
-  - count: 8
-    name: Tin Plate
-  - count: 4
-    name: Solidified Experience
-  - count: 2
-    name: Bronze Gear
-  - count: 1
-    name: Basic Control Circuit
-  - count: 2
-    name: Redstone Servo
+    Basic Control Circuit: 1
+    Bronze Gear: 2
+    Iron Plate: 8
+    Redstone Servo: 2
+    Solidified Experience: 4
+    Tin Plate: 8
   makes: 1
 Intermedium Esscence:
   ingredients:
-  - count: 1
-    name: Infusion Crystal Use
-  - count: 4
-    name: Prudentium Esscence
+    Infusion Crystal Use: 1
+    Prudentium Esscence: 4
   makes: 1
 Intermedium Gear:
   ingredients:
-  - count: 4
-    name: Intermedium Ingot
-  - count: 1
-    name: Copper Ingot
+    Copper Ingot: 1
+    Intermedium Ingot: 4
   makes: 1
 Intermedium Ingot:
   ingredients:
-  - count: 4
-    name: Intermedium Esscence
-  - count: 1
-    name: Prudentium Ingot
+    Intermedium Esscence: 4
+    Prudentium Ingot: 1
   makes: 1
 Invar Ingot:
   ingredients:
-  - count: 2
-    name: Iron Ingot
-  - count: 1
-    name: Nickel Ingot
+    Iron Ingot: 2
+    Nickel Ingot: 1
   makes: 3
 Invar Plate:
   ingredients:
-  - count: 1
-    name: Invar Ingot
+    Invar Ingot: 1
   makes: 1
 Iron Chain:
   ingredients:
-  - count: 3
-    name: Iron Chain Link
+    Iron Chain Link: 3
   makes: 1
 Iron Chain Link:
   ingredients:
-  - count: 6
-    name: Iron Ingot
+    Iron Ingot: 6
   makes: 3
 Iron Nugget:
   ingredients:
-  - count: 1
-    name: Iron Ingot
+    Iron Ingot: 1
   makes: 9
 Iron Plate:
   ingredients:
-  - count: 1
-    name: Iron Ingot
+    Iron Ingot: 1
   makes: 1
 Iron Rod:
   ingredients:
-  - count: 1
-    name: Iron Ingot
+    Iron Ingot: 1
   makes: 1
 Kinetic Dynamo:
   ingredients:
-  - count: 8
-    name: Iron Plate
-  - count: 8
-    name: Silicon Plate
-  - count: 2
-    name: Copper Gear
-  - count: 4
-    name: Iron Rod
-  - count: 1
-    name: Basic Control Circuit
-  - count: 2
-    name: Copper Coil Block
+    Basic Control Circuit: 1
+    Copper Coil Block: 2
+    Copper Gear: 2
+    Iron Plate: 8
+    Iron Rod: 4
+    Silicon Plate: 8
   makes: 1
 LV Wire Coil:
   ingredients:
-  - count: 1000
-    name: Super Glue
-  - count: 6
-    name: Wood Planks
-  - count: 2
-    name: Wooden Gear
-  - count: 7
-    name: Copper Wire
+    Copper Wire: 7
+    Super Glue: 1000
+    Wood Planks: 6
+    Wooden Gear: 2
   makes: 8
 Lapis Lazuli Plate:
   ingredients:
-  - count: 1
-    name: Lapis Lazuli
+    Lapis Lazuli: 1
   makes: 1
 Lava Brick:
   ingredients:
-  - count: 125
-    name: Lava
-  - count: 1
-    name: Brick
+    Brick: 1
+    Lava: 125
   makes: 1
 Lead Gear:
   ingredients:
-  - count: 4
-    name: Lead Ingot
+    Lead Ingot: 4
   makes: 1
 Lead Plate:
   ingredients:
-  - count: 1
-    name: Lead Ingot
+    Lead Ingot: 1
   makes: 1
 Leadstone Fluxduct:
   ingredients:
-  - count: 4
-    name: Lead Plate
-  - count: 3
-    name: Glass
-  - count: 2
-    name: Red Alloy Plate
-  - count: 1000
-    name: Silicone
+    Glass: 3
+    Lead Plate: 4
+    Red Alloy Plate: 2
+    Silicone: 1000
   makes: 8
 Leadstone Jetpack:
   ingredients:
-  - count: 26
-    name: Lead Plate
-  - count: 2
-    name: 10k Coolant Cell
-  - count: 4
-    name: Leadstone Thruster
-  - count: 2
-    name: Basic Control Circuit
-  - count: 1
-    name: Double Battery
-  - count: 2
-    name: CPU Core B500
-  - count: 1
-    name: Copper Gear
-  - count: 2
-    name: Redstone Transmission Coil
-  - count: 1
-    name: Ancient Dust
-  - count: 2
-    name: Copper Battery Cell
-  - count: 2
-    name: Configuration Card
+    10k Coolant Cell: 2
+    Ancient Dust: 1
+    Basic Control Circuit: 2
+    CPU Core B500: 2
+    Configuration Card: 2
+    Copper Battery Cell: 2
+    Copper Gear: 1
+    Double Battery: 1
+    Lead Plate: 26
+    Leadstone Thruster: 4
+    Redstone Transmission Coil: 2
   makes: 1
 Leadstone Thruster:
   ingredients:
-  - count: 1
-    name: Redstone Reception Coil
-  - count: 4
-    name: Lead Ingot
-  - count: 1
-    name: Redstone
-  - count: 2
-    name: Leadstone Fluxduct
-  - count: 1
-    name: Reactant Dynamo
+    Lead Ingot: 4
+    Leadstone Fluxduct: 2
+    Reactant Dynamo: 1
+    Redstone: 1
+    Redstone Reception Coil: 1
   makes: 1
 Liquid Cleaning Tube:
   ingredients:
-  - count: 3
-    name: Iron Ingot
-  - count: 6
-    name: Cactus Green
+    Cactus Green: 6
+    Iron Ingot: 3
   makes: 2
 Liquid Crystalline:
   ingredients:
-  - count: 1
-    name: Sapphire
+    Sapphire: 1
   makes: 250
 Logic Processor:
   ingredients:
-  - count: 8
-    name: Circuit Plate
-  - count: 1
-    name: Red Alloy Plate
-  - count: 1
-    name: Basic Control Circuit
-  - count: 2
-    name: Gold Plate
-  - count: 1
-    name: Silicon Plate
-  - count: 1000
-    name: Super Glue
+    Basic Control Circuit: 1
+    Circuit Plate: 8
+    Gold Plate: 2
+    Red Alloy Plate: 1
+    Silicon Plate: 1
+    Super Glue: 1000
   makes: 1
 Luminessence:
   ingredients:
-  - count: 2
-    name: Glowstone
-  - count: 1
-    name: Redstone
-  - count: 1
-    name: Gunpowder
+    Glowstone: 2
+    Gunpowder: 1
+    Redstone: 1
   makes: 2
 Lumium Ingot:
   ingredients:
-  - count: 1
-    name: Glowstone
-  - count: 1
-    name: Tin Ingot
-  - count: 1
-    name: Silver Ingot
+    Glowstone: 1
+    Silver Ingot: 1
+    Tin Ingot: 1
   makes: 1
 Lumium Plate:
   ingredients:
-  - count: 1
-    name: Lumium Ingot
+    Lumium Ingot: 1
   makes: 1
 Lunar Panel:
   ingredients:
-  - count: 9
-    name: Copper Plate
-  - count: 2
-    name: Lunar Reactive Dust
-  - count: 1
-    name: Resonating Redstone Crystal
-  - count: 3
-    name: Photovaoltaic Cell I
+    Copper Plate: 9
+    Lunar Reactive Dust: 2
+    Photovaoltaic Cell I: 3
+    Resonating Redstone Crystal: 1
   makes: 1
 Lunar Reactive Dust:
   ingredients:
-  - count: 1
-    name: Lapis Lazuli
+    Lapis Lazuli: 1
   makes: 1
 ME Controller:
   ingredients:
-  - count: 12
-    name: Steel Plate
-  - count: 12
-    name: Certus Quartz Plate
-  - count: 2
-    name: Advanced Coil
-  - count: 2
-    name: Red Alloy Gear
-  - count: 2
-    name: Microchip <Tier 2>
-  - count: 4
-    name: Enriched Alloy
-  - count: 4
-    name: 10k Coolant Cell
-  - count: 1
-    name: Graphics Card <Tier 1>
-  - count: 2
-    name: Logic Processor
-  - count: 1
-    name: Calculation Processor
-  - count: 2
-    name: Formation Core
-  - count: 2
-    name: Silicon Gear
-  - count: 2
-    name: Neutron Reflector
+    10k Coolant Cell: 4
+    Advanced Coil: 2
+    Calculation Processor: 1
+    Certus Quartz Plate: 12
+    Enriched Alloy: 4
+    Formation Core: 2
+    Graphics Card <Tier 1>: 1
+    Logic Processor: 2
+    Microchip <Tier 2>: 2
+    Neutron Reflector: 2
+    Red Alloy Gear: 2
+    Silicon Gear: 2
+    Steel Plate: 12
   makes: 1
 Magma Crucible:
   ingredients:
-  - count: 8
-    name: Iron Plate
-  - count: 8
-    name: Bronze Plate
-  - count: 2
-    name: 10k Coolant Cell
-  - count: 1
-    name: Liquid Cleaning Tube
-  - count: 1
-    name: Motor
-  - count: 2
-    name: Tin Gear
-  - count: 1
-    name: Lava Bucket
-  - count: 1
-    name: Basic Control Circuit
-  - count: 1
-    name: Copper Coil
+    10k Coolant Cell: 2
+    Basic Control Circuit: 1
+    Bronze Plate: 8
+    Copper Coil: 1
+    Iron Plate: 8
+    Lava Bucket: 1
+    Liquid Cleaning Tube: 1
+    Motor: 1
+    Tin Gear: 2
   makes: 1
 Majestic Component:
   ingredients:
-  - count: 2
-    name: Majestic Ingot
-  - count: 1
-    name: Luminessence
-  - count: 1
-    name: Black Iron Slate
+    Black Iron Slate: 1
+    Luminessence: 1
+    Majestic Ingot: 2
   makes: 1
 Memory <Tier 1>:
   ingredients:
-  - count: 3
-    name: Printed Circuit Board <PCB>
-  - count: 3
-    name: Microchip <Tier 1>
+    Microchip <Tier 1>: 3
+    Printed Circuit Board <PCB>: 3
   makes: 1
 Microchip <Tier 1>:
   ingredients:
-  - count: 2000
-    name: Super Glue
-  - count: 8
-    name: Circuit Plate
-  - count: 2
-    name: Transistor
-  - count: 4
-    name: Red Alloy Ingot
-  - count: 2
-    name: Gold Ingot
-  - count: 1
-    name: Electrotine
+    Circuit Plate: 8
+    Electrotine: 1
+    Gold Ingot: 2
+    Red Alloy Ingot: 4
+    Super Glue: 2000
+    Transistor: 2
   makes: 4
 Microchip <Tier 2>:
   ingredients:
-  - count: 3000
-    name: Super Glue
-  - count: 2
-    name: Nether Quartz Plate
-  - count: 2
-    name: Lumium Plate
-  - count: 2
-    name: Lapis Lazuli Plate
-  - count: 1
-    name: Infused Silicon
-  - count: 8
-    name: Circuit Plate
-  - count: 2
-    name: Microchip <Tier 1>
+    Circuit Plate: 8
+    Infused Silicon: 1
+    Lapis Lazuli Plate: 2
+    Lumium Plate: 2
+    Microchip <Tier 1>: 2
+    Nether Quartz Plate: 2
+    Super Glue: 3000
   makes: 4
 Microchip <Tier 3>:
   ingredients:
-  - count: 4000
-    name: Super Glue
-  - count: 8
-    name: Circuit Plate
-  - count: 2
-    name: Microchip <Tier 2>n
-  - count: 2
-    name: Compressed Diamond
-  - count: 1
-    name: Energized Silicon
-  - count: 2
-    name: Empowered Emeradic Plate
-  - count: 2
-    name: Refined Glowstone Plate
+    Circuit Plate: 8
+    Compressed Diamond: 2
+    Empowered Emeradic Plate: 2
+    Energized Silicon: 1
+    Microchip <Tier 2>n: 2
+    Refined Glowstone Plate: 2
+    Super Glue: 4000
   makes: 4
 Mirror:
   ingredients:
-  - count: 3
-    name: Glass
-  - count: 3
-    name: Iron Plate
+    Glass: 3
+    Iron Plate: 3
   makes: 3
 Mixed Metal Ingot:
   ingredients:
-  - count: 3
-    name: Inert Blood-Iron Ingot
-  - count: 3
-    name: Bronze Ingot
-  - count: 3
-    name: Tin Ingot
+    Bronze Ingot: 3
+    Inert Blood-Iron Ingot: 3
+    Tin Ingot: 3
   makes: 5
 Molten Copper:
   ingredients:
-  - count: 1
-    name: Copper Ingot
+    Copper Ingot: 1
   makes: 1000
 Motor:
   ingredients:
-  - count: 2
-    name: Stone
-  - count: 4
-    name: Redstone
-  - count: 2
-    name: Copper Coil
-  - count: 1
-    name: Gold Gear
+    Copper Coil: 2
+    Gold Gear: 1
+    Redstone: 4
+    Stone: 2
   makes: 1
 Nether Quartz Gear:
   ingredients:
-  - count: 4
-    name: Nether Quartz
-  - count: 1
-    name: Copper Ingot
+    Copper Ingot: 1
+    Nether Quartz: 4
   makes: 1
 Nether Quartz Plate:
   ingredients:
-  - count: 1
-    name: Nether Quartz
+    Nether Quartz: 1
   makes: 1
 Neutron Reflector:
   ingredients:
-  - count: 1
-    name: Copper Plate
-  - count: 4
-    name: Pulverized Tin
-  - count: 4
-    name: Pulverized Coal
+    Copper Plate: 1
+    Pulverized Coal: 4
+    Pulverized Tin: 4
   makes: 1
 Orange Dye:
   ingredients:
-  - count: 1
-    name: Yellow Dye
-  - count: 1
-    name: Red Dye
+    Red Dye: 1
+    Yellow Dye: 1
   makes: 2
 Osmium Dust:
   ingredients:
-  - count: 1
-    name: Osmium Ore
+    Osmium Ore: 1
   makes: 2
 Ovium Ingot:
   ingredients:
-  - count: 1
-    name: Vanadium Dust
-  - count: 2
-    name: Galena Dust
+    Galena Dust: 2
+    Vanadium Dust: 1
   makes: 1
 Photovaoltaic Cell I:
   ingredients:
-  - count: 3
-    name: Glass
-  - count: 3
-    name: Lapis Lazuli Plate
-  - count: 3
-    name: Mirror
+    Glass: 3
+    Lapis Lazuli Plate: 3
+    Mirror: 3
   makes: 3
 Piston:
   ingredients:
-  - count: 4
-    name: Stone
-  - count: 1
-    name: Iron Plate
-  - count: 1
-    name: Red Alloy Ingot
-  - count: 3
-    name: Wood Casing
+    Iron Plate: 1
+    Red Alloy Ingot: 1
+    Stone: 4
+    Wood Casing: 3
   makes: 1
 Plant Fiber:
   ingredients:
-  - count: 1
-    name: Sapling
+    Sapling: 1
   makes: 1
 Printed Circuit Board <PCB>:
   ingredients:
-  - count: 1
-    name: Circuit Board
-  - count: 1
-    name: Gold Nugget
-  - count: 1
-    name: Grog
+    Circuit Board: 1
+    Gold Nugget: 1
+    Grog: 1
   makes: 1
 Prudentium Esscence:
   ingredients:
-  - count: 4
-    name: Inferium Esscence
-  - count: 1
-    name: Infusion Crystal Use
+    Inferium Esscence: 4
+    Infusion Crystal Use: 1
   makes: 1
 Prudentium Ingot:
   ingredients:
-  - count: 4
-    name: Prudentium Esscence
-  - count: 1
-    name: Inferium Ingot
+    Inferium Ingot: 1
+    Prudentium Esscence: 4
   makes: 1
 Pulverized Coal:
   ingredients:
-  - count: 1
-    name: Coal
+    Coal: 1
   makes: 1
 Pulverized Copper:
   ingredients:
-  - count: 1
-    name: Copper Ingot
+    Copper Ingot: 1
   makes: 1
 Pulverized Diamond:
   ingredients:
-  - count: 1
-    name: Diamond
+    Diamond: 1
   makes: 1
 Pulverized Gold:
   ingredients:
-  - count: 1
-    name: Gold Ore
+    Gold Ore: 1
   makes: 2
 Pulverized Iron:
   ingredients:
-  - count: 1
-    name: Iron Ore
+    Iron Ore: 1
   makes: 2
 Pulverized Tin:
   ingredients:
-  - count: 1
-    name: Tin Ingot
+    Tin Ingot: 1
   makes: 1
 Range Addon <+7>:
   ingredients:
-  - count: 6
-    name: Silver Ingot
-  - count: 2
-    name: Block of Silver
-  - count: 2
-    name: Plastic
-  - count: 1
-    name: Advanced Control Circuit
-  - count: 2
-    name: Glass Pane
-  - count: 3000
-    name: Liquid Crystalline
+    Advanced Control Circuit: 1
+    Block of Silver: 2
+    Glass Pane: 2
+    Liquid Crystalline: 3000
+    Plastic: 2
+    Silver Ingot: 6
   makes: 1
 Raw Circuit Board:
   ingredients:
-  - count: 2
-    name: Cactus Green
-  - count: 1
-    name: Clay
-  - count: 1
-    name: Cutting Wire
+    Cactus Green: 2
+    Clay: 1
+    Cutting Wire: 1
   makes: 8
 Reactant Dynamo:
   ingredients:
-  - count: 3
-    name: Iron Ingot
-  - count: 8
-    name: Lead Ingot
-  - count: 1
-    name: Lead Gear
-  - count: 1
-    name: Bucket
-  - count: 1
-    name: Chest
-  - count: 5
-    name: Lead Plate
-  - count: 1
-    name: 10k Coolant Cell
-  - count: 1
-    name: Redstone Transmission Coil
+    10k Coolant Cell: 1
+    Bucket: 1
+    Chest: 1
+    Iron Ingot: 3
+    Lead Gear: 1
+    Lead Ingot: 8
+    Lead Plate: 5
+    Redstone Transmission Coil: 1
   makes: 1
 Red Alloy Gear:
   ingredients:
-  - count: 4
-    name: Red Alloy Ingot
-  - count: 1
-    name: Copper Ingot
+    Copper Ingot: 1
+    Red Alloy Ingot: 4
   makes: 1
 Red Alloy Ingot:
   ingredients:
-  - count: 5
-    name: Redstone
-  - count: 1
-    name: Iron Ingot
+    Iron Ingot: 1
+    Redstone: 5
   makes: 1
 Red Alloy Plate:
   ingredients:
-  - count: 1
-    name: Red Alloy Ingot
+    Red Alloy Ingot: 1
   makes: 1
 Red Dye:
   ingredients:
-  - count: 1
-    name: Red Flower
+    Red Flower: 1
   makes: 1
 Red Iron Compound:
   ingredients:
-  - count: 8
-    name: Redstone
-  - count: 1
-    name: Iron Ingot
+    Iron Ingot: 1
+    Redstone: 8
   makes: 1
 Red Silicon Compound:
   ingredients:
-  - count: 8
-    name: Redstone
-  - count: 1
-    name: Silicon
+    Redstone: 8
+    Silicon: 1
   makes: 1
 Redstone Reception Coil:
   ingredients:
-  - count: 3
-    name: Gold Ingot
-  - count: 2
-    name: Red Alloy Ingot
+    Gold Ingot: 3
+    Red Alloy Ingot: 2
   makes: 1
 Redstone Repeater:
   ingredients:
-  - count: 3
-    name: Stone
-  - count: 3
-    name: Redstone
-  - count: 2
-    name: Stick
+    Redstone: 3
+    Stick: 2
+    Stone: 3
   makes: 1
 Redstone Servo:
   ingredients:
-  - count: 4
-    name: Red Alloy Ingot
-  - count: 3
-    name: Iron Plate
+    Iron Plate: 3
+    Red Alloy Ingot: 4
   makes: 1
 Redstone Transmission Coil:
   ingredients:
-  - count: 2
-    name: Red Alloy Ingot
-  - count: 3
-    name: Silver Ingot
+    Red Alloy Ingot: 2
+    Silver Ingot: 3
   makes: 1
 Refined Glowstone Plate:
   ingredients:
-  - count: 1
-    name: Glowstone Ingot
+    Glowstone Ingot: 1
   makes: 1
 Reinforced Upgrade Kit:
   ingredients:
-  - count: 4
-    name: Silver Gear
-  - count: 8
-    name: Electrum Plate
-  - count: 1
-    name: Advanced Control Circuit
-  - count: 4
-    name: Hardened Glass
-  - count: 3000
-    name: Liquid Crystalline
+    Advanced Control Circuit: 1
+    Electrum Plate: 8
+    Hardened Glass: 4
+    Liquid Crystalline: 3000
+    Silver Gear: 4
   makes: 1
 Resonating Redstone Crystal:
   ingredients:
-  - count: 4
-    name: Redstone
-  - count: 1
-    name: Ender Shard
+    Ender Shard: 1
+    Redstone: 4
   makes: 1
 Restonia Crystal:
   ingredients:
-  - count: 1
-    name: Redstone
+    Redstone: 1
   makes: 1
 Rope:
   ingredients:
-  - count: 3
-    name: Plant Fiber
+    Plant Fiber: 3
   makes: 1
 Sandy Glass:
   ingredients:
-  - count: 1
-    name: Sand
-  - count: 1
-    name: Glass
+    Glass: 1
+    Sand: 1
   makes: 1
 Sandy-Glass Dust:
   ingredients:
-  - count: 1
-    name: Sandy Glass
+    Sandy Glass: 1
   makes: 1
 Servo:
   ingredients:
-  - count: 3
-    name: Glass
-  - count: 2
-    name: Iron Plate
-  - count: 1
-    name: Redstone Servo
+    Glass: 3
+    Iron Plate: 2
+    Redstone Servo: 1
   makes: 1
 Silicon Chip:
   ingredients:
-  - count: 3
-    name: Circuit Plate
-  - count: 1
-    name: Infused Silicon
+    Circuit Plate: 3
+    Infused Silicon: 1
   makes: 1
 Silicon Gear:
   ingredients:
-  - count: 4
-    name: Silicon
-  - count: 1
-    name: Bronze Ingot
+    Bronze Ingot: 1
+    Silicon: 4
   makes: 1
 Silicon Plate:
   ingredients:
-  - count: 1
-    name: Silicon
+    Silicon: 1
   makes: 1
 Silicone:
   ingredients:
-  - count: 1
-    name: Solid Silicon Cell
+    Solid Silicon Cell: 1
   makes: 1000
 Silver Gear:
   ingredients:
-  - count: 4
-    name: Silver Ingot
+    Silver Ingot: 4
   makes: 1
 Single Battery:
   ingredients:
-  - count: 10
-    name: Enori Plate
-  - count: 1
-    name: Tin Plate
-  - count: 1
-    name: Silicon
-  - count: 1
-    name: Advanced Coil
-  - count: 2000
-    name: Silicone
+    Advanced Coil: 1
+    Enori Plate: 10
+    Silicon: 1
+    Silicone: 2000
+    Tin Plate: 1
   makes: 1
 Solar Panel II:
   ingredients:
-  - count: 11
-    name: Iron Plate
-  - count: 5
-    name: Mirror
-  - count: 5
-    name: Redstone
-  - count: 2
-    name: Basic Control Circuit
-  - count: 1
-    name: Solar Panel I
-  - count: 1
-    name: Redstone Transmission Coil
+    Basic Control Circuit: 2
+    Iron Plate: 11
+    Mirror: 5
+    Redstone: 5
+    Redstone Transmission Coil: 1
+    Solar Panel I: 1
   makes: 1
 Solid Glue Compound Cell:
   ingredients:
-  - count: 1
-    name: Rubber
-  - count: 1
-    name: Sandy-Glass Dust
-  - count: 1
-    name: Empty Cell
+    Empty Cell: 1
+    Rubber: 1
+    Sandy-Glass Dust: 1
   makes: 1
 Solid Silicon Cell:
   ingredients:
-  - count: 1
-    name: Empty Cell
-  - count: 1
-    name: Silicon Boule
+    Empty Cell: 1
+    Silicon Boule: 1
   makes: 1
 Squeezer:
   ingredients:
-  - count: 8
-    name: Bronze Plate
-  - count: 8
-    name: Iron Plate
-  - count: 2
-    name: 10k Coolant Cell
-  - count: 1
-    name: Motor
-  - count: 1
-    name: Bucket
-  - count: 1
-    name: Liquid Cleaning Tube
-  - count: 2
-    name: Basic Control Circuit
-  - count: 1
-    name: Chest
-  - count: 1
-    name: Electrotine Alloy Ingot
+    10k Coolant Cell: 2
+    Basic Control Circuit: 2
+    Bronze Plate: 8
+    Bucket: 1
+    Chest: 1
+    Electrotine Alloy Ingot: 1
+    Iron Plate: 8
+    Liquid Cleaning Tube: 1
+    Motor: 1
   makes: 1
 Steel Plate:
   ingredients:
-  - count: 1
-    name: Steel Ingot
+    Steel Ingot: 1
   makes: 1
 Stick:
   ingredients:
-  - count: 1
-    name: Wooden Planks
+    Wooden Planks: 1
   makes: 4
 Super Glue:
   ingredients:
-  - count: 1
-    name: Solid Glue Compound Cell
+    Solid Glue Compound Cell: 1
   makes: 1000
 Superium Esscence:
   ingredients:
-  - count: 1
-    name: Infusion Crystal Use
-  - count: 4
-    name: Intermedium Esscence
+    Infusion Crystal Use: 1
+    Intermedium Esscence: 4
   makes: 1
 Superium Ingot:
   ingredients:
-  - count: 4
-    name: Superium Esscence
-  - count: 1
-    name: Intermedium Ingot
+    Intermedium Ingot: 1
+    Superium Esscence: 4
   makes: 1
 Supremium Esscence:
   ingredients:
-  - count: 1
-    name: Infusion Crystal Use
-  - count: 4
-    name: Superium Esscence
+    Infusion Crystal Use: 1
+    Superium Esscence: 4
   makes: 1
 Supremium Ingot:
   ingredients:
-  - count: 4
-    name: Supremium Esscence
-  - count: 1
-    name: Superium Ingot
+    Superium Ingot: 1
+    Supremium Esscence: 4
   makes: 1
 Tin Plate:
   ingredients:
-  - count: 1
-    name: Tin Ingot
+    Tin Ingot: 1
   makes: 1
 Transistor:
   ingredients:
-  - count: 3
-    name: Circuit Plate
-  - count: 2
-    name: Gold Ingot
-  - count: 1
-    name: Redstone
-  - count: 4
-    name: Iron Ingot
-  - count: 2
-    name: Paper
-  - count: 1000
-    name: Super Glue
+    Circuit Plate: 3
+    Gold Ingot: 2
+    Iron Ingot: 4
+    Paper: 2
+    Redstone: 1
+    Super Glue: 1000
   makes: 4
 Triberium Block:
   ingredients:
-  - count: 9
-    name: Triberium Ingot
+    Triberium Ingot: 9
   makes: 1
 Triberium Ingot:
   ingredients:
-  - count: 5
-    name: Tiberium Ingot
-  - count: 4
-    name: Basalt Ingot
+    Basalt Ingot: 4
+    Tiberium Ingot: 5
   makes: 1
 Vanadium Dust:
   ingredients:
-  - count: 1
-    name: Vanadium Ore
+    Vanadium Ore: 1
   makes: 2
 Vanadium Plate:
   ingredients:
-  - count: 1
-    name: Vanadium Ingot
+    Vanadium Ingot: 1
   makes: 1
 Water Cell:
   ingredients:
-  - count: 1
-    name: Empty Cell
+    Empty Cell: 1
   makes: 1
 Wood Casing:
   ingredients:
-  - count: 4
-    name: Stick
-  - count: 1
-    name: Wood
-  - count: 4
-    name: Wooden Planks
+    Stick: 4
+    Wood: 1
+    Wooden Planks: 4
   makes: 1
 Wooden Gear:
   ingredients:
-  - count: 4
-    name: Sticks
+    Sticks: 4
   makes: 1
 Wooden Grip:
   ingredients:
-  - count: 6
-    name: Stick
-  - count: 1
-    name: Copper Ingot
+    Copper Ingot: 1
+    Stick: 6
   makes: 1
 Wooden Planks:
   ingredients:
-  - count: 1
-    name: Wood
+    Wood: 1
   makes: 6
 Yellow Dye:
   ingredients:
-  - count: 1
-    name: Yellow Flower
+    Yellow Flower: 1
   makes: 1
