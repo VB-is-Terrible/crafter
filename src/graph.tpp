@@ -22,8 +22,8 @@ Graph<N, E>::Graph(typename std::vector<std::tuple<N, N, E>>::const_iterator beg
 }
 
 template <typename N, typename E>
-Graph<N, E>::Graph(typename std::initializer_list<N> list) {
-	for (auto& item : list) {
+Graph<N, E>::Graph(const typename std::initializer_list<N> list) {
+	for (const auto& item : list) {
 		InsertNode(item);
 	}
 }
@@ -128,7 +128,7 @@ std::vector<N> Graph<N, E>::GetConnected(const N& value) const {
 	}
 	const auto& src = src_it->second;
 	std::vector<N> result;
-	for (auto& pair : src.edges) {
+	for (const auto& pair : src.edges) {
 		result.push_back(pair.first);
 	}
 	return result;
@@ -204,7 +204,7 @@ void Graph<N, E>::MergeReplace(const N& oldData, const N& newData) {
 
 	auto& old_node = nodes[oldData];
 
-	for (auto& outbound : old_node.edges) {
+	for (const auto& outbound : old_node.edges) {
 		if (outbound.first == oldData) {
 			InsertEdge(newData, newData, outbound.second);
 		} else {
@@ -212,7 +212,7 @@ void Graph<N, E>::MergeReplace(const N& oldData, const N& newData) {
 		}
 	}
 
-	for (auto incoming : old_node.incoming) {
+	for (const auto incoming : old_node.incoming) {
 		auto& weight = nodes[incoming].edges[oldData];
 		InsertEdge(incoming, newData, weight);
 	}
@@ -245,11 +245,11 @@ bool Graph<N, E>::edge_check(const Graph<N, E>& lhs, const Graph<N, E>& rhs) {
 
 template <typename N, typename E>
 std::ostream& operator<<(std::ostream& os, const Graph<N, E>& graph) {
-	for (auto pair : graph.nodes) {
+	for (const auto pair : graph.nodes) {
 		auto& node = pair.second;
 		os << pair.first;
 		os << " (\n";
-		for (auto& edge_pair : node.edges) {
+		for (const auto& edge_pair : node.edges) {
 			auto edge = edge_pair.second;
 			auto& dest = edge_pair.first;
 			os << "  " << dest << " | " << edge << "\n";
@@ -377,7 +377,7 @@ std::vector<N> Graph<N, E>::GetIncoming(const N& node) const {
 	}
 	const auto& src = src_it->second;
 	std::vector<N> result;
-	for (auto& incoming : src.incoming) {
+	for (const auto& incoming : src.incoming) {
 		result.push_back(incoming);
 	}
 	return result;

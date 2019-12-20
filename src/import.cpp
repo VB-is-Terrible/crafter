@@ -27,7 +27,7 @@ namespace crafter {
 
 	void read_in(std::ifstream& file, recipe_store& recipes) {
 		auto recipes_yaml = YAML::Load(file);
-		for (auto it : recipes_yaml) {
+		for (const auto it : recipes_yaml) {
 			std::string name;
 			try {
 				name = it.first.as<std::string>();
@@ -55,7 +55,7 @@ namespace crafter {
 			throw std::runtime_error("Failed to parse: " + name + "\n" + "Invalid 'ingredients' value");
 		}
 		if (ingredients.IsSequence()) {
-			for (auto ingredient : ingredients) {
+			for (const auto ingredient : ingredients) {
 				if (!ingredient.IsMap()) {
 					throw std::runtime_error("Failed to parse: " + name + "\n" + "Invalid 'ingredient' value");
 				}
@@ -66,7 +66,7 @@ namespace crafter {
 				}
 			}
 		} else if (ingredients.IsMap()) {
-			for (auto ingredient_it : ingredients) {
+			for (const auto ingredient_it : ingredients) {
 				std::string ingredient;
 				int count;
 				try {

@@ -61,9 +61,9 @@ int main() {
 graph::Graph<std::string, int> build_graph(std::vector<std::string> requests, const crafter::recipe_store& recipes) {
 	std::deque<std::string> queue;
 	std::unordered_set<std::string> seen;
-	for (auto request : requests) {
 		queue.push_back(request);
 		seen.insert(request);
+	for (const auto& request : requests) {
 	}
 	graph::Graph<std::string, int> graph_;
 	while (!queue.empty()) {
@@ -73,7 +73,7 @@ graph::Graph<std::string, int> build_graph(std::vector<std::string> requests, co
 		auto recipe_it = recipes.find(request);
 		if (recipe_it != recipes.end()) {
 			auto& recipe = recipe_it->second[0];
-			for (auto& ingredient : recipe.ingredients) {
+			for (const auto& ingredient : recipe.ingredients) {
 				graph_.InsertNode(ingredient.name);
 				graph_.InsertEdge(request, ingredient.name, ingredient.count);
 				if (!seen.count(ingredient.name)) {
@@ -89,7 +89,7 @@ graph::Graph<std::string, int> build_graph(std::vector<std::string> requests, co
 template <typename N, typename E>
 std::vector<N> heads(graph::Graph<N, E> g) {
 	std::vector<N> result;
-	for (auto& node : g) {
+	for (const auto& node : g) {
 		if (g.GetIncoming(node).size() == 0) {
 			result.push_back(node);
 		}
@@ -100,7 +100,7 @@ std::vector<N> heads(graph::Graph<N, E> g) {
 template <typename N, typename E>
 std::vector<N> tails(graph::Graph<N, E> g) {
 	std::vector<N> result;
-	for (auto& node : g) {
+	for (const auto& node : g) {
 		if (g.GetConnected(node).size() == 0) {
 			result.push_back(node);
 		}
@@ -119,7 +119,7 @@ craft_store tally_count(const recipe_graph_t& recipe_graph, const crafter::recip
 	while (!queue.empty()) {
 		auto request = queue[0];
 		queue.pop_front();
-		for (auto& ingredient : recipe_graph.GetConnected(request)) {
+		for (const auto& ingredient : recipe_graph.GetConnected(request)) {
 			auto ready = check_ingredient(ingredient, recipe_count, recipe_graph, recipes);
 			if (ready) {
 				queue.push_back(ingredient);
@@ -128,7 +128,7 @@ craft_store tally_count(const recipe_graph_t& recipe_graph, const crafter::recip
 	}
 
 	std::vector<size_t> distances;
-	for (auto& tail : tails(recipe_graph)) {
+	for (const auto& tail : tails(recipe_graph)) {
 		distances.push_back(recipe_count[tail].distance);
 	}
 
@@ -138,7 +138,7 @@ craft_store tally_count(const recipe_graph_t& recipe_graph, const crafter::recip
 		it.second.ready = false;
 	}
 
-	for (auto& tail : tails(recipe_graph)) {
+	for (const auto& tail : tails(recipe_graph)) {
 		queue.push_back(tail);
 		recipe_count[tail].distance = max_distance;
 		recipe_count[tail].ready = true;
@@ -147,7 +147,7 @@ craft_store tally_count(const recipe_graph_t& recipe_graph, const crafter::recip
 	while (!queue.empty()) {
 		auto request = queue[0];
 		queue.pop_front();
-		for (auto& parent : recipe_graph.GetIncoming(request)) {
+		for (const auto& parent : recipe_graph.GetIncoming(request)) {
 			auto ready = check_parent(parent, recipe_count, recipe_graph);
 			if (ready) {
 				queue.push_back(parent);
@@ -161,7 +161,7 @@ craft_store tally_count(const recipe_graph_t& recipe_graph, const crafter::recip
 bool check_ingredient(const std::string& ingredient, craft_store& recipe_count, const recipe_graph_t& recipe_graph, const crafter::recipe_store& recipes) {
 	craft_count count;
 	decltype(count.distance) parent_distance = 0;
-	for (auto& parent : recipe_graph.GetIncoming(ingredient)) {
+	for (const auto& parent : recipe_graph.GetIncoming(ingredient)) {
 		if (!recipe_count[parent].ready) {
 			return false;
 		}
@@ -185,7 +185,7 @@ bool check_ingredient(const std::string& ingredient, craft_store& recipe_count, 
 
 bool check_parent(const std::string& parent, craft_store& recipe_count, const recipe_graph_t& recipe_graph) {
 	size_t child_distance = -1;
-	for (auto& child : recipe_graph.GetConnected(parent)) {
+	for (const auto& child : recipe_graph.GetConnected(parent)) {
 		if (!recipe_count[child].ready) {
 			return false;
 		}
@@ -218,7 +218,7 @@ std::vector<std::string> get_requests (const crafter::recipe_store& recipes) {
 
 std::vector<std::vector<std::string>> get_order (const craft_store& recipe_count) {
 	std::vector<std::vector<std::string>> result;
-	for (auto it : recipe_count) {
+	for (const auto& it : recipe_count) {
 		auto& name = it.first;
 		auto& craft = it.second;
 		if (craft.distance >= result.size()) {
@@ -238,7 +238,7 @@ void output (const std::vector<std::vector<std::string>>& order, const craft_sto
 	for (auto level = order.crbegin(); level != order.crend(); level++) {
 		level_count++;
 		std::cout << line << " " << "Level " << level_count << " " << line << "\n\n";
-		for (auto& name : *level) {
+		for (const auto& name : *level) {
 			output_recipe(name, craft, recipe_graph);
 		}
 	}
@@ -247,7 +247,7 @@ void output (const std::vector<std::vector<std::string>>& order, const craft_sto
 void output_recipe(const std::string& name, const craft_store& craft, const recipe_graph_t& recipe_graph) {
 	std::cout << name << " (" << craft.find(name)->second.count << ")\n";
 	size_t count = craft.find(name)->second.count;
-	for (auto& ingredient : recipe_graph.GetConnected(name)) {
+	for (const auto& ingredient : recipe_graph.GetConnected(name)) {
 		std::cout << count * recipe_graph.GetWeight(name, ingredient) << "\t" << ingredient << "\n";
 	}
 	if (recipe_graph.GetConnected(name).size() != 0) {
