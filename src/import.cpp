@@ -14,9 +14,19 @@ namespace crafter {
 		return read_in(fin);
 	}
 
-	recipe_store read_in(std::ifstream& file_name) {
+	void read_in(std::string file_name, recipe_store& store) {
+		std::ifstream fin(file_name);
+		return read_in(fin, store);
+	}
+
+	recipe_store read_in(std::ifstream& file) {
 		recipe_store recipes;
-		auto recipes_yaml = YAML::Load(file_name);
+		read_in(file, recipes);
+		return recipes;
+	}
+
+	void read_in(std::ifstream& file, recipe_store& recipes) {
+		auto recipes_yaml = YAML::Load(file);
 		for (auto it : recipes_yaml) {
 			std::string name;
 			try {
@@ -30,7 +40,6 @@ namespace crafter {
 			}
 			recipes[name].push_back(Recipe(name, recipe));
 		}
-		return recipes;
 	}
 
 	Recipe::Recipe(std::string name, YAML::Node recipe) : name{name} {
@@ -76,4 +85,6 @@ namespace crafter {
 		this->count = ingredient["count"].as<int>();
 		this->name = ingredient["name"].as<std::string>();
 	}
+
+
 }

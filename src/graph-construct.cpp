@@ -6,12 +6,13 @@
 #include <deque>
 #include <math.h>
 #include <algorithm>
+#include <filesystem>
 
 
 #include "import.h"
 #include "graph.h"
 
-#define data_location "data/recipes/import.yaml"
+#define data_location "data/recipes/"
 
 struct craft_count {
 	size_t count = 0;
@@ -30,6 +31,8 @@ std::vector<std::vector<std::string>> get_order (const craft_store& recipe_count
 void output (const std::vector<std::vector<std::string>>& order, const craft_store&, const recipe_graph_t& recipe_graph);
 void output_recipe(const std::string& name, const craft_store&, const recipe_graph_t& recipe_graph);
 bool check_parent(const std::string& parent, craft_store& recipe_count, const recipe_graph_t& recipe_graph);
+crafter::recipe_store read_templates(std::string template_location);
+bool valid_extension(std::string);
 
 
 template <typename N, typename E>
@@ -40,7 +43,8 @@ std::vector<N> tails(graph::Graph<N, E>);
 
 
 int main() {
-	auto recipes = crafter::read_in(data_location);
+
+	auto recipes = read_templates(data_location);
 	std::cout << "Loaded " << recipes.size() << " recipes\n";
 
 	auto requests = get_requests(recipes);
@@ -249,4 +253,21 @@ void output_recipe(const std::string& name, const craft_store& craft, const reci
 	if (recipe_graph.GetConnected(name).size() != 0) {
 		std::cout << "\n";
 	}
+}
+
+bool valid_extension(std::string extension) {
+	if (extension == ".yaml" || extension == ".yml") {
+		return true;
+	}
+	return false;
+}
+
+crafter::recipe_store read_templates(std::string template_location) {
+	crafter::recipe_store result;
+	for (const auto& entry : std::filesystem::directory_iterator(template_location)) {
+		if (entry.is_regular_file() && valid_extension(entry.path().extension())) {
+			crafter::read_in(entry.path(), result);
+		}
+	}
+	return result;
 }

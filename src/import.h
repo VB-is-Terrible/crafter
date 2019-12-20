@@ -26,5 +26,7 @@ namespace crafter {
 	using recipe_store = std::unordered_map<std::string, std::vector<Recipe>>;
 	recipe_store read_in(std::ifstream& file);
 	recipe_store read_in(std::string file_name);
+	void read_in(std::ifstream& file, recipe_store& store);
+	void read_in(std::string file_name, recipe_store& store);
 
 }
