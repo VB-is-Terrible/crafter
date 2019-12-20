@@ -51,6 +51,19 @@ Advanced Component:
   - count: 1
     name: Black Iron Slate
   makes: 1
+Advanced Control Circuit:
+  ingredients:
+  - count: 2000
+    name: Super Glue
+  - count: 3
+    name: Circuit Plate
+  - count: 2
+    name: Steel Ingot
+  - count: 2
+    name: Basic Control Circuit
+  - count: 4
+    name: Gold Ingot
+  makes: 1
 Arithmetic Logic Unit <ALU>:
   ingredients:
   - count: 2
@@ -134,6 +147,19 @@ Basic Coil:
     name: Enori Crystal
   - count: 2
     name: Black Quartz
+  makes: 1
+Basic Control Circuit:
+  ingredients:
+  - count: 4
+    name: Circuit Plate
+  - count: 1000
+    name: Super Glue
+  - count: 2
+    name: Transistor
+  - count: 2
+    name: Electrotine Alloy Ingot
+  - count: 1
+    name: Silicon
   makes: 1
 Battery:
   ingredients:
@@ -1592,6 +1618,11 @@ Stick:
   - count: 1
     name: Wooden Planks
   makes: 4
+Super Glue:
+  ingredients:
+  - count: 1
+    name: Solid Glue Compound Cell
+  makes: 1000
 Superium Esscence:
   ingredients:
   - count: 1
