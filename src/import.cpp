@@ -32,7 +32,7 @@ namespace crafter {
 		}
 		return recipes;
 	}
-	
+
 	Recipe::Recipe(std::string name, YAML::Node recipe) : name{name} {
 		auto makes = recipe["makes"];
 		if (makes.IsDefined() && !makes.IsScalar()) {
@@ -55,6 +55,18 @@ namespace crafter {
 				} catch (...) {
 					throw std::runtime_error("Failed to parse: " + name + "\n" + "Invalid 'ingredient' value");
 				}
+			}
+		} else if (ingredients.IsMap()) {
+			for (auto ingredient_it : ingredients) {
+				std::string ingredient;
+				int count;
+				try {
+					name = ingredient_it.first.as<std::string>();
+					count = ingredient_it.second.as<int>();
+				} catch (...) {
+					throw std::runtime_error("Failed to read in a ingredient list for " + name + "\nThe yaml format seems to be stuffed");
+				}
+				this->ingredients.push_back(Ingredients{count, ingredient})
 			}
 		}
 

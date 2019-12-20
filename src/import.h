@@ -12,8 +12,9 @@ namespace crafter {
 	};
 	struct Ingredients {
 		Ingredients (YAML::Node);
-		int count;
+		Ingredients(std::string name_, int count_) : name{name_}, count{count_} {};
 		std::string name;
+		int count;
 	};
 	struct Recipe {
 		Recipe (std::string, YAML::Node);
