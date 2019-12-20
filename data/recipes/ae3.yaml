@@ -15,5 +15,13 @@ Charged Certus Quartz Crystal:
   ingredients:
     Certus Quartz Crystal: 1
 Empowered Restonia Gear:
-  Tin Ingot: 1
-  Empowered Restonia Crystal: 4
+  ingredients:
+    Tin Ingot: 1
+    Empowered Restonia Crystal: 4
+Empowered Restonia Crystal:
+  ingredients:
+    Manasteel Ingot: 1
+    Block of Redstone: 1
+    Inert Blood-Iron Ingot: 1
+    Brick: 1
+    Restonia Crystal: 1
