@@ -25,3 +25,86 @@ Empowered Restonia Crystal:
     Inert Blood-Iron Ingot: 1
     Brick: 1
     Restonia Crystal: 1
+1k ME Storage Cell:
+  ingredients:
+    ME Storage Housing: 1
+    1k ME Storage Compenent: 1
+ME Storage Housing:
+  ingredients:
+    Quartz Glass: 2
+    Redstone: 3
+    Iron Ingot: 3
+Quartz Glass:
+  ingredients:
+    Crushed Quartz: 5
+    Glass: 4
+  makes: 4
+1k ME Storage Compenent:
+  ingredients:
+    Circuit Plate: 6
+    Silicon Plate: 4
+    Certus Quartz Plate: 2
+    Logic Processor: 1
+    Super Glue: 1000
+Crushed Quartz:
+  ingredients:
+    Nether Quartz: 1
+ME Crafting Terminal:
+  ingredients:
+    Steel Plate: 8
+    Certus Quartz Plate: 8
+    Enriched Alloy: 2
+    Empowered Enori Gear: 1
+    Advanced Control Circuit: 1
+    Calculation Processor: 1
+    Advanced Crafting Table: 1
+    Formation Core: 1
+    Annihilation Core: 1
+    Plastic: 1
+Annihilation Core:
+  ingredients:
+    Nether Quartz Plate: 4
+    Electrotine Alloy Plate: 2
+    Fluix Dust: 2
+    Logic Processor: 1
+Advanced Crafting Table:
+  ingredients:
+    Crafting Table: 3
+    Copper Plate: 2
+    Iron Plate: 1
+Crafting Table:
+  ingredients:
+    Wooden Planks: 4
+Empowered Enori Gear:
+  ingredients:
+    Tin Ingot: 1
+    Empowered Enori Crystal: 4
+Empowered Enori Crystal:
+  ingredients:
+    Manasteel Ingot: 1
+    Block of Redstone: 1
+    Inert Blood-Iron Ingot: 1
+    Brick: 1
+    Enori Crystal: 1
+Brick:
+  ingredients:
+    Clay: 1
+ME Glass Cable - Fluix:
+  ingredients:
+    Red Alloy Plate: 2
+    Glass: 5
+    Fluix Plate: 8
+    Silicone: 2000
+  makes: 10
+Fluix Plate:
+  ingredients:
+    Fluix Crystal: 1
+Silicon Boule:
+  ingredients:
+    Sandy Coal Compound: 1
+Sandy Coal Compound:
+  ingredients:
+    Charcoal: 9
+    Sand: 20
+  makes: 12
+  method: Metallurgic Infuser
