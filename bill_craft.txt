@@ -1,174 +1,153 @@
 --------------- Level 1 ---------------
 
--Any Stone- (14)
-Cactus (6)
-Copper Ingot (12)
-Empty Cell (16)
-Galena Ore (8)
-Gold Ingot (12)
+-Any Stone- (4)
+Clay (2)
+Copper Ingot (4)
+Empty Cell (3)
+Galena Ore (4)
+Gold Ingot (2)
 Iron Ingot (23)
-Methane Gas (3000)
+Lava (250)
 Osmium (8)
-Paper (6)
-Redstone (24)
-Rubber (10)
-Sand (20)
-Sawdust (12)
-Silicon (5)
-Silver Ingot (3)
-Snowball (12)
-Steel Ingot (23)
-String (24)
-Tin Ingot (6)
-Vanadium Ore (4)
-Wool (4)
+Paper (2)
+Red Flower (1)
+Redstone (14)
+Rubber (1)
+Sand (2)
+Sawdust (3)
+Silicon (1)
+Snowball (6)
+Steel Ingot (2)
+Tin Ingot (2)
+Vanadium Ore (2)
+Yellow Flower (1)
 --------------- Level 2 ---------------
 
-Cactus Green (6)
-6	Cactus
+Brick (2)
+2	Clay
 
-Circuit Plate (14)
-14	-Any Stone-
+Circuit Plate (4)
+4	-Any Stone-
 
-Galena Dust (8)
-8	Galena Ore
+Enriched Alloy (2)
+2	Steel Ingot
+10	Redstone
 
-Glass (10)
-10	Sand
+Galena Dust (4)
+4	Galena Ore
+
+Glass (1)
+1	Sand
+
+Iron Plate (8)
+8	Iron Ingot
 
 Osmium Plate (8)
 8	Osmium
 
-Pulverized Copper (12)
-12	Copper Ingot
+Pulverized Copper (3)
+3	Copper Ingot
 
-Red Alloy Ingot (2)
-10	Redstone
-2	Iron Ingot
+Red Dye (1)
+1	Red Flower
 
-Silicon Plate (1)
-1	Silicon
+Saw Blade (1)
+1	Copper Ingot
+6	Iron Ingot
 
-Steel Plate (19)
-19	Steel Ingot
+Vanadium Dust (2)
+2	Vanadium Ore
 
-String Mesh (3)
-24	String
+Water Cell (3)
+3	Empty Cell
 
-Vanadium Dust (4)
-4	Vanadium Ore
-
-Water Cell (6)
-6	Empty Cell
-
-Wool Cloth (1)
-4	Wool
+Yellow Dye (1)
+1	Yellow Flower
 
 --------------- Level 3 ---------------
 
-10k Coolant Cell (6)
-6	Water Cell
-12	Snowball
+10k Coolant Cell (3)
+3	Water Cell
+6	Snowball
 
-Electrotine (4)
-12	Pulverized Copper
-12	Sawdust
-12	Redstone
+Electrotine (1)
+3	Pulverized Copper
+3	Sawdust
+3	Redstone
 
-Filter (Extra Planets) (1)
-2	Paper
-3	String Mesh
-4	Wool Cloth
+Lava Bricks (2)
+250	Lava
+2	Brick
 
-Liquid Cleaning Tube (1)
-3	Iron Ingot
-6	Cactus Green
+Orange Dye (3)
+3	Yellow Dye
+3	Red Dye
 
-Ovium Ingot (8)
-8	Vanadium Dust
-16	Galena Dust
+Ovium Ingot (4)
+4	Vanadium Dust
+8	Galena Dust
 
-Redstone Transmission Coil (1)
-3	Silver Ingot
-2	Red Alloy Ingot
-
-Sandy Glass (10)
-10	Sand
-10	Glass
+Sandy Glass (1)
+1	Sand
+1	Glass
 
 --------------- Level 4 ---------------
 
-30k Coolant Cell (2)
-4	Tin Ingot
-6	10k Coolant Cell
-8	Ovium Ingot
-
-Electrotine Alloy Ingot (8)
-8	Iron Ingot
-32	Electrotine
-
-Sandy-Glass Dust (10)
-10	Sandy Glass
-
-Tank Valve (1)
-1	Filter (Extra Planets)
-2	Iron Ingot
+30k Coolant Cell (1)
 2	Tin Ingot
+3	10k Coolant Cell
+4	Ovium Ingot
+
+Cleaning Tube (1)
+6	Orange Dye
+3	Iron Ingot
+
+Electrotine Alloy Ingot (2)
+2	Iron Ingot
+8	Electrotine
+
+Sandy-Glass Dust (1)
+1	Sandy Glass
 
 --------------- Level 5 ---------------
 
-Advanced Gas Tank (1)
-1	Tank Valve
-1	Silicon Plate
-3000	Methane Gas
-11	Steel Plate
-
-Solid Glue Compound Cell (10)
-10	Empty Cell
-10	Sandy-Glass Dust
-10	Rubber
+Glue Compound (1)
+1	Rubber
+1	Sandy-Glass Dust
 
 --------------- Level 6 ---------------
 
-Super Glue (10)
-10	Solid Glue Compound Cell
+Super Glue (2)
+2	Glue Compound
 
 --------------- Level 7 ---------------
 
-Transistor (2)
-2000	Super Glue
-4	Paper
-4	Gold Ingot
-6	Circuit Plate
-8	Iron Ingot
-2	Redstone
+Transistor (1)
+1000	Super Glue
+2	Paper
+2	Gold Ingot
+3	Circuit Plate
+4	Iron Ingot
+1	Redstone
 
 --------------- Level 8 ---------------
 
-Basic Control Circuit (4)
-4000	Super Glue
-4	Silicon
-16	Circuit Plate
-8	Transistor
-8	Electrotine Alloy Ingot
+Basic Control Circuit (1)
+1000	Super Glue
+1	Silicon
+4	Circuit Plate
+2	Transistor
+2	Electrotine Alloy Ingot
 
 --------------- Level 9 ---------------
 
-Advanced Control Circuit (2)
-4000	Super Glue
-8	Gold Ingot
-4	Steel Ingot
-4	Basic Control Circuit
-6	Circuit Plate
-
---------------- Level 10 ---------------
-
-Gas-Burning Generator (1)
-2	Liquid Cleaning Tube
+Crusher (Mekanism) (1)
+1	30k Coolant Cell
 8	Osmium Plate
-2	30k Coolant Cell
-8	Steel Plate
-1	Redstone Transmission Coil
-1	Advanced Gas Tank
-2	Advanced Control Circuit
+1	Basic Control Circuit
+2	Enriched Alloy
+8	Iron Plate
+2	Lava Bricks
+1	Saw Blade
+2	Cleaning Tube
 
