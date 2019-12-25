@@ -1,0 +1,39 @@
+Purification Chamber:
+  makes: 1
+  ingredients:
+    - name: Osmium Plate
+      count: 8
+    - name: Iron Plate
+      count: 8
+    - name: Enriched Alloy
+      count: 2
+    - name: Filter (Extra Planets)
+      count: 1
+    - name: Chest
+      count: 1
+    - name: Basic Control Circuit
+      count: 1
+    - name: Advanced Gas Tank
+      count: 1
+    - name: Item Filter
+      count: 1
+    - name: Cleaning Tube
+      count: 1
+
+Filter (Extra Planets):
+  makes: 1
+  ingredients:
+    - name: String Mesh
+      count: 3
+    - name: Wool Cloth
+      count: 4
+    - name: Paper
+      count: 2
+
+String Mesh:
+  makes: 1
+  ingredients:
+    - name: String
+      count: 8
+
+
