@@ -1,0 +1,132 @@
+--------------- Level 1 ---------------
+
+-Any Stone- (4)
+Advanced Gas Tank (1)
+Copper Ingot (3)
+Empty Cell (2)
+Gold Ingot (2)
+Iron Ingot (17)
+Item Filter (1)
+Osmium Plate (8)
+Paper (4)
+Red Flower (3)
+Redstone (14)
+Rubber (2)
+Sand (4)
+Sawdust (3)
+Silicon (1)
+Steel Ingot (2)
+String (24)
+Wood (2)
+Wool Cloth (4)
+Yellow Flower (3)
+--------------- Level 2 ---------------
+
+Circuit Plate (4)
+4	-Any Stone-
+
+Enriched Alloy (2)
+2	Steel Ingot
+10	Redstone
+
+Glass (2)
+2	Sand
+
+Iron Plate (8)
+8	Iron Ingot
+
+Pulverized Copper (3)
+3	Copper Ingot
+
+Red Dye (3)
+3	Red Flower
+
+String Mesh (3)
+24	String
+
+Wooden Planks (2)
+2	Wood
+
+Yellow Dye (3)
+3	Yellow Flower
+
+--------------- Level 3 ---------------
+
+Chest (1)
+8	Wooden Planks
+
+Electrotine (1)
+3	Pulverized Copper
+3	Sawdust
+3	Redstone
+
+Filter (Extra Planets) (1)
+2	Paper
+3	String Mesh
+4	Wool Cloth
+
+Orange Dye (3)
+3	Yellow Dye
+3	Red Dye
+
+Sandy Glass (2)
+2	Sand
+2	Glass
+
+--------------- Level 4 ---------------
+
+Cleaning Tube (1)
+6	Orange Dye
+3	Iron Ingot
+
+Electrotine Alloy Ingot (2)
+2	Iron Ingot
+8	Electrotine
+
+Sandy-Glass Dust (2)
+2	Sandy Glass
+
+--------------- Level 5 ---------------
+
+Solid Glue Compound Cell (2)
+2	Empty Cell
+2	Sandy-Glass Dust
+2	Rubber
+
+--------------- Level 6 ---------------
+
+Super Glue (2)
+2	Solid Glue Compound Cell
+
+--------------- Level 7 ---------------
+
+Transistor (1)
+1000	Super Glue
+2	Paper
+2	Gold Ingot
+3	Circuit Plate
+4	Iron Ingot
+1	Redstone
+
+--------------- Level 8 ---------------
+
+Basic Control Circuit (1)
+1000	Super Glue
+1	Silicon
+4	Circuit Plate
+2	Transistor
+2	Electrotine Alloy Ingot
+
+--------------- Level 9 ---------------
+
+Purification Chamber (1)
+1	Cleaning Tube
+1	Item Filter
+1	Advanced Gas Tank
+8	Iron Plate
+1	Chest
+8	Osmium Plate
+1	Basic Control Circuit
+2	Enriched Alloy
+1	Filter (Extra Planets)
+
