@@ -1113,7 +1113,7 @@ Stick:
   makes: 4
 Super Glue:
   ingredients:
-    Solid Glue Compound Cell: 1
+    Glue Compound: 1
   makes: 1000
 Superium Esscence:
   ingredients:
@@ -1192,3 +1192,9 @@ Yellow Dye:
   ingredients:
     Yellow Flower: 1
   makes: 4
+Glue Compound:
+  ingredients:
+    Sandy-Glass Dust:  1
+    Rubber: 1
+  makes: 2
+  method: Induction Smelter
