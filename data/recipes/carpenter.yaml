@@ -1,0 +1,48 @@
+Carpenter:
+  ingredients:
+    Steel Plate: 8
+    Empowered Enori Plate: 8
+    Empowered Restonia Gear: 1
+    Data Storage Circuit: 1
+    Copper Tank: 1
+    30k Coolant Cell: 2
+    Motor: 1
+    Advanced Control Circuit (): 1
+    Microchip <Tier 2> (): 1
+    Servomechanism: 1
+Empowered Enori Plate:
+  ingredients:
+    Empowered Enori Crystal: 1
+Copper Tank:
+  ingredients:
+    Copper Plate: 13
+    Glass: 9
+    Hardened Glass: 3
+Servomechanism:
+  ingredients:
+    Ferroboron Alloy: 2
+    Redstone: 2
+    Triberium Ingot (): 1
+    Steel Ingot: 2
+    Copper Gear: 1
+Pulverized Obsidian:
+  ingredients:
+    Obsidian: 1
+  makes: 4
+Data Storage Circuit:
+  ingredients:
+    Memory <Tier 1> (): 4
+    Advanced Control Circuit (): 1
+    Emerald: 4
+Ferroboron Alloy:
+  ingredients:
+    Steel Ingot: 1
+    Boron Ingot: 1
+  makes: 2
+Hardened Fluxduct:
+  ingredients:
+    Invar Plate: 4
+    Glass: 3
+    Red Alloy Plate: 2
+    Silicone: 500
+  makes: 12
