@@ -36,4 +36,15 @@ String Mesh:
     - name: String
       count: 8
 
+Osmium Plate:
+  ingredients:
+    Osmium: 1
 
+Wool Cloth:
+  ingredients:
+    Wool: 4
+
+Item Filter:
+  ingredients:
+    Iron Bars: 8
+    Black Quartz: 1
