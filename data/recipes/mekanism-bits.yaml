@@ -86,3 +86,24 @@ Turbine Blade:
   ingredients:
     Enriched Alloy: 1
     Steel Ingot: 4
+
+Crusher (Mekanism):
+  method:
+    Advanced Crafting Table
+  ingredients:
+    Osmium Plate: 8
+    Iron Plate: 8
+    Enriched Alloy: 2
+    Lava Bricks: 2
+    Cleaning Tube: 2
+    Basic Control Circuit: 1
+    Saw Blade: 1
+    30k Coolant Cell: 1
+
+Saw Blade:
+  ingredients:
+    Iron Ingot: 6
+    Copper Ingot: 1
+
+
+
