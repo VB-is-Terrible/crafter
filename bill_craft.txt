@@ -19,8 +19,8 @@ Silicon (1)
 Steel Ingot (2)
 String (24)
 Wood (2)
-Wool (16)
-Yellow Flower (3)
+Wool (4)
+Yellow Flower (1)
 --------------- Level 2 ---------------
 
 Circuit Plate (4)
@@ -55,11 +55,11 @@ String Mesh (3)
 Wooden Planks (2)
 2	Wood
 
-Wool Cloth (4)
-16	Wool
+Wool Cloth (1)
+4	Wool
 
-Yellow Dye (3)
-3	Yellow Flower
+Yellow Dye (1)
+1	Yellow Flower
 
 --------------- Level 3 ---------------
 
