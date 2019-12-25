@@ -59,7 +59,7 @@ int main(int argc, char const *argv[]) {
         std::cout << "No input given\n";
         return 0;
     }
-    
+
 	auto recipe_graph = build_graph(requests, recipes);
 	// std::cout << recipe_graph;
 	auto recipe_counts = tally_count(requests, recipe_graph, recipes);
@@ -124,8 +124,10 @@ craft_store tally_count(const std::vector<crafter::Ingredients>& requests, const
 	std::unordered_map<std::string, craft_count> recipe_count;
 	std::deque<std::string> queue;
 	for (const auto& node : requests) {
-		auto count = static_cast<size_t>(node.count);
-		recipe_count[node.name] = craft_count{count, count, true, 0};
+		auto needed = static_cast<size_t>(node.count);
+		auto& recipe = recipes.find(node.name)->second[0];
+		auto count = (size_t) ceil(needed / (double) recipe.makes);
+		recipe_count[node.name] = craft_count{count, needed, true, 0};
 		queue.push_back(node.name);
 	}
 	while (!queue.empty()) {
