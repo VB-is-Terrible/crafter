@@ -10,7 +10,7 @@ Iron Bars (8)
 Iron Ingot (17)
 Osmium (8)
 Paper (4)
-Red Flower (3)
+Red Flower (1)
 Redstone (14)
 Rubber (2)
 Sand (4)
@@ -46,8 +46,8 @@ Osmium Plate (8)
 Pulverized Copper (3)
 3	Copper Ingot
 
-Red Dye (3)
-3	Red Flower
+Red Dye (1)
+1	Red Flower
 
 String Mesh (3)
 24	String

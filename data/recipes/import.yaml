@@ -969,7 +969,7 @@ Red Alloy Plate:
 Red Dye:
   ingredients:
     Red Flower: 1
-  makes: 1
+  makes: 4
 Red Iron Compound:
   ingredients:
     Iron Ingot: 1
@@ -1191,4 +1191,4 @@ Wooden Planks:
 Yellow Dye:
   ingredients:
     Yellow Flower: 1
-  makes: 1
+  makes: 4
