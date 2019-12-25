@@ -2,12 +2,13 @@
 
 -Any Stone- (4)
 Advanced Gas Tank (1)
+Black Quartz (1)
 Copper Ingot (3)
 Empty Cell (2)
 Gold Ingot (2)
+Iron Bars (8)
 Iron Ingot (17)
-Item Filter (1)
-Osmium Plate (8)
+Osmium (8)
 Paper (4)
 Red Flower (3)
 Redstone (14)
@@ -18,7 +19,7 @@ Silicon (1)
 Steel Ingot (2)
 String (24)
 Wood (2)
-Wool Cloth (4)
+Wool (16)
 Yellow Flower (3)
 --------------- Level 2 ---------------
 
@@ -35,6 +36,13 @@ Glass (2)
 Iron Plate (8)
 8	Iron Ingot
 
+Item Filter (1)
+1	Black Quartz
+8	Iron Bars
+
+Osmium Plate (8)
+8	Osmium
+
 Pulverized Copper (3)
 3	Copper Ingot
 
@@ -46,6 +54,9 @@ String Mesh (3)
 
 Wooden Planks (2)
 2	Wood
+
+Wool Cloth (4)
+16	Wool
 
 Yellow Dye (3)
 3	Yellow Flower
