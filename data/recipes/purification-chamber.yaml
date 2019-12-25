@@ -1,5 +1,7 @@
 Purification Chamber:
   makes: 1
+  method:
+    Advanced Crafting Table
   ingredients:
     - name: Osmium Plate
       count: 8
@@ -10,7 +12,7 @@ Purification Chamber:
     - name: Filter (Extra Planets)
       count: 1
     - name: Chest
-      count: 1
+      count: 2
     - name: Basic Control Circuit
       count: 1
     - name: Advanced Gas Tank
@@ -37,6 +39,8 @@ String Mesh:
       count: 8
 
 Osmium Plate:
+  method:
+    Compactor
   ingredients:
     Osmium: 1
 
@@ -49,3 +53,35 @@ Item Filter:
   ingredients:
     Iron Bars: 8
     Black Quartz: 1
+
+Advanced Gas Tank:
+  method:
+    Blacksmith's Workshop
+  ingredients:
+    Methane Gas: 3000
+    Steel Plate: 11
+    Silicon Plate: 1
+    Tank Valve: 1
+
+Tank Valve:
+  ingredients:
+    Iron Ingot: 2
+    Tin Ingot: 2
+    Filter (Extra Planets): 1
+
+Gas-Burning Generator:
+  method: 
+    Advanced Crafting Table
+  ingredients:
+    Steel Plate: 8
+    Osmium Plate: 8
+    30k Coolant Cell: 2
+    Redstone Transmission Coil: 1
+    Advanced Control Circuit: 2
+    Liquid Cleaning Tube: 2
+    Advanced Gas Tank: 1
+
+Turbine Blade:
+  ingredients:
+    Enriched Alloy: 1
+    Steel Ingot: 4
