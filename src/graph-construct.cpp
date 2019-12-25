@@ -55,6 +55,11 @@ int main(int argc, char const *argv[]) {
 
 	auto requests = get_requests(recipes, input);
 
+    if (requests.size() == 0) {
+        std::cout << "No input given\n";
+        return 0;
+    }
+    
 	auto recipe_graph = build_graph(requests, recipes);
 	// std::cout << recipe_graph;
 	auto recipe_counts = tally_count(requests, recipe_graph, recipes);
