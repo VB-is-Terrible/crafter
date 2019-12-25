@@ -104,7 +104,7 @@ Silicon Boule:
     Sandy Coal Compound: 1
 Sandy Coal Compound:
   ingredients:
-    Carbon <Mekanism>: 360
+    Carbon <Mekanism>: 90
     Sand: 10
   makes: 12
   method: Metallurgic Infuser
