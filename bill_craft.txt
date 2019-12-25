@@ -1,143 +1,174 @@
 --------------- Level 1 ---------------
 
--Any Stone- (4)
-Advanced Gas Tank (1)
-Black Quartz (1)
-Copper Ingot (3)
-Empty Cell (2)
-Gold Ingot (2)
-Iron Bars (8)
-Iron Ingot (17)
+-Any Stone- (14)
+Cactus (6)
+Copper Ingot (12)
+Empty Cell (16)
+Galena Ore (8)
+Gold Ingot (12)
+Iron Ingot (23)
+Methane Gas (3000)
 Osmium (8)
-Paper (4)
-Red Flower (1)
-Redstone (14)
-Rubber (2)
-Sand (4)
-Sawdust (3)
-Silicon (1)
-Steel Ingot (2)
+Paper (6)
+Redstone (24)
+Rubber (10)
+Sand (20)
+Sawdust (12)
+Silicon (5)
+Silver Ingot (3)
+Snowball (12)
+Steel Ingot (23)
 String (24)
-Wood (2)
+Tin Ingot (6)
+Vanadium Ore (4)
 Wool (4)
-Yellow Flower (1)
 --------------- Level 2 ---------------
 
-Circuit Plate (4)
-4	-Any Stone-
+Cactus Green (6)
+6	Cactus
 
-Enriched Alloy (2)
-2	Steel Ingot
-10	Redstone
+Circuit Plate (14)
+14	-Any Stone-
 
-Glass (2)
-2	Sand
+Galena Dust (8)
+8	Galena Ore
 
-Iron Plate (8)
-8	Iron Ingot
-
-Item Filter (1)
-1	Black Quartz
-8	Iron Bars
+Glass (10)
+10	Sand
 
 Osmium Plate (8)
 8	Osmium
 
-Pulverized Copper (3)
-3	Copper Ingot
+Pulverized Copper (12)
+12	Copper Ingot
 
-Red Dye (1)
-1	Red Flower
+Red Alloy Ingot (2)
+10	Redstone
+2	Iron Ingot
+
+Silicon Plate (1)
+1	Silicon
+
+Steel Plate (19)
+19	Steel Ingot
 
 String Mesh (3)
 24	String
 
-Wooden Planks (2)
-2	Wood
+Vanadium Dust (4)
+4	Vanadium Ore
+
+Water Cell (6)
+6	Empty Cell
 
 Wool Cloth (1)
 4	Wool
 
-Yellow Dye (1)
-1	Yellow Flower
-
 --------------- Level 3 ---------------
 
-Chest (1)
-8	Wooden Planks
+10k Coolant Cell (6)
+6	Water Cell
+12	Snowball
 
-Electrotine (1)
-3	Pulverized Copper
-3	Sawdust
-3	Redstone
+Electrotine (4)
+12	Pulverized Copper
+12	Sawdust
+12	Redstone
 
 Filter (Extra Planets) (1)
 2	Paper
 3	String Mesh
 4	Wool Cloth
 
-Orange Dye (3)
-3	Yellow Dye
-3	Red Dye
+Liquid Cleaning Tube (1)
+3	Iron Ingot
+6	Cactus Green
 
-Sandy Glass (2)
-2	Sand
-2	Glass
+Ovium Ingot (8)
+8	Vanadium Dust
+16	Galena Dust
+
+Redstone Transmission Coil (1)
+3	Silver Ingot
+2	Red Alloy Ingot
+
+Sandy Glass (10)
+10	Sand
+10	Glass
 
 --------------- Level 4 ---------------
 
-Cleaning Tube (1)
-6	Orange Dye
-3	Iron Ingot
+30k Coolant Cell (2)
+4	Tin Ingot
+6	10k Coolant Cell
+8	Ovium Ingot
 
-Electrotine Alloy Ingot (2)
+Electrotine Alloy Ingot (8)
+8	Iron Ingot
+32	Electrotine
+
+Sandy-Glass Dust (10)
+10	Sandy Glass
+
+Tank Valve (1)
+1	Filter (Extra Planets)
 2	Iron Ingot
-8	Electrotine
-
-Sandy-Glass Dust (2)
-2	Sandy Glass
+2	Tin Ingot
 
 --------------- Level 5 ---------------
 
-Solid Glue Compound Cell (2)
-2	Empty Cell
-2	Sandy-Glass Dust
-2	Rubber
+Advanced Gas Tank (1)
+1	Tank Valve
+1	Silicon Plate
+3000	Methane Gas
+11	Steel Plate
+
+Solid Glue Compound Cell (10)
+10	Empty Cell
+10	Sandy-Glass Dust
+10	Rubber
 
 --------------- Level 6 ---------------
 
-Super Glue (2)
-2	Solid Glue Compound Cell
+Super Glue (10)
+10	Solid Glue Compound Cell
 
 --------------- Level 7 ---------------
 
-Transistor (1)
-1000	Super Glue
-2	Paper
-2	Gold Ingot
-3	Circuit Plate
-4	Iron Ingot
-1	Redstone
+Transistor (2)
+2000	Super Glue
+4	Paper
+4	Gold Ingot
+6	Circuit Plate
+8	Iron Ingot
+2	Redstone
 
 --------------- Level 8 ---------------
 
-Basic Control Circuit (1)
-1000	Super Glue
-1	Silicon
-4	Circuit Plate
-2	Transistor
-2	Electrotine Alloy Ingot
+Basic Control Circuit (4)
+4000	Super Glue
+4	Silicon
+16	Circuit Plate
+8	Transistor
+8	Electrotine Alloy Ingot
 
 --------------- Level 9 ---------------
 
-Purification Chamber (1)
-1	Cleaning Tube
-1	Item Filter
-1	Advanced Gas Tank
-8	Iron Plate
-1	Chest
+Advanced Control Circuit (2)
+4000	Super Glue
+8	Gold Ingot
+4	Steel Ingot
+4	Basic Control Circuit
+6	Circuit Plate
+
+--------------- Level 10 ---------------
+
+Gas-Burning Generator (1)
+2	Liquid Cleaning Tube
 8	Osmium Plate
-1	Basic Control Circuit
-2	Enriched Alloy
-1	Filter (Extra Planets)
+2	30k Coolant Cell
+8	Steel Plate
+1	Redstone Transmission Coil
+1	Advanced Gas Tank
+2	Advanced Control Circuit
 
