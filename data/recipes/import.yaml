@@ -546,7 +546,7 @@ Heat Conductor:
   ingredients:
     Gold Coil: 2
     Iron Bars: 8
-    Lava Brick: 4
+    Lava Bricks: 4
     Lava Bucket: 1
     Silicon: 2
     Silicon Plate: 8
@@ -663,7 +663,7 @@ Lapis Lazuli Plate:
   ingredients:
     Lapis Lazuli: 1
   makes: 1
-Lava Brick:
+Lava Bricks:
   ingredients:
     Brick: 1
     Lava: 125
@@ -1057,7 +1057,7 @@ Silicon Plate:
   makes: 1
 Silicone:
   ingredients:
-    Solid Silicon Cell: 1
+    Silicon Boule: 1
   makes: 1000
 Silver Gear:
   ingredients:
