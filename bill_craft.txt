@@ -1,25 +1,26 @@
 --------------- Level 1 ---------------
 
 -Any Stone- (7)
-Copper Ingot (6)
-Filter Fluids (1)
+Copper Ingot (12)
 Glowstone (2)
 Gold Ingot (8)
-Iron Ingot (4)
+Iron Ingot (8)
 Lapis Lazuli (2)
 Manasteel (8)
 Nether Quartz (2)
 Osmium Ingot (4)
 Paper (1)
 Plastic (2)
-Redstone (32)
+Redstone (38)
 Rubber (3)
 Sand (6)
-Sawdust (3)
+Sawdust (9)
 Silicon (7)
 Silver Ingot (2)
 Steel Ingot (12)
+Sticks (4)
 Stone Tank (1)
+String (8)
 Tin Ingot (3)
 --------------- Level 2 ---------------
 
@@ -51,8 +52,8 @@ Molten Lumium (2)
 Nether Quartz Plate (2)
 2	Nether Quartz
 
-Pulverized Copper (3)
-3	Copper Ingot
+Pulverized Copper (9)
+9	Copper Ingot
 
 Red Alloy Ingot (2)
 10	Redstone
@@ -65,12 +66,15 @@ Red Silicon Compound (1)
 Steel Plate (8)
 8	Steel Ingot
 
+String Mesh (1)
+8	String
+
 --------------- Level 3 ---------------
 
-Electrotine (1)
-3	Pulverized Copper
-3	Sawdust
-3	Redstone
+Electrotine (3)
+9	Pulverized Copper
+9	Sawdust
+9	Redstone
 
 Infused Silicon (1)
 1	Red Silicon Compound
@@ -88,6 +92,10 @@ Silicon Gear (1)
 
 --------------- Level 4 ---------------
 
+Electrotine Alloy Ingot (4)
+4	Iron Ingot
+16	Electrotine
+
 Lumium Plate (2)
 2	Lumium Ingot
 
@@ -95,6 +103,11 @@ Sandy-Glass Dust (3)
 3	Sandy Glass
 
 --------------- Level 5 ---------------
+
+Filter Fluids (1)
+4	Sticks
+4	Electrotine Alloy Ingot
+1	String Mesh
 
 Glue Compound (3)
 3	Rubber
