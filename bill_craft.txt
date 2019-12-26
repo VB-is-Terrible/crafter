@@ -1,59 +1,29 @@
 --------------- Level 1 ---------------
 
--Any Stone- (4)
-Clay (2)
-Copper Ingot (4)
+Bucket (2)
 Empty Cell (3)
 Galena Ore (4)
-Gold Ingot (2)
-Iron Ingot (23)
-Lava (250)
-Osmium (8)
-Paper (2)
-Red Flower (1)
-Redstone (14)
-Rubber (1)
-Sand (2)
-Sawdust (3)
-Silicon (1)
+Iron Ingot (10)
+Plastic (2)
+Redstone (10)
+Silver Ingot (3)
 Snowball (6)
-Steel Ingot (2)
-Tin Ingot (2)
+Tin Ingot (12)
 Vanadium Ore (2)
-Yellow Flower (1)
 --------------- Level 2 ---------------
-
-Brick (2)
-2	Clay
-
-Circuit Plate (4)
-4	-Any Stone-
-
-Enriched Alloy (2)
-2	Steel Ingot
-10	Redstone
 
 Galena Dust (4)
 4	Galena Ore
 
-Glass (1)
-1	Sand
+Iron Plate (5)
+5	Iron Ingot
 
-Iron Plate (8)
-8	Iron Ingot
+Red Alloy Ingot (2)
+10	Redstone
+2	Iron Ingot
 
-Osmium Plate (8)
-8	Osmium
-
-Pulverized Copper (3)
-3	Copper Ingot
-
-Red Dye (1)
-1	Red Flower
-
-Saw Blade (1)
-1	Copper Ingot
-6	Iron Ingot
+Tin Gear (1)
+4	Tin Ingot
 
 Vanadium Dust (2)
 2	Vanadium Ore
@@ -61,35 +31,19 @@ Vanadium Dust (2)
 Water Cell (3)
 3	Empty Cell
 
-Yellow Dye (1)
-1	Yellow Flower
-
 --------------- Level 3 ---------------
 
 10k Coolant Cell (3)
 3	Water Cell
 6	Snowball
 
-Electrotine (1)
-3	Pulverized Copper
-3	Sawdust
-3	Redstone
-
-Lava Bricks (2)
-250	Lava
-2	Brick
-
-Orange Dye (3)
-3	Yellow Dye
-3	Red Dye
-
 Ovium Ingot (4)
 4	Vanadium Dust
 8	Galena Dust
 
-Sandy Glass (1)
-1	Sand
-1	Glass
+Redstone Transmission Coil (1)
+3	Silver Ingot
+2	Red Alloy Ingot
 
 --------------- Level 4 ---------------
 
@@ -98,56 +52,15 @@ Sandy Glass (1)
 3	10k Coolant Cell
 4	Ovium Ingot
 
-Cleaning Tube (1)
-6	Orange Dye
-3	Iron Ingot
-
-Electrotine Alloy Ingot (2)
-2	Iron Ingot
-8	Electrotine
-
-Sandy-Glass Dust (1)
-1	Sandy Glass
-
 --------------- Level 5 ---------------
 
-Glue Compound (1)
-1	Rubber
-1	Sandy-Glass Dust
-
---------------- Level 6 ---------------
-
-Super Glue (2)
-2	Glue Compound
-
---------------- Level 7 ---------------
-
-Transistor (1)
-1000	Super Glue
-2	Paper
-2	Gold Ingot
-3	Circuit Plate
-4	Iron Ingot
-1	Redstone
-
---------------- Level 8 ---------------
-
-Basic Control Circuit (1)
-1000	Super Glue
-1	Silicon
-4	Circuit Plate
-2	Transistor
-2	Electrotine Alloy Ingot
-
---------------- Level 9 ---------------
-
-Crusher (Mekanism) (1)
+Compression Dynamo (1)
+5	Iron Plate
+2	Bucket
 1	30k Coolant Cell
-8	Osmium Plate
-1	Basic Control Circuit
-2	Enriched Alloy
-8	Iron Plate
-2	Lava Bricks
-1	Saw Blade
-2	Cleaning Tube
+6	Tin Ingot
+3	Iron Ingot
+1	Tin Gear
+2	Plastic
+1	Redstone Transmission Coil
 
