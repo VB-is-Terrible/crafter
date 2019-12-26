@@ -106,7 +106,7 @@ Sandy Coal Compound:
   ingredients:
     Carbon <Mekanism>: 90
     Sand: 10
-  makes: 12
+  makes: 6
   method: Metallurgic Infuser
 Carbon <Mekanism>:
   ingredients:
