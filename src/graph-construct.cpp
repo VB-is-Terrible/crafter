@@ -123,11 +123,17 @@ std::vector<N> tails(graph::Graph<N, E> g) {
 craft_store tally_count(const std::vector<crafter::Ingredients>& requests, const recipe_graph_t& recipe_graph, const crafter::recipe_store& recipes) {
 	std::unordered_map<std::string, craft_count> recipe_count;
 	std::deque<std::string> queue;
+    const auto head_vec = heads(recipe_graph);
+    std::unordered_set<std::string> head_set{head_vec.begin(), head_vec.end()};
 	for (const auto& node : requests) {
 		auto needed = static_cast<size_t>(node.count);
 		auto& recipe = recipes.find(node.name)->second[0];
 		auto count = (size_t) ceil(needed / (double) recipe.makes);
-		recipe_count[node.name] = craft_count{count, needed, true, 0};
+        if (head_set.count(node.name)) {
+            recipe_count[node.name] = craft_count{count, needed, true, 0};    
+        } else {
+            recipe_count[node.name] = craft_count{count, needed, false, 0};    
+        }
 		queue.push_back(node.name);
 	}
 	while (!queue.empty()) {
@@ -175,7 +181,10 @@ craft_store tally_count(const std::vector<crafter::Ingredients>& requests, const
 bool check_ingredient(const std::string& ingredient, craft_store& recipe_count, const recipe_graph_t& recipe_graph, const crafter::recipe_store& recipes) {
 	craft_count count;
 	if (recipe_count.count(ingredient) != 0) {
-		count = recipe_count[ingredient];
+        count = recipe_count[ingredient];
+        if (count.ready) {
+            return true;
+        }
 	}
 	decltype(count.distance) parent_distance = 0;
 	for (const auto& parent : recipe_graph.GetIncoming(ingredient)) {
