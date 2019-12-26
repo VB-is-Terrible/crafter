@@ -41,3 +41,10 @@ Filter Fluids:
     String Mesh: 1
     Sticks: 4
 
+Itemduct:
+  makes: 12
+  ingredients:
+    Tin Plate: 4
+    Electrotine Alloy Plate: 2
+    Glass: 3
+    Silicone: 1000
