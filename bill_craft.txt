@@ -1,66 +1,164 @@
 --------------- Level 1 ---------------
 
-Bucket (2)
-Empty Cell (3)
-Galena Ore (4)
-Iron Ingot (10)
+-Any Stone- (7)
+Copper Ingot (6)
+Filter Fluids (1)
+Glowstone (2)
+Gold Ingot (8)
+Iron Ingot (4)
+Lapis Lazuli (2)
+Manasteel (8)
+Nether Quartz (2)
+Osmium Ingot (4)
+Paper (1)
 Plastic (2)
-Redstone (10)
-Silver Ingot (3)
-Snowball (6)
-Tin Ingot (12)
-Vanadium Ore (2)
+Redstone (32)
+Rubber (3)
+Sand (6)
+Sawdust (3)
+Silicon (7)
+Silver Ingot (2)
+Steel Ingot (12)
+Stone Tank (1)
+Tin Ingot (3)
 --------------- Level 2 ---------------
 
-Galena Dust (4)
-4	Galena Ore
+Bronze Ingot (1)
+1	Tin Ingot
+3	Copper Ingot
 
-Iron Plate (5)
-5	Iron Ingot
+Circuit Plate (7)
+7	-Any Stone-
+
+Enriched Alloy (2)
+2	Steel Ingot
+10	Redstone
+
+Glass (3)
+3	Sand
+
+Lapis Lazuli Plate (2)
+2	Lapis Lazuli
+
+Manasteel Plate (8)
+8	Manasteel
+
+Molten Lumium (2)
+2	Tin Ingot
+2	Glowstone
+2	Silver Ingot
+
+Nether Quartz Plate (2)
+2	Nether Quartz
+
+Pulverized Copper (3)
+3	Copper Ingot
 
 Red Alloy Ingot (2)
 10	Redstone
 2	Iron Ingot
 
-Tin Gear (1)
-4	Tin Ingot
+Red Silicon Compound (1)
+1	Silicon
+8	Redstone
 
-Vanadium Dust (2)
-2	Vanadium Ore
-
-Water Cell (3)
-3	Empty Cell
+Steel Plate (8)
+8	Steel Ingot
 
 --------------- Level 3 ---------------
 
-10k Coolant Cell (3)
-3	Water Cell
-6	Snowball
+Electrotine (1)
+3	Pulverized Copper
+3	Sawdust
+3	Redstone
 
-Ovium Ingot (4)
-4	Vanadium Dust
-8	Galena Dust
+Infused Silicon (1)
+1	Red Silicon Compound
 
-Redstone Transmission Coil (1)
-3	Silver Ingot
-2	Red Alloy Ingot
+Lumium Ingot (2)
+288	Molten Lumium
+
+Sandy Glass (3)
+3	Sand
+3	Glass
+
+Silicon Gear (1)
+4	Silicon
+1	Bronze Ingot
 
 --------------- Level 4 ---------------
 
-30k Coolant Cell (1)
-2	Tin Ingot
-3	10k Coolant Cell
-4	Ovium Ingot
+Lumium Plate (2)
+2	Lumium Ingot
+
+Sandy-Glass Dust (3)
+3	Sandy Glass
 
 --------------- Level 5 ---------------
 
-Compression Dynamo (1)
-5	Iron Plate
-2	Bucket
-1	30k Coolant Cell
-6	Tin Ingot
-3	Iron Ingot
-1	Tin Gear
+Glue Compound (3)
+3	Rubber
+3	Sandy-Glass Dust
+
+--------------- Level 6 ---------------
+
+Super Glue (6)
+6	Glue Compound
+
+--------------- Level 7 ---------------
+
+Transistor (1)
+500	Super Glue
+1	Paper
+2	Gold Ingot
+3	Circuit Plate
+2	Iron Ingot
+1	Redstone
+
+--------------- Level 8 ---------------
+
+Basic Control Circuit (2)
+4	Transistor
+1000	Super Glue
+2	Silicon
+8	Circuit Plate
+4	Osmium Ingot
+
+Microchip <Tier 1> (1)
+1	Electrotine
+2	Circuit Plate
+2	Gold Ingot
+2	Transistor
+2	Red Alloy Ingot
+1000	Super Glue
+
+--------------- Level 9 ---------------
+
+Advanced Control Circuit (1)
+1000	Super Glue
+4	Gold Ingot
+2	Steel Ingot
+2	Basic Control Circuit
+1	Circuit Plate
+
+Microchip <Tier 2> (1)
+2000	Super Glue
+2	Lapis Lazuli Plate
+1	Infused Silicon
+2	Lumium Plate
+2	Microchip <Tier 1>
+2	Nether Quartz Plate
+
+--------------- Level 10 ---------------
+
+Fractionating Still (1)
+1	Microchip <Tier 2>
+1	Advanced Control Circuit
+2	Enriched Alloy
+8	Manasteel Plate
+8	Steel Plate
 2	Plastic
-1	Redstone Transmission Coil
+1	Filter Fluids
+1	Stone Tank
+1	Silicon Gear
 
