@@ -174,6 +174,9 @@ craft_store tally_count(const std::vector<crafter::Ingredients>& requests, const
 
 bool check_ingredient(const std::string& ingredient, craft_store& recipe_count, const recipe_graph_t& recipe_graph, const crafter::recipe_store& recipes) {
 	craft_count count;
+	if (recipe_count.count(ingredient) != 0) {
+		count = recipe_count[ingredient];
+	}
 	decltype(count.distance) parent_distance = 0;
 	for (const auto& parent : recipe_graph.GetIncoming(ingredient)) {
 		if (!recipe_count[parent].ready) {
