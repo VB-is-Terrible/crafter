@@ -36,7 +36,8 @@ Manasteel Plate:
     Manasteel: 1
 
 Filter Fluids:
-  Electrotine Alloy Ingot: 4
-  String Mesh: 1
-  Sticks: 4
+  ingredients:
+    Electrotine Alloy Ingot: 4
+    String Mesh: 1
+    Sticks: 4
 
