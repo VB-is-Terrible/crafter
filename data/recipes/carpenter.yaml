@@ -46,3 +46,68 @@ Hardened Fluxduct:
     Red Alloy Plate: 2
     Silicone: 500
   makes: 12
+Basic Smelting Factory:
+  ingredients:
+    Red Alloy Ingot: 2
+    Electrotine Alloy Ingot: 2
+    Furnace: 2
+    Advanced Control Circuit: 1
+    Silver Plate: 8
+    Steel Plate: 8
+    Energized Smelter: 1
+    Heat Conductor: 1
+Basic Enrichment Factory:
+  ingredients:
+    Enriched Alloy: 4
+    Advanced Control Circuit: 2
+    Silver Plate: 8
+    Steel Plate: 8
+    Battery: 1
+    Heat Conductor: 1
+    Enrichment Chamber: 1
+Basic Crushing Factory:
+  ingredients:
+    Steel Plate: 8
+    Silver Plate: 8
+    Enriched Alloy: 2
+    Chest: 2
+    Advanced Control Circuit: 1
+    Saw Blade: 1
+    30k Coolant Cell: 2
+    Crusher <Mekanism>: 1
+Furnace:
+  ingredients:
+    Cobblestone: 8
+Impulse Itemduct:
+  ingredients:
+    Tin Plate: 4
+    Electrotine Alloy Plate: 2
+    Hardened Glass: 3
+    Molten Lumium: 1008
+  makes: 12
+Aquamarine:
+  makes: 60
+  ingredients:
+    Block of Electrotine: 2
+    Lapis Lazuli: 1
+    Luminessence: 2
+    Molten Lumium: 2016
+Aquamarine:
+  makes: 6
+  ingredients:
+    Electrotine: 2
+    Lapis Lazuli: 1
+    Luminessence: 2
+    Molten Lumium: 576
+Hardened Fluiduct:
+  ingredients:
+    Invar Plate: 6
+    Glass: 3
+    Silicone: 1000
+  makes: 12
+Fluiduct:
+  ingredients:
+    Copper Plate: 6
+    Glass: 3
+    Silicone: 1000
+  makes: 12

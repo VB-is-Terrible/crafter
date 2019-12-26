@@ -38,11 +38,12 @@ Advanced Component:
 Advanced Control Circuit:
   ingredients:
     Basic Control Circuit: 2
-    Circuit Plate: 3
+    Circuit Plate: 1
     Gold Ingot: 4
     Steel Ingot: 2
-    Super Glue: 2000
+    Super Glue: 1000
   makes: 1
+  method: Carpenter
 Arithmetic Logic Unit <ALU>:
   ingredients:
     Iron Nugget: 2
@@ -97,9 +98,9 @@ Basic Coil:
 Basic Control Circuit:
   ingredients:
     Circuit Plate: 4
-    Electrotine Alloy Ingot: 2
+    Osmium Ingot: 2
     Silicon: 1
-    Super Glue: 1000
+    Super Glue: 500
     Transistor: 2
   makes: 1
 Battery:
@@ -173,11 +174,11 @@ Cactus Green:
 Calculation Processor:
   ingredients:
     Advanced Control Circuit: 1
-    Circuit Plate: 8
+    Circuit Plate: 4
     Pure Certus Quartz Crystal: 2
     Red Alloy Plate: 1
     Silicon Plate: 1
-    Super Glue: 2000
+    Super Glue: 1000
   makes: 1
 Carbon Fiber:
   ingredients:
@@ -655,11 +656,11 @@ Kinetic Dynamo:
   makes: 1
 LV Wire Coil:
   ingredients:
-    Copper Wire: 7
-    Super Glue: 1000
-    Wood Planks: 6
+    Copper Wire: 6
+    Super Glue: 800
+    Wood Planks: 1
     Wooden Gear: 2
-  makes: 8
+  makes: 10
 Lapis Lazuli Plate:
   ingredients:
     Lapis Lazuli: 1
@@ -682,8 +683,9 @@ Leadstone Fluxduct:
     Glass: 3
     Lead Plate: 4
     Red Alloy Plate: 2
-    Silicone: 1000
-  makes: 8
+    Silicone: 500
+  makes: 12
+  method: Carpenter
 Leadstone Jetpack:
   ingredients:
     10k Coolant Cell: 2
@@ -718,11 +720,11 @@ Liquid Crystalline:
 Logic Processor:
   ingredients:
     Basic Control Circuit: 1
-    Circuit Plate: 8
+    Circuit Plate: 4
     Gold Plate: 2
     Red Alloy Plate: 1
     Silicon Plate: 1
-    Super Glue: 1000
+    Super Glue: 500
   makes: 1
 Luminessence:
   ingredients:
@@ -792,33 +794,31 @@ Memory <Tier 1>:
   makes: 1
 Microchip <Tier 1>:
   ingredients:
-    Circuit Plate: 8
+    Circuit Plate: 2
     Electrotine: 1
     Gold Ingot: 2
-    Red Alloy Ingot: 4
-    Super Glue: 2000
+    Red Alloy Ingot: 2
+    Super Glue: 1000
     Transistor: 2
-  makes: 4
+  makes: 6
 Microchip <Tier 2>:
   ingredients:
-    Circuit Plate: 8
     Infused Silicon: 1
     Lapis Lazuli Plate: 2
     Lumium Plate: 2
     Microchip <Tier 1>: 2
     Nether Quartz Plate: 2
-    Super Glue: 3000
-  makes: 4
+    Super Glue: 2000
+  makes: 6
 Microchip <Tier 3>:
   ingredients:
-    Circuit Plate: 8
     Compressed Diamond: 2
     Empowered Emeradic Plate: 2
     Energized Silicon: 1
-    Microchip <Tier 2>n: 2
+    Microchip <Tier 2>: 2
     Refined Glowstone Plate: 2
-    Super Glue: 4000
-  makes: 4
+    Super Glue: 3000
+  makes: 6
 Mirror:
   ingredients:
     Glass: 3
@@ -1144,11 +1144,12 @@ Transistor:
   ingredients:
     Circuit Plate: 3
     Gold Ingot: 2
-    Iron Ingot: 4
-    Paper: 2
+    Iron Ingot: 2
+    Paper: 1
     Redstone: 1
-    Super Glue: 1000
-  makes: 4
+    Super Glue: 500
+  makes: 6
+  method: Carpenter
 Triberium Block:
   ingredients:
     Triberium Ingot: 9
