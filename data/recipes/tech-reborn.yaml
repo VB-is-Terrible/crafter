@@ -1,0 +1,48 @@
+Rolling Machine:
+  method:
+    Advanced Crafting Table
+  ingredients:
+    Steel Plate: 16
+    Linear Actuator: 2
+    Blazing Electron Tube: 1
+    Cobalt Gear: 2
+    60k Coolant Cell: 1
+    Advanced Control Circuit: 1
+    Servomechanism: 1
+    CPU Core S1000: 1
+
+Steel Plate:
+  method:
+    Smeltery
+  ingredients:
+    Steel Ingot: 4
+
+Linear Actuator:
+  ingredients:
+    Jauxum Ingot: 1
+    Karmesine Ingot: 1
+    Ferroboron Ingot: 3
+    Copper Gear: 1
+    Piston: 1
+  
+Blazing Electron Tube:
+  makes: 4
+  method:
+    Thermionic Fabricator
+  ingredients:
+    Blaze Powder: 5
+    Redstone: 2
+
+Cobalt Gear:
+  method:
+    Smeltery
+  ingredients:
+    Cobalt Ingot: 4
+
+Servomechanism:
+  ingredients:
+    Ferroboron Ingot: 2
+    Triberium Ingot: 1
+    Redstone: 2
+    Copper Gear: 1
+    Steel Ingot: 2
