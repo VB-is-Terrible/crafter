@@ -111,3 +111,14 @@ Fluiduct:
     Glass: 3
     Silicone: 1000
   makes: 12
+Signalum-Plated Impulse Itemduct:
+  makes: 12
+  method: Carpenter
+  ingredients:
+    Molten Lumium: 1008
+    Signalum Plate: 4
+    Electrotine Alloy Plate: 1
+    Red Alloy Plate: 1
+    Hardened Glass: 3
+    
+    
