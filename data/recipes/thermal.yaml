@@ -15,5 +15,28 @@ Tin Gear:
   ingredients:
     Tin Ingot: 4
 
+Fractionating Still:
+  method:
+    Advanced Crafting Table
+  ingredients:
+    Steel Plate: 8
+    Manasteel Plate: 8
+    Filter Fluids: 1
+    Silicon Gear: 1
+    Stone Tank: 1
+    Enriched Alloy: 2
+    Advanced Control Circuit: 1
+    Plastic: 2
+    Microchip <Tier 2>: 1
 
+Manasteel Plate:
+  method:
+    Compactor
+  ingredients:
+    Manasteel: 1
+
+Filter Fluids:
+  Electrotine Alloy Ingot: 4
+  String Mesh: 1
+  Sticks: 4
 
