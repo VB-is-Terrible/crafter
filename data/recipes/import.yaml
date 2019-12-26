@@ -732,12 +732,15 @@ Luminessence:
     Gunpowder: 1
     Redstone: 1
   makes: 2
-Lumium Ingot:
+Molten Lumium:
   ingredients:
     Glowstone: 1
     Silver Ingot: 1
     Tin Ingot: 1
-  makes: 1
+  makes: 144
+Lumium Ingot:
+  ingredients:
+    Molten Lumium: 144
 Lumium Plate:
   ingredients:
     Lumium Ingot: 1
@@ -917,12 +920,12 @@ Pulverized Diamond:
   makes: 1
 Pulverized Gold:
   ingredients:
-    Gold Ore: 1
-  makes: 2
+    Gold Ingot: 1
+  makes: 1
 Pulverized Iron:
   ingredients:
-    Iron Ore: 1
-  makes: 2
+    Iron Ingot: 1
+  makes: 1
 Pulverized Tin:
   ingredients:
     Tin Ingot: 1
@@ -1161,8 +1164,12 @@ Triberium Ingot:
   makes: 1
 Vanadium Dust:
   ingredients:
+    Vanadium Ingot: 1
+  makes: 1
+Vanadium Ingot:
+  ingredients:
     Vanadium Ore: 1
-  makes: 2
+  makes: 3
 Vanadium Plate:
   ingredients:
     Vanadium Ingot: 1
@@ -1200,3 +1207,26 @@ Glue Compound:
     Rubber: 1
   makes: 2
   method: Induction Smelter
+Signalum Plate:
+  ingredients:
+    Signalum Ingot: 1
+Signalum Ingot:
+  ingredients:
+    Molten Signalum: 144
+Molten Signalum:
+  ingredients:
+    Molten Redstone: 300
+    Molten Constantan: 144
+  makes: 432
+Molten Constantan:
+  ingredients:
+    Molten Nickel: 1
+    Molten Copper: 1
+  makes: 2
+Pulverized Nickel:
+  ingredients:
+    Nickel Ingot: 1
+Molten Redstone:
+  ingredients:
+    Redstone: 1
+  makes: 100
