@@ -1,122 +1,111 @@
 --------------- Level 1 ---------------
 
--Any Stone- (7)
-Copper Ingot (12)
-Glowstone (2)
-Gold Ingot (8)
-Iron Ingot (8)
-Lapis Lazuli (2)
-Manasteel (8)
-Nether Quartz (2)
-Osmium Ingot (4)
+-Any Stone- (4)
+Copper Ingot (26)
+Empty Cell (1)
+Gold Ingot (6)
+Iron Ingot (13)
+Osmium Ingot (2)
 Paper (1)
-Plastic (2)
-Redstone (38)
-Rubber (3)
-Sand (6)
-Sawdust (9)
-Silicon (7)
-Silver Ingot (2)
-Steel Ingot (12)
-Sticks (4)
-Stone Tank (1)
-String (8)
-Tin Ingot (3)
+Red Flower (1)
+Redstone (9)
+Rubber (1)
+Sand (2)
+Silicon (2)
+Snowball (2)
+Stone (2)
+Tin Ingot (2)
+Wood (3)
+Yellow Flower (1)
 --------------- Level 2 ---------------
 
-Bronze Ingot (1)
-1	Tin Ingot
-3	Copper Ingot
-
-Circuit Plate (7)
-7	-Any Stone-
-
-Enriched Alloy (2)
-2	Steel Ingot
-10	Redstone
-
-Glass (3)
-3	Sand
-
-Lapis Lazuli Plate (2)
-2	Lapis Lazuli
-
-Manasteel Plate (8)
-8	Manasteel
-
-Molten Lumium (2)
+Bronze Ingot (2)
 2	Tin Ingot
-2	Glowstone
-2	Silver Ingot
+6	Copper Ingot
 
-Nether Quartz Plate (2)
-2	Nether Quartz
+Circuit Plate (4)
+4	-Any Stone-
 
-Pulverized Copper (9)
-9	Copper Ingot
+Copper Gear (2)
+8	Copper Ingot
 
-Red Alloy Ingot (2)
-10	Redstone
-2	Iron Ingot
+Glass (1)
+1	Sand
 
-Red Silicon Compound (1)
+Gold Gear (1)
+4	Gold Ingot
+
+Iron Plate (8)
+8	Iron Ingot
+
+Red Dye (1)
+1	Red Flower
+
+Silicon Plate (1)
 1	Silicon
-8	Redstone
 
-Steel Plate (8)
-8	Steel Ingot
+Water Cell (1)
+1	Empty Cell
 
-String Mesh (1)
-8	String
+Wooden Planks (3)
+3	Wood
+
+Yellow Dye (1)
+1	Yellow Flower
 
 --------------- Level 3 ---------------
 
-Electrotine (3)
-9	Pulverized Copper
-9	Sawdust
-9	Redstone
+10k Coolant Cell (1)
+1	Water Cell
+2	Snowball
 
-Infused Silicon (1)
-1	Red Silicon Compound
+Bronze Plate (8)
+8	Bronze Ingot
 
-Lumium Ingot (2)
-288	Molten Lumium
+Chest (2)
+16	Wooden Planks
 
-Sandy Glass (3)
-3	Sand
-3	Glass
+Orange Dye (3)
+3	Yellow Dye
+3	Red Dye
 
-Silicon Gear (1)
-4	Silicon
-1	Bronze Ingot
+Sandy Glass (1)
+1	Sand
+1	Glass
+
+Stick (1)
+1	Wooden Planks
 
 --------------- Level 4 ---------------
 
-Electrotine Alloy Ingot (4)
-4	Iron Ingot
-16	Electrotine
+Cleaning Tube (1)
+6	Orange Dye
+3	Iron Ingot
 
-Lumium Plate (2)
-2	Lumium Ingot
+Copper Coil (2)
+2	Stick
+12	Copper Ingot
+4	Redstone
 
-Sandy-Glass Dust (3)
-3	Sandy Glass
+Sandy-Glass Dust (1)
+1	Sandy Glass
 
 --------------- Level 5 ---------------
 
-Filter Fluids (1)
-4	Sticks
-4	Electrotine Alloy Ingot
-1	String Mesh
+Glue Compound (1)
+1	Rubber
+1	Sandy-Glass Dust
 
-Glue Compound (3)
-3	Rubber
-3	Sandy-Glass Dust
+Motor (1)
+4	Redstone
+2	Stone
+2	Copper Coil
+1	Gold Gear
 
 --------------- Level 6 ---------------
 
-Super Glue (6)
-6	Glue Compound
+Super Glue (1)
+1	Glue Compound
 
 --------------- Level 7 ---------------
 
@@ -130,48 +119,23 @@ Transistor (1)
 
 --------------- Level 8 ---------------
 
-Basic Control Circuit (2)
-4	Transistor
-1000	Super Glue
-2	Silicon
-8	Circuit Plate
-4	Osmium Ingot
-
-Microchip <Tier 1> (1)
-1	Electrotine
-2	Circuit Plate
-2	Gold Ingot
+Basic Control Circuit (1)
 2	Transistor
-2	Red Alloy Ingot
-1000	Super Glue
+500	Super Glue
+1	Silicon
+4	Circuit Plate
+2	Osmium Ingot
 
 --------------- Level 9 ---------------
 
-Advanced Control Circuit (1)
-1000	Super Glue
-4	Gold Ingot
-2	Steel Ingot
-2	Basic Control Circuit
-1	Circuit Plate
-
-Microchip <Tier 2> (1)
-2000	Super Glue
-2	Lapis Lazuli Plate
-1	Infused Silicon
-2	Lumium Plate
-2	Microchip <Tier 1>
-2	Nether Quartz Plate
-
---------------- Level 10 ---------------
-
-Fractionating Still (1)
-1	Microchip <Tier 2>
-1	Advanced Control Circuit
-2	Enriched Alloy
-8	Manasteel Plate
-8	Steel Plate
-2	Plastic
-1	Filter Fluids
-1	Stone Tank
-1	Silicon Gear
+Induction Smelter (1)
+1	Silicon Plate
+1	Motor
+8	Iron Plate
+1	Basic Control Circuit
+2	Copper Gear
+2	Chest
+1	10k Coolant Cell
+8	Bronze Plate
+1	Cleaning Tube
 
