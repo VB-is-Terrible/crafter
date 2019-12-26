@@ -465,6 +465,7 @@ Enrichment Chamber:
     Iron Plate: 8
     Motor: 1
     Osmium Plate: 8
+    30k Coolant Cell: 1
   makes: 1
 Fluix Crystal:
   ingredients:
@@ -665,7 +666,7 @@ Lapis Lazuli Plate:
   makes: 1
 Lava Bricks:
   ingredients:
-    Brick: 1
+    Bricks: 1
     Lava: 125
   makes: 1
 Lead Gear:
