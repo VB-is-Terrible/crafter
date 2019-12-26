@@ -350,9 +350,9 @@ Electrolytic Core:
 Electrotine:
   ingredients:
     Pulverized Copper: 3
-    Redstone: 3
-    Sawdust: 3
-  makes: 8
+    Redstone: 4
+  makes: 10
+  method: Induction Smelter
 Electrotine Alloy Ingot:
   ingredients:
     Electrotine: 4
