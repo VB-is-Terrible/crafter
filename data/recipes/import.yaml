@@ -105,11 +105,11 @@ Basic Control Circuit:
   makes: 1
 Battery:
   ingredients:
-    Copper Ingot: 9
+    Block of Copper: 1
     Crystalized Menril Chunk: 2
     Electro Silicon: 1
-    Silicone: 2000
-    Tin Ingot: 1
+    Silicone: 1000
+    Tin Plate: 1
   makes: 1
 Black Iron Ingot:
   ingredients:
@@ -128,10 +128,10 @@ Block of Iron:
   ingredients:
     Iron Ingot: 9
   makes: 1
-Block of Redstone:
-  ingredients:
-    Redstone: 9
-  makes: 1
+#Block of Redstone:
+  #ingredients:
+    #Redstone: 9
+  #makes: 1
 Block of Silver:
   ingredients:
     Silver Ingot: 9
