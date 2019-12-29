@@ -48,3 +48,14 @@ Itemduct:
     Electrotine Alloy Plate: 2
     Glass: 3
     Silicone: 1000
+
+Energy Cell:
+  ingredients:
+    Iron Plate: 8
+    Tin Plate: 8
+    Transistor: 2
+    Block of Redstone: 1
+    Silicon Plate: 1
+    Battery: 2
+    Copper Coil: 2
+    Block of Crystalized Menril: 1
