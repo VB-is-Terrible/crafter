@@ -131,7 +131,7 @@ namespace crafter {
 			} catch (...) {
 				std::cerr << "Failed to read request from file\n";
 			}
-			if (name != "") {
+			if (name != "" && recipes.count(name)) {
 				requests.push_back(Ingredients(name, 1));
 			}
 		}
