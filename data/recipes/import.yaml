@@ -1232,3 +1232,9 @@ Molten Redstone:
   ingredients:
     Redstone: 1
   makes: 100
+Sugar:
+  ingredients:
+    Sugar Cane: 1
+  makes: 4
+  method: 
+    Mechanical Squeezer
