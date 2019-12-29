@@ -1,0 +1,18 @@
+Mechanical Squeezer:
+  method:
+    Advanced Crafting Table
+  ingredients:
+    Electrum Plate: 7
+    Steel Plate: 8
+    Demon Gear: 2
+    Electric Motor: 1
+    30k Coolant Cell: 1
+    Advanced Control Circuit: 1
+    Linear Actuator: 1
+    Battery: 2
+    CPU Core S1000: 1
+
+Demon Gear:
+  ingredients:
+    Demon Ingot: 4
+    Iron Ingot: 1
