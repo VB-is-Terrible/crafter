@@ -21,7 +21,7 @@ Linear Actuator:
   ingredients:
     Jauxum Ingot: 1
     Karmesine Ingot: 1
-    Ferroboron Ingot: 3
+    Ferroboron Alloy: 3
     Copper Gear: 1
     Piston: 1
   
@@ -39,7 +39,7 @@ Cobalt Gear:
 
 Servomechanism:
   ingredients:
-    Ferroboron Ingot: 2
+    Ferroboron Alloy: 2
     Triberium Ingot: 1
     Redstone: 2
     Copper Gear: 1
