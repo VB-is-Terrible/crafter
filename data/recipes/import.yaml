@@ -170,7 +170,9 @@ CPU Core S1000:
 Cactus Green:
   ingredients:
     Cactus: 1
-  makes: 1
+  makes: 4
+  method:
+    Mechanical Squeezer
 Calculation Processor:
   ingredients:
     Advanced Control Circuit: 1
