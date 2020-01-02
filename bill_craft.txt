@@ -1,184 +1,114 @@
+Loaded 283 recipes
+Input Recipe: Input Recipe: 
 --------------- Level 1 ---------------
 
 -Any Stone- (8)
-Cactus (2)
-Charcoal (5)
-Copper Ingot (32)
-Crystalized Menril Chunk (4)
-Demon Ingot (8)
-Diamond (4)
-Emerald (2)
-Empty Cell (3)
-Ferroboron Ingot (3)
-Galena Ore (4)
-Gold Ingot (19)
-Iron Ingot (8)
-Jauxum Ingot (1)
-Karmesine Ingot (1)
+Bricks (4)
+Cactus (1)
+Cobblestone (16)
+Copper Ingot (6)
+Gold Ingot (23)
+Iron Bars (8)
+Iron Ingot (5)
+Lava (500)
+Lava Bucket (1)
 Osmium Ingot (6)
 Paper (3)
-Redstone (39)
+Plastic (2)
+Red Flower (1)
+Redstone (12)
 Rubber (2)
-Sand (14)
-Silicon (5)
-Silver Ingot (4)
-Snowball (6)
-Steel Ingot (16)
-Stone (4)
-Tin Ingot (4)
-Vanadium Ore (2)
-Wood (6)
+Sand (4)
+Silicon (13)
+Steel Ingot (34)
+Tin Ingot (2)
+Wood (2)
+Yellow Flower (1)
 --------------- Level 2 ---------------
 
-Block of Redstone (2)
-18	Redstone
+Bronze Ingot (2)
+2	Tin Ingot
+6	Copper Ingot
 
-Cactus Green (2)
-2	Cactus
-
-Carbon <Mekanism> (5)
-5	Charcoal
+Cactus Green (1)
+1	Cactus
 
 Circuit Plate (8)
 8	-Any Stone-
 
-Copper Gear (1)
-4	Copper Ingot
-
-Copper Solenoid (1)
-2	Iron Ingot
-4	Copper Ingot
-
-Demon Gear (2)
-2	Iron Ingot
-8	Demon Ingot
-
-Electrum Ingot (4)
-4	Silver Ingot
-4	Gold Ingot
-
-Galena Dust (4)
-4	Galena Ore
+Furnace (2)
+16	Cobblestone
 
 Glass (2)
 2	Sand
 
-Gold Gear (1)
-4	Gold Ingot
+Lava Bricks (4)
+500	Lava
+4	Bricks
 
-Iron Plate (1)
-1	Iron Ingot
+Red Dye (1)
+1	Red Flower
 
-Pulverized Copper (6)
-6	Copper Ingot
-
-Red Alloy Ingot (1)
-5	Redstone
-1	Iron Ingot
+Silicon Plate (8)
+8	Silicon
 
 Steel Plate (8)
-8	Steel Ingot
+32	Steel Ingot
 
-Vanadium Ingot (2)
-2	Vanadium Ore
+Wooden Planks (2)
+2	Wood
 
-Water Cell (3)
-3	Empty Cell
-
-Wooden Planks (3)
-3	Wood
+Yellow Dye (1)
+1	Yellow Flower
 
 --------------- Level 3 ---------------
 
-10k Coolant Cell (3)
-3	Water Cell
-6	Snowball
+Bronze Plate (8)
+8	Bronze Ingot
 
-Electric Motor (1)
-6	Steel Ingot
-2	Copper Solenoid
-1	Gold Gear
+Chest (1)
+8	Wooden Planks
 
-Electrotine (2)
-8	Redstone
-6	Pulverized Copper
-
-Electrum Plate (7)
-7	Electrum Ingot
-
-Sandy Coal Compound (1)
-10	Sand
-90	Carbon <Mekanism>
+Orange Dye (3)
+3	Yellow Dye
+3	Red Dye
 
 Sandy Glass (2)
 2	Sand
 2	Glass
 
-Stick (3)
-3	Wooden Planks
-
-Vanadium Dust (4)
-4	Vanadium Ingot
+Stick (1)
+1	Wooden Planks
 
 --------------- Level 4 ---------------
 
-Electrotine Silicon Compound (2)
-2	Silicon
-16	Electrotine
+Cleaning Tube (1)
+6	Orange Dye
+3	Iron Ingot
 
-Ovium Ingot (4)
-4	Vanadium Dust
-8	Galena Dust
+Gold Coil (2)
+2	Stick
+12	Gold Ingot
+4	Redstone
 
 Sandy-Glass Dust (2)
 2	Sandy Glass
 
-Silicon Boule (4)
-4	Sandy Coal Compound
-
-Wood Casing (3)
-12	Wooden Planks
-12	Stick
-3	Wood
-
 --------------- Level 5 ---------------
-
-30k Coolant Cell (1)
-2	Tin Ingot
-3	10k Coolant Cell
-4	Ovium Ingot
-
-Electro Silicon (2)
-2	Electrotine Silicon Compound
 
 Glue Compound (2)
 2	Rubber
 2	Sandy-Glass Dust
 
-Piston (1)
-4	Stone
-3	Wood Casing
-1	Iron Plate
-1	Red Alloy Ingot
-
-Silicone (4)
-4	Silicon Boule
+Heat Conductor (1)
+8	Iron Bars
+2	Silicon
+2	Gold Coil
+8	Silicon Plate
+4	Lava Bricks
+1	Lava Bucket
 
 --------------- Level 6 ---------------
-
-Battery (2)
-2	Tin Ingot
-2	Electro Silicon
-4000	Silicone
-18	Copper Ingot
-4	Crystalized Menril Chunk
-
-Linear Actuator (1)
-1	Piston
-3	Ferroboron Ingot
-1	Jauxum Ingot
-1	Copper Gear
-1	Karmesine Ingot
 
 Super Glue (3)
 3	Glue Compound
@@ -227,22 +157,14 @@ CPU Core B500 (1)
 
 --------------- Level 11 ---------------
 
-CPU Core S1000 (1)
-2	Emerald
-4	Diamond
-2	Block of Redstone
+Resourceful Furnace (1)
 1	CPU Core B500
-
---------------- Level 12 ---------------
-
-Mechanical Squeezer (1)
-1	CPU Core S1000
-1	Linear Actuator
-1	Advanced Control Circuit
-2	Battery
+1	Cleaning Tube
+8	Bronze Plate
+1	Heat Conductor
+2	Plastic
+2	Furnace
+1	Chest
 8	Steel Plate
-7	Electrum Plate
-1	Electric Motor
-2	Demon Gear
-1	30k Coolant Cell
+1	Advanced Control Circuit
 
