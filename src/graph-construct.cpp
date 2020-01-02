@@ -6,7 +6,14 @@
 #include <deque>
 #include <math.h>
 #include <algorithm>
+
+#if defined(__GNUC__) && (__GNUC___ > 7)
 #include <filesystem>
+using fs = std::filesystem;
+#else
+#include <experimental/filesystem>
+using fs = std::experimental::filesystem;
+#endif
 
 
 #include "import.h"
@@ -299,7 +306,7 @@ bool valid_extension(std::string extension) {
 
 crafter::recipe_store read_templates(std::string template_location) {
 	crafter::recipe_store result;
-	for (const auto& entry : std::filesystem::directory_iterator(template_location)) {
+	for (const auto& entry : fs::directory_iterator(template_location)) {
 		if (entry.is_regular_file() && valid_extension(entry.path().extension())) {
 			crafter::read_in(entry.path(), result);
 		}
