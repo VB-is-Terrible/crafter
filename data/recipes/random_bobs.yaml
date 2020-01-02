@@ -21,3 +21,17 @@ Demon Gear:
 Block of Copper:
   ingredients:
     Copper Ingot: 9
+
+Resourceful Furnace:
+  method:
+    Advanced Crafting Table
+  ingredients:
+    Steel Plate: 8
+    Bronze Plate: 8
+    Plastic: 2
+    Furnace: 2
+    Advanced Control Circuit: 1
+    Cleaning Tube: 1
+    Chest: 1
+    CPU Core B500: 1
+    Heat Conductor: 1
