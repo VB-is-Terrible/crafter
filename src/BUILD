@@ -37,4 +37,5 @@ cc_binary(
     srcs = ["graph-construct.cpp"],
     deps = [":graph", ":importer"],
     data = ["//data:recipes"],
+    linkopts = ['-lstdc++fs'],
 )
