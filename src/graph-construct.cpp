@@ -7,7 +7,7 @@
 #include <math.h>
 #include <algorithm>
 
-#if defined(__GNUC__) && (__GNUC___ > 7)
+#if __GNUC__ > 7
 #include <filesystem>
 namespace fs = std::filesystem;
 #else
