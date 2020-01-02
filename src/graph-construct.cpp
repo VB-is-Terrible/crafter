@@ -9,10 +9,11 @@
 
 #if defined(__GNUC__) && (__GNUC___ > 7)
 #include <filesystem>
-using fs = std::filesystem;
+namespace fs = std::filesystem;
 #else
 #include <experimental/filesystem>
-using fs = std::experimental::filesystem;
+namespace fs = std::experimental::filesystem;
+#define old_fs
 #endif
 
 
@@ -304,6 +305,7 @@ bool valid_extension(std::string extension) {
 	return false;
 }
 
+#ifndef old_fs
 crafter::recipe_store read_templates(std::string template_location) {
 	crafter::recipe_store result;
 	for (const auto& entry : fs::directory_iterator(template_location)) {
@@ -313,6 +315,18 @@ crafter::recipe_store read_templates(std::string template_location) {
 	}
 	return result;
 }
+#else
+crafter::recipe_store read_templates(std::string template_location) {
+	crafter::recipe_store result;
+	for (const auto& entry : fs::directory_iterator(template_location)) {
+		if (fs::is_regular_file(entry) && valid_extension(entry.path().extension())) {
+			crafter::read_in(entry.path(), result);
+		}
+	}
+	return result;
+}
+#endif
+
 
 std::string read_args (int argc, char const *argv[]) {
 	if (argc == 1) {
