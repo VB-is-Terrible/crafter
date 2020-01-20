@@ -294,9 +294,10 @@ Copper Solenoid:
     Iron Ingot: 2
   makes: 2
 Copper Wire:
+  method: Metal Press
   ingredients:
     Copper Plate: 1
-  makes: 1
+  makes: 2
 Crystalized Menril Block:
   ingredients:
     Crystalized Menril Chunk: 9
@@ -582,7 +583,6 @@ Industrial Electrolyzer:
   makes: 1
 Inert Blood-Iron Ingot:
   ingredients:
-    Blood <Evilcraft>: 5000
     Iron Ingot: 1
   makes: 1
 Inferium Ingot:
@@ -644,9 +644,10 @@ Iron Plate:
     Iron Ingot: 1
   makes: 1
 Iron Rod:
+  method: Metal Press
   ingredients:
     Iron Ingot: 1
-  makes: 1
+  makes: 2
 Kinetic Dynamo:
   ingredients:
     Basic Control Circuit: 1
@@ -1161,17 +1162,13 @@ Triberium Block:
   makes: 1
 Triberium Ingot:
   ingredients:
-    Basalt Ingot: 4
+    Dilithium Ingot: 2
     Tiberium Ingot: 5
   makes: 1
 Vanadium Dust:
   ingredients:
     Vanadium Ingot: 1
   makes: 1
-Vanadium Ingot:
-  ingredients:
-    Vanadium Ore: 1
-  makes: 3
 Vanadium Plate:
   ingredients:
     Vanadium Ingot: 1

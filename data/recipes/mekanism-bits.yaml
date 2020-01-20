@@ -33,10 +33,11 @@ Filter (Extra Planets):
       count: 2
 
 String Mesh:
-  makes: 1
+  method: Carpenter
+  makes: 2
   ingredients:
     - name: String
-      count: 8
+      count: 9
 
 Osmium Plate:
   method:

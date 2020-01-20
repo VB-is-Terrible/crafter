@@ -1,0 +1,298 @@
+Engineer's Workshop:
+  ingredients:
+    Treated Wood Planks: 16
+    Advanced Crafting Table: 1
+    Huge Iron Pane: 4
+    Silicon Block: 2
+    
+Huge Iron Pane:
+  ingredients:
+    Iron Pane: 9
+
+Iron Pane:
+  makes: 8
+  ingredients:
+    Chest Pane: 8
+    Iron Ingot: 1
+    
+Chest Pane:
+  makes: 32
+  ingredients:
+    Wooden Planks: 7
+    Wood: 2
+    
+Silicon Block:
+  ingredients:
+    Silicon: 9
+    
+Water Wheel: 
+  ingredients:
+    Steel Ingot: 5
+    Waterwheel Segment: 8
+
+Waterwheel Segment:
+  ingredients:
+    Treated Wood Planks: 3
+    Treated Stick: 4
+
+Treated Stick:
+  makes: 4
+  method: Handsaw
+  ingredients:
+    Treated Wood Planks: 2
+
+Cauldron:
+  ingredients:
+    Iron Plate: 7
+    Silicon: 1
+
+Redstone Engineering Block:
+  makes: 4
+  ingredients:
+    Red Alloy Plate: 8
+    Iron Plate: 8
+    Copper Ingot: 8
+    Block of Redstone: 1
+    
+Light Engineering Block:
+  makes: 4
+  ingredients:
+    Iron Plate: 16
+    Triberium Ingot: 4
+    Iron Mechanical Component: 4
+    Block of Copper: 1
+
+Iron Mechanical Component:
+  ingredients:
+    Iron Plate: 8
+    Lead Gear: 1
+    
+Iron Sheetmetal:
+  makes: 4
+  ingredients:
+    Iron Plate: 4
+
+Graphite Electrode:
+  ingredients:
+    HOP Graphite Ingot: 4
+    
+HOP Graphite Ingot:
+  ingredients:
+    HOP Graphite Dust: 1
+
+HOP Graphite Dust:
+  ingredients:
+    Coke Dust: 8
+    
+Coke Dust:
+  ingredients:
+    Coal Coke: 1
+
+Garden Cloche:
+  ingredients:
+    Hardened Steel Glass: 11
+    Vacuum Tube: 2
+    Ancient Dust: 1
+    Advanced Control Circuit: 2
+    Enchanted Plate: 2
+    Steel Mechanical Component: 2
+    Redstone Servo: 1
+    Empowered Palis Plate: 2
+    Treated Wood Planks: 11
+    Bone Meal Bag: 1
+    
+Empowered Palis Plate:
+  ingredients:
+    Empowered Palis Crystal: 1
+
+Empowered Palis Crystal:
+  makes: 9
+  ingredients:
+    Empowered Palis Crystal Block: 1
+
+Empowered Palis Crystal Block:
+  ingredients:
+    Block of Redstone: 1
+    Bricks: 1
+    Block of Manasteel: 1
+    Inert Blood-Iron Ingot: 1
+    Palis Crystal Block: 1
+    
+Palis Crystal Block:
+  ingredients:
+    Lapis Lazuli Block: 1
+    
+Palis Plate:
+  ingredients:
+    Lapis Lazuli Plate: 1
+    
+Steel Mechanical Component:
+  ingredients:
+    Steel Plate: 8
+    Manasteel Gear: 1
+    
+Vacuum Tube:
+  method: Engineer's Workbench
+  makes: 3
+  ingredients:
+    Nickel Plate: 1
+    Redstone: 1
+    Glass: 1
+    Copper Wire: 1
+
+Manasteel Gear:
+  method: Metal Press
+  ingredients:
+    Manasteel Ingot: 4
+    
+Steel Fence:
+  makes: 3
+  ingredients:
+    Steel Ingot: 4
+    Steel Rod: 2
+
+Steel Scaffolding:
+  makes: 2
+  ingredients:
+    Steel Plate: 4
+    Steel Rod: 4
+    Manasteel Plate: 1
+
+Steel Rod:
+  method: Metal Press
+  makes: 2
+  ingredients:
+    Steel Ingot: 1
+    
+Nickel Plate:
+  ingredients:
+    Nickel Ingot: 1
+    
+Steel Sheetmetal:
+  makes: 2
+  ingredients:
+    Steel Plate: 5
+    
+Steel Sheetmetal Slab:
+  makes: 6
+  ingredients:
+    Steel Sheetmetal: 3
+    
+Heavy Engineering Block:
+  makes: 4
+  ingredients:
+    Electrum Plate: 8
+    Steel Plate: 9
+    Steel Mechanical Component: 4
+    Osram Ingot: 4
+    
+Bone Meal Bag:
+  ingredients:
+    String: 7
+    Bone Block: 1
+    Paper: 1
+
+Hardened Steel Glass:
+  makes: 2
+  ingredients:
+    Hardened Glass: 2
+    Steel Blend: 1
+
+Steel Blend:
+  ingredients:
+    Steel Ingot: 1
+    
+Metal Press:
+  ingredients:
+    Steel Scaffolding: 2
+    Redstone Engineering Block: 1
+    Piston: 1
+    Conveyor Belt: 2
+    Heavy Engineering Block: 1
+    
+Conveyor Belt:
+  makes: 8
+  ingredients:
+    Leather: 3
+    Iron Ingot: 2
+    Redstone: 1
+    
+Item Allocator:
+  ingredients:
+    Iron Plate: 8
+    Tin Plate: 8
+    Cleaning Tube: 2
+    Bronze Gear: 2
+    Basic Control Circuit: 1
+    Chest: 1
+    Filter: 1
+    Redstone Servo: 2
+    
+Filter:
+  ingredients:
+    Red Alloy Ingot: 4
+    Stick: 4
+    String Mesh: 1
+
+Industrial Squeezer:
+  ingredients:
+    Steel Scaffolding: 6
+    Fluid Pipe: 2
+    Redstone Engineering Block: 1
+    Light Engineering Block: 2
+    Wooden Barrel: 4
+    Piston: 1
+    Steel Fence: 3
+
+Excavator:
+  ingredients:
+    Steel Scaffolding: 6
+    Steel Sheetmetal: 15
+    Redstone Engineering Block: 1
+    Light Engineering Block: 9
+    Heavy Engineering Block: 5
+    Radiator Block: 3
+
+Bagger:
+  ingredients:
+    Block of Steel: 9
+    Steel Scaffolding: 20
+    
+Fermenter:
+  ingredients:
+    Steel Scaffolding: 6
+    Fluid Pipe: 2
+    Redstone Engineering Block: 1
+    Light Engineering Block: 2
+    Cauldron: 4
+    Iron Sheetmetal: 4
+    
+Refinery:
+  ingredients:
+    Steel Scaffolding: 8
+    Fluid Pipe: 5
+    Redstone Engineering Block: 1
+    Light Engineering Block: 2
+    Heavy Engineering Block: 2
+    Iron Sheetmetal: 16
+    
+Wooden Barrel:
+  ingredients:
+    Treated Wood Planks: 5
+    Treated Wood Slab: 3
+
+Fluid Pipe:
+  makes: 8
+  ingredients:
+    Iron Plate: 6
+    Glass Pipe: 3
+    
+Glass Pipe:
+  makes: 4
+  ingredients: 
+    Hardened Glass: 1
+    
+Treated Wood Slab:
+  makes: 4
+  ingredients:
+    Treated Wood Planks: 1

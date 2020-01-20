@@ -33,7 +33,7 @@ Manasteel Plate:
   method:
     Compactor
   ingredients:
-    Manasteel: 1
+    Manasteel Ingot: 1
 
 Filter Fluids:
   ingredients:
@@ -59,3 +59,14 @@ Energy Cell:
     Battery: 2
     Copper Coil: 2
     Block of Crystalized Menril: 1
+
+Factorizer:
+  ingredients:
+    Steel Plate: 8
+    Bronze Plate: 8
+    Cleaning Tube: 2
+    Tiberium Block: 1
+    Piston: 2
+    Motor: 2
+    Redstone Servo: 1
+    Advanced Control Circuit: 1

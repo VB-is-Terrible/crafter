@@ -35,3 +35,31 @@ Resourceful Furnace:
     Chest: 1
     CPU Core B500: 1
     Heat Conductor: 1
+    
+Compacting Drawer:
+  ingredients:
+    Stone: 5
+    Piston: 2
+    Half Drawers 2x2: 1
+    Iron Ingot: 1
+
+Half Drawers 2x2:
+  makes: 4
+  ingredients:
+    Chest: 4
+    Wood Slab: 5
+    
+Wood Slab:
+  makes: 4
+  ingredients:
+    Wooden Planks: 1
+
+Crafter Tier 1:
+  ingredients:
+    Invar Plate: 16
+    Glass: 2
+    Chest: 1
+    Basic Control Circuit: 1
+    Crafting Table: 2
+    Bronze Gear: 2
+    Motor: 1
